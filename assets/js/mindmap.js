@@ -1,5 +1,6 @@
 /* =========================================================
    SƠ ĐỒ TƯ DUY – vẽ bằng SVG + HTML, không dùng thư viện ngoài
+   Bản cập nhật: Hỗ trợ hình ảnh minh hoạ Infographic và Gallery
    ========================================================= */
 (function () {
   'use strict';
@@ -14,19 +15,19 @@
   const panel = $('detailPanel');
 
   /* ---------- Thông số bố cục ---------- */
-  const HGAP = [84, 58, 42, 36];   // khoảng cách ngang từ nút cha (theo cấp cha)
-  const VGAP = [0, 22, 8, 6];      // khoảng cách dọc giữa các nút anh em (theo cấp con)
-  const SIDE_GAP = 28;             // khoảng cách giữa các chủ đề lớn
-  const STROKE = [0, 6, 3.2, 2];   // độ dày đường nối
+  const HGAP = [96, 64, 46, 38];   // khoảng cách ngang từ nút cha (theo cấp cha)
+  const VGAP = [0, 24, 10, 8];     // khoảng cách dọc giữa các nút anh em (theo cấp con)
+  const SIDE_GAP = 32;             // khoảng cách giữa các chủ đề lớn
+  const STROKE = [0, 6.5, 3.5, 2]; // độ dày đường nối
   const DURATION = 420;
   const MIN_K = 0.2, MAX_K = 2.5;
 
   /* ---------- Dựng cây dữ liệu ---------- */
   const all = [];
   function build(raw, parent, depth) {
-    if (Array.isArray(raw)) raw = { i: raw[0], t: raw[1], d: raw[2] };
+    if (Array.isArray(raw)) raw = { i: raw[0], t: raw[1], d: raw[2], img: raw[3] };
     const n = {
-      i: raw.i, t: raw.t, sub: raw.sub, d: raw.d, depth, parent,
+      i: raw.i, t: raw.t, sub: raw.sub, d: raw.d, img: raw.img, depth, parent,
       color: raw.color || (parent ? parent.color : '#0b4f86'),
       dir: depth === 1 ? (raw.side === 'left' ? -1 : 1) : (parent ? parent.dir : 1),
       open: depth === 0 || !!raw.open,
@@ -46,7 +47,8 @@
     el.className = 'node l' + Math.min(n.depth, 3) +
       (n.dir < 0 ? ' dir-left' : '') +
       (n.children.length ? '' : ' leaf') +
-      (n.d ? ' has-detail' : '');
+      (n.d ? ' has-detail' : '') +
+      (n.img ? ' has-art' : '');
     el.style.setProperty('--c', n.color);
 
     const inner = document.createElement('div');
@@ -60,6 +62,15 @@
       img.alt = 'HCMUE';
       img.className = 'root-logo';
       wrap.appendChild(img);
+
+      if (n.img) {
+        const artCenter = document.createElement('img');
+        artCenter.src = n.img;
+        artCenter.alt = 'KHTN 8';
+        artCenter.className = 'root-art-img';
+        wrap.appendChild(artCenter);
+      }
+
       const txt = document.createElement('div');
       const t1 = document.createElement('div'); t1.className = 'root-title'; t1.textContent = n.t;
       const t2 = document.createElement('div'); t2.className = 'root-sub'; t2.textContent = n.sub || '';
@@ -67,9 +78,23 @@
       inner.append(wrap, txt);
       inner.title = 'Bấm để đưa sơ đồ về giữa';
     } else {
+      // Nếu có hình minh hoạ từ Infographic
+      if (n.img) {
+        const art = document.createElement('span');
+        art.className = 'node-art-badge';
+        const img = document.createElement('img');
+        img.src = n.img;
+        img.alt = n.t;
+        img.className = 'node-art-img';
+        img.loading = 'lazy';
+        art.appendChild(img);
+        inner.appendChild(art);
+      }
+
       const ic = document.createElement('span'); ic.className = 'node-icon'; ic.textContent = n.i || '•';
       const tx = document.createElement('span'); tx.className = 'node-text'; tx.textContent = n.t;
       inner.append(ic, tx);
+
       if (n.children.length) {
         n.badge = document.createElement('span');
         n.badge.className = 'node-badge';
@@ -151,7 +176,7 @@
     });
   }
 
-  /* ---------- Vẽ ---------- */
+  /* ---------- Vẽ đường nối ---------- */
   function linkPath(p, c) {
     const dir = c.dir;
     const x1 = p.cur.x + dir * (p.w / 2 - (p.depth === 0 ? 12 : 0));
@@ -262,7 +287,7 @@
     });
     const r = viewport.getBoundingClientRect();
     const pad = r.width < 640 ? 16 : 40;
-    const k = clamp(Math.min((r.width - pad * 2) / (maxX - minX), (r.height - pad * 2) / (maxY - minY)), 0.25, 1.15);
+    const k = clamp(Math.min((r.width - pad * 2) / (maxX - minX), (r.height - pad * 2) / (maxY - minY)), 0.22, 1.15);
     setView(r.width / 2 - ((minX + maxX) / 2) * k, r.height / 2 - ((minY + maxY) / 2) * k, k, smooth);
   }
 
@@ -271,7 +296,7 @@
   const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
 
   viewport.addEventListener('pointerdown', (e) => {
-    if (e.target.closest('.zoom-controls, .detail-panel')) return;
+    if (e.target.closest('.zoom-controls, .detail-panel, .gallery-modal')) return;
     if (e.pointerType === 'mouse' && e.button !== 0) return;
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
     if (pointers.size === 1) {
@@ -321,7 +346,7 @@
   window.addEventListener('pointercancel', endPointer);
 
   viewport.addEventListener('wheel', (e) => {
-    if (e.target.closest('.detail-panel')) return;
+    if (e.target.closest('.detail-panel, .gallery-modal')) return;
     e.preventDefault();
     const r = viewport.getBoundingClientRect();
     const dy = e.deltaMode === 1 ? e.deltaY * 33 : e.deltaY;
@@ -330,7 +355,7 @@
 
   viewport.addEventListener('click', (e) => {
     if (suppressClick) return;
-    if (!e.target.closest('.node, .detail-panel, .zoom-controls')) closeDetail();
+    if (!e.target.closest('.node, .detail-panel, .zoom-controls, .gallery-modal')) closeDetail();
   });
 
   function zoomCenter(f) {
@@ -367,6 +392,18 @@
     const body = $('detailBody');
     body.innerHTML = '';
 
+    // Ảnh minh hoạ lớn từ Infographic
+    if (n.img) {
+      const artWrap = document.createElement('div');
+      artWrap.className = 'detail-art-card';
+      const artImg = document.createElement('img');
+      artImg.src = n.img;
+      artImg.alt = n.t;
+      artImg.className = 'detail-art-image';
+      artWrap.appendChild(artImg);
+      body.appendChild(artWrap);
+    }
+
     let items;
     if (n.d) items = Array.isArray(n.d) ? n.d : [n.d];
     else items = [n.parent && n.parent.depth > 0 ? `${n.t} (${fullName(n.parent)})` : n.t];
@@ -386,14 +423,24 @@
     if (n.children.length) {
       const lab2 = document.createElement('div');
       lab2.className = 'detail-label';
-      lab2.textContent = 'Gồm các ý';
+      lab2.textContent = 'Gồm các nhánh con';
       const chips = document.createElement('div');
       chips.className = 'detail-chips';
       n.children.forEach((c) => {
         const chip = document.createElement('span');
         chip.className = 'detail-chip';
-        const ic = document.createElement('span'); ic.textContent = c.i || '•';
-        chip.append(ic, document.createTextNode(c.t));
+        if (c.img) {
+          const cImg = document.createElement('img');
+          cImg.src = c.img;
+          cImg.alt = c.t;
+          cImg.className = 'detail-chip-img';
+          chip.appendChild(cImg);
+        } else {
+          const ic = document.createElement('span');
+          ic.textContent = c.i || '•';
+          chip.appendChild(ic);
+        }
+        chip.appendChild(document.createTextNode(c.t));
         chips.appendChild(chip);
       });
       body.append(lab2, chips);
@@ -411,7 +458,12 @@
     select(null);
   }
   $('detailClose').addEventListener('click', closeDetail);
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDetail(); });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeDetail();
+      closeGallery();
+    }
+  });
 
   function isDescendantOrSelf(x, n) {
     for (let a = x; a; a = a.parent) if (a === n) return true;
@@ -446,6 +498,68 @@
     fit();
   });
   $('btnCenter').addEventListener('click', () => fit());
+
+  /* ---------- Gallery 4 Infographics ---------- */
+  const INFOGRAPHICS = [
+    { title: "Bản vẽ 1: Tổng quan chương trình môn KHTN 8", src: "assets/images/infographics/tong_quan.png" },
+    { title: "Bản vẽ 2: Chủ đề 1 — Chất và sự biến đổi chất", src: "assets/images/infographics/chat.png" },
+    { title: "Bản vẽ 3: Chủ đề 2 — Vật sống", src: "assets/images/infographics/vat_song.jpg" },
+    { title: "Bản vẽ 4: Chủ đề 3 — Năng lượng và sự biến đổi", src: "assets/images/infographics/nang_luong.png" }
+  ];
+  let currentGalleryIndex = 0;
+  const galleryModal = $('galleryModal');
+  const galleryImg = $('galleryImg');
+  const galleryCaption = $('galleryCaption');
+  const galleryDownload = $('galleryDownload');
+  const galleryTabs = document.querySelectorAll('.gallery-tab');
+
+  function openGallery(index = 0) {
+    currentGalleryIndex = index;
+    renderGallery();
+    if (galleryModal) {
+      galleryModal.classList.add('open');
+      galleryModal.setAttribute('aria-hidden', 'false');
+    }
+  }
+
+  function closeGallery() {
+    if (galleryModal) {
+      galleryModal.classList.remove('open');
+      galleryModal.setAttribute('aria-hidden', 'true');
+    }
+  }
+
+  function renderGallery() {
+    if (!galleryImg) return;
+    const item = INFOGRAPHICS[currentGalleryIndex];
+    galleryImg.src = item.src;
+    if (galleryCaption) galleryCaption.textContent = item.title;
+    if (galleryDownload) {
+      galleryDownload.href = item.src;
+      galleryDownload.download = item.src.split('/').pop();
+    }
+    galleryTabs.forEach((tab, i) => {
+      tab.classList.toggle('active', i === currentGalleryIndex);
+    });
+  }
+
+  $('btnGallery')?.addEventListener('click', () => openGallery(0));
+  $('galleryClose')?.addEventListener('click', closeGallery);
+  $('galleryOverlay')?.addEventListener('click', closeGallery);
+  $('galleryPrev')?.addEventListener('click', () => {
+    currentGalleryIndex = (currentGalleryIndex - 1 + INFOGRAPHICS.length) % INFOGRAPHICS.length;
+    renderGallery();
+  });
+  $('galleryNext')?.addEventListener('click', () => {
+    currentGalleryIndex = (currentGalleryIndex + 1) % INFOGRAPHICS.length;
+    renderGallery();
+  });
+  galleryTabs.forEach((tab, idx) => {
+    tab.addEventListener('click', () => {
+      currentGalleryIndex = idx;
+      renderGallery();
+    });
+  });
 
   /* ---------- Chế độ sáng / tối ---------- */
   $('themeToggle').addEventListener('click', () => {

@@ -58,10 +58,14 @@
         <span class="map-title-icon">🔬</span>
         <div>
           <h1>Sơ đồ tư duy – Khoa học tự nhiên 8</h1>
-          <p>Bấm vào từ khoá để mở nhánh &amp; xem chi tiết</p>
+          <p>Bấm vào từ khoá để mở nhánh &amp; xem hình minh hoạ chi tiết</p>
         </div>
       </div>
       <div class="map-actions">
+        <button class="tool-btn highlight" id="btnGallery" title="Xem 4 bản vẽ Infographic gốc">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          <span>🖼️ Bản vẽ Infographic</span>
+        </button>
         <button class="tool-btn" id="btnExpand" title="Mở tất cả các nhánh">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
           <span>Mở tất cả</span>
@@ -89,7 +93,7 @@
         <button id="zoomOut" title="Thu nhỏ" aria-label="Thu nhỏ">−</button>
       </div>
 
-      <div class="map-hint">🖱️ Kéo để di chuyển • Cuộn chuột để phóng to/thu nhỏ</div>
+      <div class="map-hint">🖱️ Kéo để di chuyển • Cuộn chuột để phóng to/thu nhỏ • Bấm nút để xem chi tiết</div>
 
       <!-- Khung chi tiết -->
       <aside class="detail-panel" id="detailPanel" aria-hidden="true">
@@ -105,6 +109,36 @@
       </aside>
     </div>
   </main>
+
+  <!-- ==================== GALLERY MODAL (4 INFOGRAPHICS GỐC) ==================== -->
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="gallery-overlay" id="galleryOverlay"></div>
+    <div class="gallery-dialog">
+      <div class="gallery-header">
+        <div class="gallery-tabs" id="galleryTabs">
+          <button class="gallery-tab active" data-index="0">1. Tổng quan</button>
+          <button class="gallery-tab" data-index="1">2. Chất & Biến đổi</button>
+          <button class="gallery-tab" data-index="2">3. Vật sống</button>
+          <button class="gallery-tab" data-index="3">4. Năng lượng</button>
+        </div>
+        <div class="gallery-actions">
+          <a class="gallery-btn" id="galleryDownload" href="assets/images/infographics/tong_quan.png" target="_blank" download="infographic_khtn8.png" title="Tải ảnh về máy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Tải ảnh</span>
+          </a>
+          <button class="gallery-close" id="galleryClose" title="Đóng">&times;</button>
+        </div>
+      </div>
+      <div class="gallery-body">
+        <button class="gallery-nav prev" id="galleryPrev" title="Ảnh trước">&#10094;</button>
+        <div class="gallery-image-wrap">
+          <img id="galleryImg" src="assets/images/infographics/tong_quan.png" alt="Infographic KHTN 8">
+        </div>
+        <button class="gallery-nav next" id="galleryNext" title="Ảnh kế tiếp">&#10095;</button>
+      </div>
+      <div class="gallery-caption" id="galleryCaption">Bản vẽ 1: Tổng quan chương trình môn KHTN 8</div>
+    </div>
+  </div>
 
   <!-- ==================== FOOTER ==================== -->
   <footer class="site-footer">
