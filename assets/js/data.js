@@ -1,18 +1,12 @@
 /* =========================================================
    DỮ LIỆU SƠ ĐỒ TƯ DUY – KHOA HỌC TỰ NHIÊN 8
-   Thống nhất chuẩn hoá theo 4 bản đồ Infographics môn KHTN 8
-   Mỗi nút hỗ trợ:
-     - t: Từ khoá hiển thị ngắn gọn
-     - i: Emoji biểu trưng
-     - img: Hình vẽ minh hoạ trích xuất từ Infographic
-     - d: Nội dung chi tiết / yêu cầu cần đạt (hiển thị khi click)
-     - c: Danh sách các nhánh con
-     - side: 'left' | 'right' (ở cấp 1)
+   Phiên bản nâng cấp: Toàn bộ nội dung khoa học chi tiết, chuyên sâu,
+   chuẩn chương trình GDPT 2018 (SGK KHTN 8).
+   Mỗi nhánh đều có kiến thức đầy đủ, công thức, PTHH, thí nghiệm & thực tiễn.
    ========================================================= */
 window.MINDMAP_DATA = {
   t: "KHTN 8",
-  sub: "Chương trình môn KHTN 8",
-  img: "assets/images/icons/atom_center.png",
+  sub: "Chương trình Khoa học tự nhiên 8",
   c: [
     /* ==================== 1. MỞ ĐẦU ==================== */
     {
@@ -22,8 +16,8 @@ window.MINDMAP_DATA = {
       side: "right",
       open: true,
       d: [
-        "Sử dụng một số hoá chất, thiết bị cơ bản trong phòng thí nghiệm.",
-        "Quy tắc an toàn trong thực hành Khoa học tự nhiên 8."
+        "Chủ đề Mở đầu trang bị kiến thức và kĩ năng thực hành an toàn trong phòng thí nghiệm Khoa học tự nhiên 8.",
+        "Nắm vững các quy tắc an toàn, cách sử dụng các hoá chất, dụng cụ thuỷ tinh và thiết bị điện chuyên dụng."
       ],
       c: [
         {
@@ -31,9 +25,21 @@ window.MINDMAP_DATA = {
           t: "Hoá chất",
           img: "assets/images/icons/chem_phan_ung.png",
           c: [
-            ["🔎", "Nhận biết", "Nhận biết một số hoá chất thường dùng trong phòng thí nghiệm."],
-            ["🥄", "Cách lấy", "Cách lấy hoá chất rắn, hoá chất lỏng đúng quy tắc an toàn."],
-            ["🔒", "Bảo quản", "Cách bảo quản hoá chất an toàn, đúng tiêu chuẩn."]
+            ["🔎", "Nhận biết", [
+              "Nhận biết nhãn hoá chất: Tên hoá chất, công thức phân tử, độ tinh khiết, nồng độ và các kí hiệu cảnh báo an toàn.",
+              "Phân loại hoá chất trong phòng thí nghiệm: Hoá chất rắn (dạng bột, tinh thể, lá kim loại) và hoá chất lỏng (dung dịch axit, bazơ, muối, dung môi hữu cơ).",
+              "Một số hoá chất thông dụng: Acid (HCl, H2SO4), Base (NaOH, Ca(OH)2), Muối (NaCl, CuSO4, Na2CO3) và các chất chỉ thị màu (quỳ tím, phenolphthalein)."
+            ]],
+            ["🥄", "Cách lấy", [
+              "Quy tắc chung: Không dùng tay trực tiếp chạm vào hoá chất; không nếm hoặc ngửi trực tiếp bằng mũi (phải dùng tay phẩy nhẹ hơi hoá chất vào mũi).",
+              "Lấy hoá chất rắn: Dùng thìa thuỷ tinh hoặc panh kẹp gắp; đối với hoá chất dạng bột nghiêng nhẹ lọ và dùng thìa lấy lượng vừa đủ.",
+              "Lấy hoá chất lỏng: Dùng ống hút nhỏ giọt (pipette) hoặc rót cẩn thận theo thành ống nghiệm, tránh làm hoá chất bắn ra ngoài; tuyệt đối không đổ hoá chất thừa trở lại lọ ban đầu."
+            ]],
+            ["🔒", "Bảo quản", [
+              "Lưu trữ trong lọ đậy kín nút nhám; hoá chất dễ bị phân huỷ bởi ánh sáng (như AgNO3, KMnO4) phải đựng trong lọ thuỷ tinh màu nâu sẫm.",
+              "Xếp hoá chất theo từng nhóm riêng biệt: axit để riêng, chất dễ cháy nổ (cồn, photpho trắng) để xa nguồn nhiệt và tia lửa điện.",
+              "Phòng thí nghiệm phải có tủ hút thông gió, bình chữa cháy dạng khí CO2 và cát khô để xử lí sự cố cháy nổ."
+            ]]
           ]
         },
         {
@@ -41,9 +47,21 @@ window.MINDMAP_DATA = {
           t: "Dụng cụ",
           img: "assets/images/icons/chem_bien_doi.png",
           c: [
-            ["🧫", "Thuỷ tinh", "Ống nghiệm, cốc thuỷ tinh, bình tam giác, ống hút nhỏ giọt..."],
-            ["⚖️", "Đo lường", "Cân điện tử, ống đong, nhiệt kế, đồng hồ bấm giây."],
-            ["🔥", "Đun nóng", "Đèn cồn, giá đỡ, lưới amiang, kẹp ống nghiệm."]
+            ["🧫", "Thuỷ tinh", [
+              "Ống nghiệm: Dùng chứa lượng nhỏ hoá chất để thực hiện phản ứng nhanh; khi đun phải nghiêng miệng ống nghiệm khoảng 45 độ và hướng về nơi không có người.",
+              "Cốc thuỷ tinh & Bình tam giác: Dùng để hoà tan chất rắn, chứa dung dịch và thực hiện các phản ứng thể tích lớn.",
+              "Ống đong & Bình định mức: Dùng để đo thể tích chất lỏng chính xác theo vạch chia độ ngang tầm mắt."
+            ]],
+            ["⚖️", "Đo lường", [
+              "Cân điện tử: Dùng xác định khối lượng mẫu chất với độ chính xác cao (thường từ 0,01 g đến 0,001 g); phải đặt cân trên mặt phẳng thăng bằng và đĩa cân sạch.",
+              "Nhiệt kế: Dùng theo dõi nhiệt độ phản ứng toả nhiệt, thu nhiệt hoặc xác định nhiệt độ sôi, nhiệt độ nóng chảy của chất.",
+              "Đồng hồ bấm giây: Đo khoảng thời gian phản ứng diễn ra để khảo sát tốc độ phản ứng."
+            ]],
+            ["🔥", "Đun nóng", [
+              "Đèn cồn: Dùng ngọn lửa đèn cồn để đun nóng (đun ở 1/3 phía trên ngọn lửa nơi có nhiệt độ cao nhất); khi tắt đèn dùng nắp đậy chụp lại, không được thổi bằng miệng.",
+              "Giá đỡ & Kẹp gỗ/kim loại: Giữ ống nghiệm chắc chắn ở vị trí 1/3 từ miệng ống nghiệm xuống.",
+              "Lưới amiang & Kiềng đun: Giúp nhiệt toả đều dưới đáy cốc thuỷ tinh, tránh hiện tượng nứt vỡ do sốc nhiệt."
+            ]]
           ]
         },
         {
@@ -51,18 +69,42 @@ window.MINDMAP_DATA = {
           t: "Thiết bị điện",
           img: "assets/images/icons/phys_ac_quy.png",
           c: [
-            ["🔋", "Nguồn điện", "Biến áp nguồn, pin điện hoá, ắc quy."],
-            ["🎚️", "Điện trở – biến trở", "Sử dụng điện trở, biến trở trong mạch điện."],
-            ["📟", "Đồng hồ đo", "Ampe kế, vôn kế, joulemeter đo năng lượng điện."]
+            ["🔋", "Nguồn điện", [
+              "Biến áp nguồn: Thiết bị hạ điện áp lưới xoay chiều (220V) xuống nguồn điện hạ áp an toàn một chiều (DC) hoặc xoay chiều (AC) từ 1,5V đến 12V.",
+              "Pin điện hoá & Ắc quy: Cung cấp dòng điện một chiều ổn định phục vụ các bài thực hành đo lường điện học KHTN 8.",
+              "Quy tắc: Luôn tắt nguồn điện khi đang tiến hành lắp ráp hoặc thay đổi sơ đồ mạch điện."
+            ]],
+            ["🎚️", "Điện trở – biến trở", [
+              "Điện trở cố định: Dùng để hạn chế cường độ dòng điện trong mạch, bảo vệ các linh kiện nhạy cảm (như đèn LED).",
+              "Biến trở con chạy: Dùng để điều chỉnh linh hoạt giá trị điện trở, từ đó thay đổi cường độ dòng điện hoặc hiệu điện thế giữa hai đầu đoạn mạch.",
+              "Điện trở nhiệt (thermistor) & Quang điện trở (LDR): Các linh kiện cảm biến nhiệt độ và ánh sáng trong ứng dụng tự động hoá."
+            ]],
+            ["📟", "Đồng hồ đo", [
+              "Ampe kế: Dùng đo cường độ dòng điện (I); mắc nối tiếp vào đoạn mạch cần đo, cực dương (+) nối về phía cực dương của nguồn điện.",
+              "Vôn kế: Dùng đo hiệu điện thế (U); mắc song song với thiết bị điện cần đo điện áp.",
+              "Joulemeter / Oát kế: Đo công suất và năng lượng nhiệt/điện mà đoạn mạch tiêu thụ trong thời gian thực nghiệm."
+            ]]
           ]
         },
         {
           i: "🦺",
           t: "An toàn PTN",
           c: [
-            ["📜", "Nội quy", "Quy tắc an toàn chung trong phòng thực hành."],
-            ["⚠️", "Biển cảnh báo", "Nhận biết các kí hiệu cảnh báo nguy hiểm."],
-            ["🩹", "Xử lí sự cố", "Cách sơ cứu khi bị bỏng nhiệt, dính axit hoặc đổ vỡ thuỷ tinh."]
+            ["📜", "Nội quy", [
+              "Mặc áo blouse trắng, đeo kính bảo hộ và mang găng tay cao su thích hợp khi tiếp xúc với hoá chất nguy hiểm.",
+              "Chỉ tiến hành thí nghiệm khi có sự hướng dẫn và giám sát trực tiếp của giáo viên bộ môn.",
+              "Vệ sinh sạch sẽ dụng cụ, bàn thực hành và rửa tay bằng xà phòng sau mỗi buổi học."
+            ]],
+            ["⚠️", "Biển cảnh báo", [
+              "Kí hiệu chất ăn mòn (hình axit nhỏ giọt làm mòn tay/kim loại): Cần cẩn trọng tối đa với axit đặc và kiềm đặc.",
+              "Kí hiệu chất độc (hình đầu lâu xương chéo): Nguy hiểm đến tính mạng khi hít phải hoặc dính vào da.",
+              "Kí hiệu chất dễ cháy (hình ngọn lửa): Để xa tia lửa, không đun trực tiếp cồn bằng lửa hở mà phải cách thuỷ."
+            ]],
+            ["🩹", "Xử lí sự cố", [
+              "Khi dính axit vào da: Rửa ngay dưới vòi nước chảy liên tục trong 10-15 phút, sau đó rửa bằng dung dịch NaHCO3 2%.",
+              "Khi dính bazơ vào da: Rửa dưới vòi nước chảy rồi rửa lại bằng dung dịch acid acetic loãng (giấm ăn 1-2%).",
+              "Khi bị bỏng nhiệt: Ngâm vùng bỏng vào nước sạch mát trong 15-20 phút; tuyệt đối không bôi dầu gió, kem đánh răng vào vết bỏng."
+            ]]
           ]
         }
       ]
@@ -76,7 +118,7 @@ window.MINDMAP_DATA = {
       side: "right",
       open: true,
       img: "assets/images/icons/chat_banner.png",
-      d: "CHẤT VÀ SỰ BIẾN ĐỔI CHẤT",
+      d: "CHẤT VÀ SỰ BIẾN ĐỔI CHẤT – HOÁ HỌC VÔ CƠ & CƠ CHẾ PHẢN ỨNG",
       c: [
         /* 1. Phản ứng hoá học (8 bài) */
         {
@@ -89,123 +131,187 @@ window.MINDMAP_DATA = {
               i: "🔄",
               t: "Biến đổi lí – hoá",
               img: "assets/images/icons/chem_bien_doi.png",
-              d: [
-                "Khái niệm sự biến đổi vật lí và biến đổi hoá học.",
-                "Phân biệt giữa hiện tượng vật lí và hiện tượng hoá học.",
-                "Lấy ví dụ thực tế về biến đổi vật lí và biến đổi hoá học."
-              ],
+              d: "Sự biến đổi vật lí và biến đổi hoá học",
               c: [
-                ["💡", "Khái niệm", "Khái niệm biến đổi vật lí và biến đổi hoá học."],
-                ["🔍", "Phân biệt", "Phân biệt hiện tượng vật lí và hoá học."],
-                ["📝", "Ví dụ", "Lấy ví dụ thực tiễn trong đời sống."]
+                ["💡", "Khái niệm", [
+                  "Biến đổi vật lí: Là hiện tượng chất có sự thay đổi về trạng thái, hình dạng, kích thước nhưng vẫn giữ nguyên là chất ban đầu (không tạo ra chất mới).",
+                  "Biến đổi hoá học: Là hiện tượng chất bị biến đổi có sự tạo thành chất mới với tính chất vật lí và hoá học khác biệt hoàn toàn so với chất ban đầu."
+                ]],
+                ["🔍", "Phân biệt", [
+                  "Dấu hiệu cốt lõi: Có xuất hiện chất mới hay không?",
+                  "Biến đổi vật lí: Chỉ thay đổi liên kết giữa các phân tử hoặc khoảng cách giữa các hạt (nhiệt độ nóng chảy, bay hơi, hoà tan, nghiền nhỏ).",
+                  "Biến đổi hoá học: Có sự phá vỡ liên kết trong phân tử chất đầu và hình thành liên kết mới tạo phân tử chất sản phẩm."
+                ]],
+                ["📝", "Ví dụ", [
+                  "Ví dụ biến đổi vật lí: Nước đá tan thành nước lỏng; nước lỏng sôi bốc hơi; hoà tan đường vào nước tạo nước đường; cưa khúc gỗ thành dăm bào.",
+                  "Ví dụ biến đổi hoá học: Đốt cháy than (C + O2 -> CO2); đinh sắt để ngoài không khí ẩm bị gỉ sét; thức ăn bị thiu ôi; nung đá vôi (CaCO3 -> CaO + CO2)."
+                ]]
               ]
             },
             {
               i: "🎆",
               t: "Phản ứng HH",
               img: "assets/images/icons/chem_phan_ung.png",
-              d: [
-                "Tiến hành thí nghiệm phản ứng hoá học.",
-                "Khái niệm phản ứng hoá học, chất phản ứng và sản phẩm.",
-                "Dấu hiệu nhận biết có phản ứng hoá học xảy ra (kết tủa, đổi màu, sinh khí, toả nhiệt...)."
-              ],
+              d: "Khái niệm và diễn biến phản ứng hoá học",
               c: [
-                ["🧪", "Thí nghiệm", "Tiến hành thí nghiệm phản ứng hoá học."],
-                ["💡", "Khái niệm", "Khái niệm phản ứng hoá học."],
-                ["👀", "Dấu hiệu", "Dấu hiệu nhận biết phản ứng hoá học xảy ra."]
+                ["💡", "Khái niệm", [
+                  "Phản ứng hoá học là quá trình biến đổi từ chất này thành chất khác.",
+                  "Chất phản ứng (chất tham gia / chất đầu): Là những chất ban đầu bị tiêu hao trong quá trình phản ứng.",
+                  "Sản phẩm (chất tạo thành): Là những chất mới sinh ra sau khi phản ứng kết thúc.",
+                  "Phương trình chữ: Tên các chất phản ứng -> Tên các sản phẩm (Ví dụ: Iron + Sulfur -> Iron(II) sulfide)."
+                ]],
+                ["🧪", "Thí nghiệm", [
+                  "Thí nghiệm 1: Trộn bột sắt (Fe) với bột lưu huỳnh (S), đưa nam châm lại gần thì sắt bị hút (vật lí). Đun nóng hỗn hợp trên ngọn lửa, phản ứng tự cháy sáng toả nhiệt tạo chất rắn màu xám đen FeS, đưa nam châm lại gần thì không bị hút (hoá học).",
+                  "Thí nghiệm 2: Nhỏ dung dịch Barium chloride (BaCl2) vào dung dịch Sodium sulfate (Na2SO4) xuất hiện kết tủa trắng Barium sulfate (BaSO4)."
+                ]],
+                ["👀", "Dấu hiệu", [
+                  "Sự thay đổi màu sắc của dung dịch hoặc chất rắn.",
+                  "Sự xuất hiện chất kết tủa (chất không tan lắng xuống đáy).",
+                  "Sự giải phóng chất khí (sủi bọt khí thoát ra).",
+                  "Sự phát sáng hoặc toả nhiệt / thu nhiệt mạnh ra môi trường."
+                ]]
               ]
             },
             {
               i: "⚡",
               t: "Năng lượng PƯ",
               img: "assets/images/icons/chem_nang_luong.png",
-              d: [
-                "Khái niệm phản ứng toả nhiệt và phản ứng thu nhiệt.",
-                "Ví dụ về phản ứng toả nhiệt, thu nhiệt trong thực tiễn.",
-                "Ứng dụng cung cấp năng lượng của các phản ứng hoá học."
-              ],
+              d: "Năng lượng trong các phản ứng hoá học",
               c: [
-                ["💡", "Khái niệm", "Khái niệm phản ứng toả nhiệt và thu nhiệt."],
-                ["📝", "Ví dụ", "Ví dụ về phản ứng toả nhiệt, thu nhiệt."],
-                ["🏭", "Ứng dụng", "Ứng dụng năng lượng phản ứng trong đời sống."]
+                ["💡", "Khái niệm", [
+                  "Phản ứng toả nhiệt: Là phản ứng hoá học giải phóng năng lượng dưới dạng nhiệt ra môi trường xung quanh (làm nhiệt độ môi trường tăng lên).",
+                  "Phản ứng thu nhiệt: Là phản ứng hoá học hấp thụ năng lượng dưới dạng nhiệt từ môi trường xung quanh (làm nhiệt độ môi trường hạ xuống hoặc cần đun nóng liên tục để xảy ra)."
+                ]],
+                ["📝", "Ví dụ", [
+                  "Ví dụ phản ứng toả nhiệt: Đốt cháy cồn, gas, than củi; phản ứng tôi vôi sống (CaO + H2O -> Ca(OH)2 toả nhiệt sôi sùng sục); phản ứng đốt cháy xăng dầu trong động cơ.",
+                  "Ví dụ phản ứng thu nhiệt: Phản ứng nhiệt phân đá vôi CaCO3 ở 1000°C; phản ứng nhiệt phân thuốc tím KMnO4; phản ứng trong túi chườm lạnh hoá học (hoà tan NH4NO3 vào nước)."
+                ]],
+                ["🏭", "Ứng dụng", [
+                  "Nhiên liệu sưởi ấm và nấu nướng: Đốt cháy khí methane (gas), than củi cung cấp nhiệt năng phục vụ đời sống.",
+                  "Giao thông vận tải & Công nghiệp: Động cơ nhiệt chuyển hoá năng lượng toả nhiệt từ xăng dầu thành cơ năng kéo ô tô, tàu hoả, máy bay.",
+                  "Y tế & Thể thao: Chế tạo túi chườm nóng dùng phản ứng toả nhiệt và túi chườm lạnh dùng phản ứng thu nhiệt để sơ cứu chấn thương."
+                ]]
               ]
             },
             {
               i: "⚖️",
               t: "Bảo toàn khối lượng",
               img: "assets/images/icons/chem_can.png",
-              d: [
-                "Tiến hành thí nghiệm định luật bảo toàn khối lượng (phản ứng BaCl2 + Na2SO4).",
-                "Phát biểu định luật bảo toàn khối lượng: Tổng khối lượng các chất tham gia bằng tổng khối lượng các sản phẩm tạo thành."
-              ],
+              d: "Định luật bảo toàn khối lượng",
               c: [
-                ["🧪", "Thí nghiệm", "Tiến hành thí nghiệm bảo toàn khối lượng."],
-                ["📢", "Định luật", "Phát biểu định luật bảo toàn khối lượng."]
+                ["📢", "Định luật", [
+                  "Nội dung định luật (Lomonosov & Lavoisier): 'Trong một phản ứng hoá học, tổng khối lượng của các chất tham gia phản ứng bằng tổng khối lượng của các sản phẩm tạo thành.'",
+                  "Biểu thức toán học cho phản ứng A + B -> C + D: m_A + m_B = m_C + m_D.",
+                  "Ý nghĩa: Biết khối lượng của (n - 1) chất ta luôn tính được khối lượng của chất còn lại."
+                ]],
+                ["🧪", "Thí nghiệm", [
+                  "Tiến hành: Đặt cốc chứa dung dịch BaCl2 và lọ chứa dung dịch Na2SO4 lên đĩa cân, ghi số chỉ của cân (m1). Đổ dung dịch BaCl2 vào lọ chứa Na2SO4 thấy xuất hiện kết tủa trắng BaSO4. Đặt lại lên cân thấy số chỉ cân m2 = m1.",
+                  "Bản chất: Trong phản ứng hoá học chỉ có liên kết giữa các nguyên tử thay đổi làm phân tử này biến thành phân tử khác, còn số nguyên tử của mỗi nguyên tố được bảo toàn tuyệt đối."
+                ]]
               ]
             },
             {
               i: "✍️",
               t: "Phương trình HH",
               img: "assets/images/icons/chem_but_chi.png",
-              d: [
-                "Khái niệm phương trình hoá học.",
-                "Các bước lập sơ đồ phản ứng và cân bằng số nguyên tử mỗi nguyên tố.",
-                "Ý nghĩa của phương trình hoá học (tỉ lệ số nguyên tử, phân tử giữa các chất).",
-                "Viết và cân bằng phương trình hoá học thành thạo."
-              ],
+              d: "Phương trình hoá học và phương pháp cân bằng",
               c: [
-                ["💡", "Khái niệm", "Khái niệm phương trình hoá học."],
-                ["📋", "Lập sơ đồ", "Các bước lập sơ đồ phản ứng hoá học."],
-                ["🎯", "Ý nghĩa", "Ý nghĩa của phương trình hoá học."],
-                ["✏️", "Viết PTHH", "Viết và cân bằng phương trình hoá học."]
+                ["💡", "Khái niệm", [
+                  "Phương trình hoá học là cách biểu diễn phản ứng hoá học bằng công thức hoá học của các chất tham gia và sản phẩm.",
+                  "Ví dụ: 2H2 + O2 -> 2H2O (2 phân tử hydrogen phản ứng với 1 phân tử oxygen tạo ra 2 phân tử nước)."
+                ]],
+                ["📋", "Lập sơ đồ", [
+                  "Bước 1: Viết sơ đồ phản ứng gồm công thức hoá học của chất phản ứng và sản phẩm (dùng mũi tên nét đứt).",
+                  "Bước 2: Cân bằng số nguyên tử của mỗi nguyên tố ở hai vế bằng cách đặt hệ số thích hợp trước công thức hoá học (không được thay đổi chỉ số chân của công thức).",
+                  "Bước 3: Viết phương trình hoá học hoàn chỉnh với mũi tên nét liền."
+                ]],
+                ["🎯", "Ý nghĩa", [
+                  "Cho biết tỉ lệ về số nguyên tử, số phân tử giữa các chất trong phản ứng hoá học.",
+                  "Tỉ lệ số hạt đúng bằng tỉ lệ các hệ số đứng trước mỗi công thức hoá học.",
+                  "Ví dụ phản ứng: 4Al + 3O2 -> 2Al2O3 -> Tỉ lệ số nguyên tử Al : số phân tử O2 : số phân tử Al2O3 = 4 : 3 : 2."
+                ]],
+                ["✏️", "Viết PTHH", [
+                  "Phương pháp chẵn - lẻ: Thêm hệ số 2 vào trước chất có chỉ số lẻ để làm chẵn nguyên tử.",
+                  "Phương pháp nhóm nguyên tử: Coi nhóm nguyên tử (như SO4, NO3, OH, CO3) là một đơn vị để cân bằng nhanh.",
+                  "Ví dụ: Fe + 2HCl -> FeCl2 + H2↑; 2NaOH + H2SO4 -> Na2SO4 + 2H2O."
+                ]]
               ]
             },
             {
               i: "🧮",
               t: "Mol & tỉ khối",
               img: "assets/images/icons/chem_mol.png",
-              d: [
-                "Khái niệm mol, khối lượng mol (M), thể tích mol của chất khí ở đktc/đkc (24,79 L).",
-                "Công thức tính số mol n = m/M = V/24,79.",
-                "Tỉ khối của chất khí: dA/B = MA / MB, dA/kk = MA / 29."
-              ],
+              d: "Khái niệm mol và tỉ khối của chất khí",
               c: [
-                ["💡", "Khái niệm", "Khái niệm mol, khối lượng mol, thể tích mol chất khí."],
-                ["📐", "Công thức", "Công thức tính số mol và tỉ khối của chất khí."]
+                ["💡", "Khái niệm", [
+                  "Mol là lượng chất có chứa N_A (khoảng 6,022 * 10^23) nguyên tử hoặc phân tử của chất đó (hằng số Avogadro N_A = 6,022 * 10^23 mol^-1).",
+                  "Khối lượng mol (M): Là khối lượng tính bằng gam của 1 mol chất đó (đơn vị: g/mol). Có trị số bằng nguyên tử khối hoặc phân tử khối.",
+                  "Thể tích mol chất khí: Ở điều kiện chuẩn (đkc: 25°C và 1 bar), 1 mol của bất kì chất khí nào cũng đều chiếm thể tích bằng 24,79 lít."
+                ]],
+                ["📐", "Công thức", [
+                  "Tính số mol từ khối lượng: n = m / M  <=>  m = n * M  <=>  M = m / n.",
+                  "Tính số mol từ thể tích khí (ở đkc): n = V / 24,79  <=>  V = n * 24,79 (lít).",
+                  "Tỉ khối chất khí A đối với khí B: d_(A/B) = M_A / M_B (cho biết khí A nặng hay nhẹ hơn khí B bao nhiêu lần).",
+                  "Tỉ khối chất khí A đối với không khí (M_kk = 29 g/mol): d_(A/kk) = M_A / 29."
+                ]]
               ]
             },
             {
               i: "📊",
               t: "Tính theo PTHH",
               img: "assets/images/icons/chem_tinh_toan.png",
-              d: [
-                "Tính lượng chất tham gia hoặc sản phẩm theo phương trình hoá học.",
-                "Khái niệm hiệu suất phản ứng (H%).",
-                "Công thức tính hiệu suất phản ứng: H = (m_thực tế / m_lí thuyết) * 100%."
-              ],
+              d: "Tính toán theo phương trình hoá học và hiệu suất phản ứng",
               c: [
-                ["🔢", "Lượng chất", "Tính lượng chất trong phương trình hoá học."],
-                ["📈", "Hiệu suất", "Khái niệm hiệu suất phản ứng."],
-                ["🧾", "Tính H%", "Công thức và cách tính hiệu suất phản ứng."]
+                ["🔢", "Lượng chất", [
+                  "Quy trình 4 bước giải toán hoá học:",
+                  "1. Chuyển đổi dữ kiện đề bài (khối lượng m hoặc thể tích V) thành số mol n.",
+                  "2. Viết phương trình hoá học và cân bằng chính xác.",
+                  "3. Dựa vào tỉ lệ mol trên phương trình để tìm số mol chất cần xác định.",
+                  "4. Chuyển số mol vừa tìm được thành khối lượng (m = n * M) hoặc thể tích khí (V = n * 24,79 L)."
+                ]],
+                ["📈", "Hiệu suất", [
+                  "Khái niệm: Hiệu suất phản ứng (H) phản ánh mức độ hoàn thành của phản ứng hoá học, biểu thị tỉ lệ giữa lượng chất thu được thực tế so với lượng chất tính theo phương trình lí thuyết.",
+                  "Nguyên nhân H < 100%: Do chất phản ứng không tinh khiết, phản ứng thuận nghịch, hao hụt trong quá trình thao tác hoặc có phản ứng phụ."
+                ]],
+                ["🧾", "Tính H%", [
+                  "Công thức tính theo chất sản phẩm: H = (m_thực tế / m_lí thuyết) * 100%.",
+                  "Công thức tính theo chất tham gia: H = (m_lí thuyết cần dùng / m_thực tế đã dùng) * 100%.",
+                  "Tính lượng chất thực tế khi biết H: m_thực tế (sản phẩm) = (m_lí thuyết * H) / 100."
+                ]]
               ]
             },
             {
               i: "💧",
               t: "Nồng độ dung dịch",
               img: "assets/images/icons/chem_nong_do.png",
-              d: [
-                "Khái niệm dung dịch, chất tan, dung môi.",
-                "Độ tan (S) của một chất trong nước.",
-                "Nồng độ phần trăm C% = (m_ct / m_dd) * 100%.",
-                "Nồng độ mol C_M = n / V_dd.",
-                "Thí nghiệm thực hành pha chế dung dịch theo nồng độ cho trước."
-              ],
+              d: "Độ tan và các loại nồng độ dung dịch",
               c: [
-                ["💡", "Khái niệm", "Khái niệm dung dịch, chất tan, dung môi."],
-                ["🧂", "Độ tan", "Độ tan của chất trong nước."],
-                ["💯", "C%", "Nồng độ phần trăm của dung dịch."],
-                ["🧴", "CM", "Nồng độ mol của dung dịch."],
-                ["🧪", "Pha dung dịch", "Thí nghiệm pha chế dung dịch theo nồng độ."]
+                ["💡", "Khái niệm", [
+                  "Dung dịch: Là hỗn hợp đồng nhất giữa dung môi và chất tan.",
+                  "Chất tan: Chất bị phân tán vào dung môi (rắn, lỏng, khí).",
+                  "Dung môi: Chất có khả năng hoà tan chất khác (phổ biến nhất là nước H2O).",
+                  "Dung dịch chưa bão hoà: Dung dịch có thể hoà tan thêm chất tan ở nhiệt độ xác định; Dung dịch bão hoà: Không thể hoà tan thêm chất tan."
+                ]],
+                ["🧂", "Độ tan", [
+                  "Độ tan (S) của một chất trong nước là số gam chất đó hoà tan trong 100 gam nước để tạo thành dung dịch bão hoà ở một nhiệt độ xác định.",
+                  "Ảnh hưởng nhiệt độ: Độ tan của hầu hết chất rắn tăng khi nhiệt độ tăng; Độ tan của chất khí tăng khi giảm nhiệt độ và tăng áp suất."
+                ]],
+                ["💯", "C%", [
+                  "Nồng độ phần trăm (C%): Cho biết số gam chất tan có trong 100 gam dung dịch.",
+                  "Công thức: C% = (m_ct / m_dd) * 100%.",
+                  "Trong đó: m_dd = m_ct + m_dm (khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi)."
+                ]],
+                ["🧴", "CM", [
+                  "Nồng độ mol (C_M): Cho biết số mol chất tan có trong 1 lít dung dịch.",
+                  "Công thức: C_M = n / V (mol/lít hoặc M).",
+                  "Trong đó: n là số mol chất tan (mol), V là thể tích dung dịch (lít)."
+                ]],
+                ["🧪", "Pha dung dịch", [
+                  "Các bước pha chế một dung dịch có nồng độ cho trước:",
+                  "1. Tính toán lượng chất tan (m_ct hoặc n) và lượng dung môi (hoặc thể tích V) cần dùng.",
+                  "2. Cân chính xác lượng chất tan cho vào cốc thuỷ tinh.",
+                  "3. Đong lượng dung môi cần thiết (nước cất), rót từ từ vào cốc và dùng đũa thuỷ tinh khuấy đều cho tan hoàn toàn."
+                ]]
               ]
             }
           ]
@@ -217,17 +323,28 @@ window.MINDMAP_DATA = {
           t: "Tốc độ & xúc tác",
           img: "assets/images/icons/chem_toc_do.png",
           open: true,
-          d: [
-            "Khái niệm tốc độ phản ứng (nhanh hay chậm của biến đổi hoá học).",
-            "Các yếu tố ảnh hưởng đến tốc độ phản ứng: nồng độ, nhiệt độ, diện tích tiếp xúc, áp suất, chất xúc tác.",
-            "Khái niệm chất xúc tác (làm tăng tốc độ phản ứng nhưng không bị biến đổi sau phản ứng).",
-            "Tiến hành được thí nghiệm và nhận xét các yếu tố ảnh hưởng đến tốc độ phản ứng."
-          ],
+          d: "Tốc độ phản ứng hoá học và các yếu tố ảnh hưởng",
           c: [
-            ["⏱️", "Tốc độ PƯ", "Khái niệm tốc độ phản ứng hoá học."],
-            ["🎛️", "Yếu tố ảnh hưởng", "Nhiệt độ, nồng độ, diện tích tiếp xúc, áp suất, xúc tác."],
-            ["🧲", "Chất xúc tác", "Khái niệm và vai trò của chất xúc tác."],
-            ["🧪", "Thí nghiệm", "Tiến hành thí nghiệm và rút ra nhận xét."]
+            ["⏱️", "Tốc độ PƯ", [
+              "Khái niệm: Tốc độ phản ứng là đại lượng đặc trưng cho sự thay đổi lượng chất tham gia hoặc sản phẩm trong một đơn vị thời gian (cho biết phản ứng diễn ra nhanh hay chậm).",
+              "Ví dụ phản ứng nhanh: Phản ứng cháy nổ của hỗn hợp khí gas và oxy; phản ứng tạo kết tủa trắng AgCl khi nhỏ AgNO3 vào NaCl.",
+              "Ví dụ phản ứng chậm: Quá trình đinh sắt bị gỉ sét ngoài không khí; quá trình lên men giấm ăn; đá vôi bị bào mòn bởi nước mưa."
+            ]],
+            ["🎛️", "Yếu tố ảnh hưởng", [
+              "Nồng độ: Nồng độ chất phản ứng tăng -> số va chạm hiệu quả giữa các phân tử tăng -> tốc độ phản ứng tăng.",
+              "Nhiệt độ: Nhiệt độ tăng -> các phân tử chuyển động nhanh hơn, va chạm mạnh hơn -> tốc độ phản ứng tăng (thường tăng 10°C tốc độ tăng 2-4 lần).",
+              "Diện tích tiếp xúc: Chất rắn có diện tích tiếp xúc càng lớn (chia nhỏ, nghiền bột) -> tốc độ phản ứng càng nhanh.",
+              "Áp suất: Áp suất tăng làm các phân tử chất khí lại gần nhau hơn -> tốc độ phản ứng có chất khí tăng."
+            ]],
+            ["🧲", "Chất xúc tác", [
+              "Định nghĩa: Chất xúc tác là chất làm tăng tốc độ của phản ứng hoá học nhưng không bị tiêu hao và không bị biến đổi về chất lượng sau khi phản ứng kết thúc.",
+              "Chất xúc tác sinh học (Enzyme): Xúc tác các phản ứng sinh hoá trong cơ thể người và sinh vật ở nhiệt độ cơ thể (như men amylase tiêu hoá tinh bột, pepsin tiêu hoá protein).",
+              "Chất ức chế: Ngược lại với chất xúc tác, làm chậm tốc độ phản ứng không mong muốn (chất bảo quản thực phẩm chống ôi thiu)."
+            ]],
+            ["🧪", "Thí nghiệm", [
+              "Thí nghiệm ảnh hưởng diện tích tiếp xúc: Cho mẩu đá vôi (CaCO3) và bột đá vôi có cùng khối lượng vào 2 ống nghiệm chứa cùng thể tích dd HCl loãng -> ống nghiệm chứa bột đá vôi sủi bọt khí CO2 nhanh và mạnh hơn rất nhiều.",
+              "Thí nghiệm vai trò chất xúc tác: Cho dd H2O2 (nước oxy già) vào 2 ống nghiệm, thêm một ít bột MnO2 vào ống thứ hai -> ống có MnO2 bọt khí O2 thoát ra cuồn cuộn làm tàn đóm đỏ bùng cháy."
+            ]]
           ]
         },
 
@@ -235,96 +352,168 @@ window.MINDMAP_DATA = {
         {
           i: "🌈",
           t: "Acid – Base – Muối",
-          img: "assets/images/icons/chem_acid.png",
           open: true,
-          d: "Acid - Base - pH - Oxide - Muối",
+          d: "Hợp chất vô cơ: Acid, Base, Thang pH, Oxide và Muối",
           c: [
             {
               i: "🍋",
               t: "Acid",
               img: "assets/images/icons/chem_acid.png",
-              d: [
-                "Khái niệm acid (chứa ion H+).",
-                "Tiến hành thí nghiệm và giải thích hiện tượng (làm đỏ quỳ tím, tác dụng kim loại giải phóng H2).",
-                "Viết phương trình hoá học đặc trưng của acid.",
-                "Tính chất hoá học của acid.",
-                "Ứng dụng quan trọng của HCl, H2SO4, CH3COOH trong công nghiệp và đời sống."
-              ],
+              d: "Phân tử acid và tính chất hoá học",
               c: [
-                ["💡", "Khái niệm", "Khái niệm phân tử acid."],
-                ["🧪", "Thí nghiệm", "Tiến hành thí nghiệm và giải thích hiện tượng."],
-                ["✏️", "PTHH", "Viết phương trình hoá học của acid."],
-                ["⚙️", "Tính chất", "Tính chất hoá học của acid."],
-                ["🏭", "Ứng dụng", "Ứng dụng của một số acid thông dụng."]
+                ["💡", "Khái niệm", [
+                  "Acid là những hợp chất trong phân tử gồm có một hay nhiều nguyên tử hydrogen liên kết với gốc acid.",
+                  "Khi tan trong nước, acid phân li ra ion H⁺: HA -> H⁺ + A⁻.",
+                  "Công thức hoá học tổng quát: H_n A (Trong đó H có hoá trị I, A là gốc acid hoá trị n).",
+                  "Ví dụ: Hydrochloric acid (HCl), Sulfuric acid (H2SO4), Nitric acid (HNO3), Acetic acid (CH3COOH)."
+                ]],
+                ["🧪", "Thí nghiệm", [
+                  "Thí nghiệm 1: Nhỏ 1 giọt dung dịch HCl lên mẩu giấy quỳ tím -> quỳ tím lập tức chuyển sang màu đỏ.",
+                  "Thí nghiệm 2: Cho 1-2 ml dung dịch HCl vào ống nghiệm chứa mẩu kim loại kẽm (Zn) hoặc sắt (Fe) -> có nhiều bọt khí không màu H2 thoát ra, toả nhiệt.",
+                  "Thí nghiệm 3: Cho dd HCl vào ống nghiệm chứa gỉ sắt Fe2O3 màu nâu đỏ -> gỉ sắt tan dần tạo dung dịch FeCl3 màu vàng nâu."
+                ]],
+                ["✏️", "PTHH", [
+                  "1. Acid + Kim loại (trước H) -> Muối + H2↑: Zn + 2HCl -> ZnCl2 + H2↑; 2Al + 3H2SO4 (loãng) -> Al2(SO4)3 + 3H2↑.",
+                  "2. Acid + Oxide base -> Muối + H2O: CuO (đen) + 2HCl -> CuCl2 (xanh lam) + H2O; Fe2O3 + 3H2SO4 -> Fe2(SO4)3 + 3H2O.",
+                  "3. Acid + Base -> Muối + H2O: HCl + NaOH -> NaCl + H2O; H2SO4 + Cu(OH)2 -> CuSO4 + 2H2O.",
+                  "4. Acid + Muối -> Muối mới + Acid mới: 2HCl + CaCO3 -> CaCl2 + CO2↑ + H2O; H2SO4 + BaCl2 -> BaSO4↓ + 2HCl."
+                ]],
+                ["⚙️", "Tính chất", [
+                  "Tính chất chung: Có vị chua đặc trưng (axit chanh, giấm).",
+                  "Làm quỳ tím chuyển sang màu đỏ (chất chỉ thị nhận biết acid).",
+                  "Phản ứng mãnh liệt với các kim loại đứng trước hydrogen trong dãy hoạt động hoá học giải phóng khí H2.",
+                  "Phản ứng trung hoà hoàn toàn với dung dịch kiềm và base không tan tạo thành muối trung hoà và nước."
+                ]],
+                ["🏭", "Ứng dụng", [
+                  "Hydrochloric acid (HCl): Dùng tẩy gỉ kim loại trước khi mạ, sản xuất chất dẻo PVC, chế biến thực phẩm và điều hoà dịch vị dạ dày.",
+                  "Sulfuric acid (H2SO4): Được mệnh danh là 'hoá chất vua', dùng sản xuất phân bón (supephotphat), thuốc nhuộm, chất tẩy rửa, điện dịch trong ắc quy xe máy, ô tô.",
+                  "Acetic acid (CH3COOH): Nồng độ 2-5% dùng làm giấm ăn trong gia đình, bảo quản thực phẩm, tổng hợp tơ nhân tạo và dược phẩm aspirin."
+                ]]
               ]
             },
             {
               i: "🧼",
               t: "Base",
               img: "assets/images/icons/chem_base.png",
-              d: [
-                "Khái niệm base (chứa nhóm hydroxide OH-).",
-                "Tiến hành thí nghiệm và giải thích hiện tượng (quỳ tím hoá xanh, phenolphtalein hoá hồng).",
-                "Viết phương trình hoá học đặc trưng của base.",
-                "Tính chất hoá học của base (tác dụng với acid, oxide acid)."
-              ],
+              d: "Phân tử base và tính chất hoá học",
               c: [
-                ["💡", "Khái niệm", "Khái niệm phân tử base."],
-                ["🧪", "Thí nghiệm", "Tiến hành thí nghiệm và giải thích hiện tượng."],
-                ["✏️", "PTHH", "Viết phương trình hoá học của base."],
-                ["⚙️", "Tính chất", "Tính chất hoá học của base tan và không tan."]
+                ["💡", "Khái niệm", [
+                  "Base là những hợp chất trong phân tử gồm có một nguyên tử kim loại liên kết với một hay nhiều nhóm hydroxide (–OH).",
+                  "Khi tan trong nước, base phân li ra ion OH⁻: M(OH)_n -> M^n+ + nOH⁻.",
+                  "Công thức tổng quát: M(OH)_n (M là kim loại hoá trị n).",
+                  "Phân loại: Base tan trong nước gọi là Kiềm (NaOH, KOH, Ba(OH)2, Ca(OH)2) và Base không tan (Cu(OH)2, Fe(OH)3, Al(OH)3, Mg(OH)2)."
+                ]],
+                ["🧪", "Thí nghiệm", [
+                  "Thí nghiệm 1: Nhúng giấy quỳ tím vào dung dịch NaOH -> quỳ tím hoá xanh; nhỏ dd phenolphthalein không màu vào NaOH -> dung dịch chuyển sang màu hồng đậm.",
+                  "Thí nghiệm 2: Cho dd NaOH vào ống nghiệm đựng dd CuSO4 -> xuất hiện kết tủa màu xanh lam dạng nhầy của Cu(OH)2: CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4.",
+                  "Thí nghiệm 3: Dẫn khí CO2 vào cốc đựng dung dịch vôi trong Ca(OH)2 -> dung dịch bị vẩn đục trắng do tạo thành kết tủa CaCO3."
+                ]],
+                ["✏️", "PTHH", [
+                  "1. Base + Acid -> Muối + H2O (Phản ứng trung hoà): NaOH + HCl -> NaCl + H2O; Ba(OH)2 + H2SO4 -> BaSO4↓ + 2H2O.",
+                  "2. Base tan + Oxide acid -> Muối + H2O: 2NaOH + CO2 -> Na2CO3 + H2O; Ca(OH)2 + SO2 -> CaSO3↓ + H2O.",
+                  "3. Base tan + Muối -> Muối mới + Base mới: 2NaOH + FeCl2 -> Fe(OH)2↓ (trắng xanh) + 2NaCl.",
+                  "4. Base không tan bị nhiệt phân huỷ: Cu(OH)2 (xanh) --t°--> CuO (đen) + H2O; 2Fe(OH)3 --t°--> Fe2O3 + 3H2O."
+                ]],
+                ["⚙️", "Tính chất", [
+                  "Dung dịch kiềm có vị đắng, nhờn như xà phòng và làm thay đổi màu chất chỉ thị: quỳ tím hoá xanh, phenolphthalein hoá hồng.",
+                  "Tất cả các base (tan và không tan) đều tác dụng dễ dàng với acid tạo muối và nước.",
+                  "Dung dịch kiềm tác dụng được với oxide acid và dung dịch muối sinh ra kết tủa mới."
+                ]]
               ]
             },
             {
               i: "🎨",
               t: "Thang pH",
               img: "assets/images/icons/chem_ph.png",
-              d: [
-                "Khái niệm chỉ số pH biểu thị độ acid hay base của dung dịch (thang 0-14).",
-                "Đo pH bằng giấy chỉ thị màu hoặc pH kế.",
-                "Liên hệ pH trong thực tiễn (đất trồng, nước sinh hoạt, môi trường tiêu hoá trong cơ thể)."
-              ],
+              d: "Thang đo pH và ý nghĩa thực tiễn",
               c: [
-                ["💡", "Khái niệm", "Khái niệm thang đo pH từ 0 đến 14."],
-                ["📏", "Đo pH", "Đo pH bằng giấy chỉ thị màu hoặc bút đo."],
-                ["🌍", "Thực tiễn", "Ý nghĩa pH trong nông nghiệp, y học, môi trường."]
+                ["💡", "Khái niệm", [
+                  "pH là chỉ số đo độ acid hoặc độ base của một dung dịch trong dung môi nước, có giá trị từ 0 đến 14.",
+                  "pH = 7: Dung dịch trung tính (nước cất nguyên chất).",
+                  "pH < 7: Dung dịch có tính acid (giá trị pH càng nhỏ thì nồng độ ion H⁺ càng lớn, tính acid càng mạnh).",
+                  "pH > 7: Dung dịch có tính base (giá trị pH càng lớn thì nồng độ ion OH⁻ càng lớn, tính base càng mạnh)."
+                ]],
+                ["📏", "Đo pH", [
+                  "Giấy chỉ thị màu vạn năng: Nhúng vào dung dịch rồi so màu biến đổi với bảng màu chuẩn trên vỏ hộp để đọc giá trị pH từ 1 đến 14.",
+                  "Bút đo pH điện tử (pH kế): Dụng cụ đo hiện đại có đầu dò thuỷ tinh nhạy cảm, hiển thị giá trị pH dạng số trên màn hình LCD với độ chính xác đến 0,01 đơn vị.",
+                  "Chất chỉ thị tự nhiên: Nước bắp cải tím, dịch chiết hoa dâm bụt đổi màu theo pH của môi trường."
+                ]],
+                ["🌍", "Thực tiễn", [
+                  "Đất trồng nông nghiệp: Đất chua (pH < 5,5) cây khó hấp thụ lân và vi lượng -> nông dân bón vôi bột (CaO/Ca(OH)2) để nâng pH; đất kiềm (pH > 7,5) cây dễ bị vàng lá.",
+                  "Y sinh học người: pH máu duy trì cực kì nghiêm ngặt ở mức 7,35 - 7,45; pH dịch dạ dày rất acid (1,5 - 3,5) giúp tiêu hoá đạm và diệt khuẩn; pH nước bọt 6,5 - 7,5.",
+                  "Môi trường & Đời sống: Nước mưa tự nhiên có pH khoảng 5,6; nước mưa acid có pH < 5,0 huỷ hoại rừng và công trình kiến trúc; kiểm soát pH nước sinh hoạt và bể bơi ở 7,2 - 7,6."
+                ]]
               ]
             },
             {
               i: "🌫️",
               t: "Oxide",
               img: "assets/images/icons/chem_oxide.png",
-              d: [
-                "Khái niệm oxide (hợp chất của nguyên tố với oxygen).",
-                "Viết phương trình hoá học tạo thành và phản ứng của oxide.",
-                "Phân loại oxide: oxide acid, oxide base, oxide lưỡng tính, oxide trung tính.",
-                "Tiến hành thí nghiệm và giải thích hiện tượng."
-              ],
+              d: "Hợp chất Oxide và phân loại",
               c: [
-                ["💡", "Khái niệm", "Khái niệm hợp chất oxide."],
-                ["✏️", "PTHH", "Viết phương trình hoá học tạo thành oxide."],
-                ["🗂️", "Phân loại", "Oxide acid, oxide base, oxide lưỡng tính, trung tính."],
-                ["🧪", "Thí nghiệm", "Tiến hành thí nghiệm và giải thích hiện tượng."]
+                ["💡", "Khái niệm", [
+                  "Oxide là hợp chất gồm hai nguyên tố, trong đó có một nguyên tố là oxygen.",
+                  "Công thức phân tử tổng quát: M_x O_y (hoá trị của O luôn là II, x*hóa_trị_M = 2*y).",
+                  "Ví dụ: Carbon dioxide (CO2), Sulfur dioxide (SO2), Calcium oxide (CaO), Iron(III) oxide (Fe2O3)."
+                ]],
+                ["🗂️", "Phân loại", [
+                  "Oxide acid (acidic oxide): Thường là oxide của phi kim, tác dụng với base tạo muối và nước (CO2, SO2, SO3, P2O5).",
+                  "Oxide base (basic oxide): Thường là oxide của kim loại, tác dụng với acid tạo muối và nước (CaO, Na2O, BaO, Fe2O3, CuO).",
+                  "Oxide lưỡng tính: Tác dụng được với cả dung dịch acid và dung dịch base tạo muối (Al2O3, ZnO).",
+                  "Oxide trung tính (không tạo muối): Không tác dụng với acid, base, nước ở điều kiện thường (CO, NO, N2O)."
+                ]],
+                ["✏️", "PTHH", [
+                  "Tạo thành oxide: Đốt cháy đơn chất trong oxygen: C + O2 --t°--> CO2; 4Fe + 3O2 --t°--> 2Fe2O3.",
+                  "Oxide base tác dụng với nước tạo kiềm: CaO + H2O -> Ca(OH)2; Na2O + H2O -> 2NaOH.",
+                  "Oxide acid tác dụng với nước tạo acid: SO3 + H2O -> H2SO4; P2O5 + 3H2O -> 2H3PO4.",
+                  "Oxide base tác dụng với acid: CuO + 2HCl -> CuCl2 + H2O.",
+                  "Oxide acid tác dụng với base: CO2 + Ca(OH)2 -> CaCO3↓ + H2O."
+                ]],
+                ["🧪", "Thí nghiệm", [
+                  "Thí nghiệm 1: Đốt mẩu than (carbon) trong muỗng sắt rồi đưa vào bình chứa khí O2 -> than cháy sáng chói tạo khí không màu CO2. Rót nước vôi trong Ca(OH)2 vào bình lắc nhẹ thấy nước vôi hoá đục.",
+                  "Thí nghiệm 2: Cho một mẩu vôi sống CaO vào ống nghiệm chứa nước -> vôi tan ra, toả nhiệt rất lớn, dung dịch thu được làm đỏ phenolphtalein (tính base)."
+                ]]
               ]
             },
             {
               i: "🧂",
               t: "Muối",
-              d: [
-                "Khái niệm muối (gồm kim loại liên kết gốc acid).",
-                "Gọi tên muối thông dụng theo danh pháp chuẩn.",
-                "Tính chất vật lí (độ tan, trạng thái tinh thể).",
-                "Tính chất hoá học của muối (tác dụng kim loại, acid, base, muối).",
-                "Phương pháp điều chế muối.",
-                "Tiến hành thí nghiệm và giải thích hiện tượng."
-              ],
+              img: "assets/images/icons/chem_muoi.png",
+              d: "Hợp chất Muối và tính chất hoá học",
               c: [
-                ["💡", "Khái niệm", "Khái niệm muối."],
-                ["🏷️", "Gọi tên", "Quy tắc gọi tên muối."],
-                ["💎", "Tính chất vật lí", "Trạng thái, độ tan trong nước của muối."],
-                ["⚗️", "Tính chất hoá học", "Các phản ứng hoá học của muối."],
-                ["🏭", "Điều chế", "Các phương pháp điều chế muối trong PTN và công nghiệp."],
-                ["🧪", "Thí nghiệm", "Tiến hành thí nghiệm và nhận xét hiện tượng."]
+                ["💡", "Khái niệm", [
+                  "Muối là hợp chất hoá học được tạo thành do sự thay thế ion H⁺ trong phân tử acid bằng ion kim loại hoặc ion ammonium (NH4⁺).",
+                  "Cấu tạo: Gồm cation kim loại (hoặc NH4⁺) liên kết với anion gốc acid.",
+                  "Công thức tổng quát: M_x A_y (Ví dụ: Sodium chloride NaCl, Calcium carbonate CaCO3, Copper(II) sulfate CuSO4)."
+                ]],
+                ["🏷️", "Gọi tên", [
+                  "Quy tắc IUPAC: Tên kim loại (kèm hoá trị bằng số La Mã nếu kim loại nhiều hoá trị) + Tên gốc acid.",
+                  "Gốc acid đuôi -ua (chloride, sulfide): NaCl (Sodium chloride), FeS (Iron(II) sulfide).",
+                  "Gốc acid đuôi -at (sulfate, nitrate, carbonate): CaSO4 (Calcium sulfate), KNO3 (Potassium nitrate), CaCO3 (Calcium carbonate).",
+                  "Gốc acid đuôi -it (sulfite): Na2SO3 (Sodium sulfite)."
+                ]],
+                ["💎", "Tính chất vật lí", [
+                  "Trạng thái: Hầu hết các muối ở thể rắn, dạng tinh thể ion có nhiệt độ nóng chảy cao.",
+                  "Màu sắc tinh thể đa dạng: NaCl không màu/trắng, CuSO4.5H2O màu xanh lam, KMnO4 tím than, FeSO4 xanh nhạt.",
+                  "Độ tan: Tất cả các muối nitrate (-NO3) và muối của Na, K, NH4 đều tan tốt trong nước; Muối AgCl, BaSO4, CaCO3, BaCO3 không tan trong nước."
+                ]],
+                ["⚗️", "Tính chất hoá học", [
+                  "1. Muối + Kim loại (mạnh hơn đứng trước) -> Muối mới + Kim loại mới: Fe + CuSO4 -> FeSO4 + Cu↓ (đồng đỏ bám lên sắt).",
+                  "2. Muối + Acid -> Muối mới + Acid mới (ĐK: có chất kết tủa hoặc bay hơi): BaCl2 + H2SO4 -> BaSO4↓ + 2HCl; CaCO3 + 2HCl -> CaCl2 + CO2↑ + H2O.",
+                  "3. Muối + Base -> Muối mới + Base mới (ĐK: có kết tủa): CuSO4 + 2NaOH -> Cu(OH)2↓ (xanh) + Na2SO4.",
+                  "4. Muối + Muối -> Hai muối mới (ĐK: 2 muối ban đầu tan, sản phẩm có ít nhất 1 muối kết tủa): AgNO3 + NaCl -> AgCl↓ (trắng) + NaNO3."
+                ]],
+                ["🏭", "Điều chế", [
+                  "Kim loại + Phi kim -> Muối: 2Na + Cl2 -> 2NaCl; Fe + S --t°--> FeS.",
+                  "Kim loại + Acid -> Muối + H2: Zn + 2HCl -> ZnCl2 + H2↑.",
+                  "Oxide base + Acid -> Muối + H2O: CuO + H2SO4 -> CuSO4 + H2O.",
+                  "Base + Acid -> Muối + H2O: KOH + HNO3 -> KNO3 + H2O.",
+                  "Khai thác tự nhiên: Cô cạn nước biển thu muối ăn NaCl; khai thác mỏ đá vôi CaCO3, quặng thạch cao CaSO4."
+                ]],
+                ["🧪", "Thí nghiệm", [
+                  "Thí nghiệm Fe tác dụng với dd CuSO4: Nhúng một đinh sắt sạch vào ống nghiệm đựng dung dịch CuSO4 màu xanh lam. Sau vài phút, rút đinh sắt ra thấy có một lớp kim loại màu đỏ (Cu) bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần.",
+                  "Thí nghiệm phản ứng trao đổi muối: Trộn dung dịch BaCl2 với dung dịch Na2SO4 xuất hiện ngay kết tủa trắng đục BaSO4 không tan trong axit mạnh."
+                ]]
               ]
             }
           ]
@@ -336,17 +525,29 @@ window.MINDMAP_DATA = {
           t: "Phân bón hoá học",
           img: "assets/images/icons/chem_phan_bon.png",
           open: true,
-          d: [
-            "Vai trò thiết yếu của phân bón đối với sự sinh trưởng và năng suất cây trồng.",
-            "Thành phần và tác dụng của một số loại phân bón phổ biến (phân đạm N, phân lân P, phân kali K, phân NPK, vi lượng).",
-            "Ảnh hưởng tiêu cực của việc lạm dụng phân bón hoá học đến đất, nguồn nước và sức khoẻ con người.",
-            "Biện pháp giảm thiểu ô nhiễm phân bón (bón đúng liều lượng, đúng thời điểm, sử dụng phân bón hữu cơ)."
-          ],
+          d: "Phân bón hoá học và kĩ thuật bón phân an toàn",
           c: [
-            ["🌱", "Vai trò", "Vai trò của phân bón đối với cây trồng."],
-            ["🧬", "Thành phần & tác dụng", "Đặc điểm của phân đạm N, lân P, kali K, phân hỗn hợp NPK."],
-            ["⚠️", "Ảnh hưởng", "Tác hại của việc lạm dụng phân bón vô cơ."],
-            ["♻️", "Giảm ô nhiễm", "Các biện pháp bón phân hợp lí, thân thiện môi trường."]
+            ["🌱", "Vai trò", [
+              "Cung cấp các nguyên tố dinh dưỡng thiết yếu (đa lượng N-P-K, trung lượng Ca-Mg-S, vi lượng Fe-Zn-Cu-B) cho cây trồng.",
+              "Kích thích sinh trưởng, giúp cây phân cành đẻ nhánh, tăng khả năng quang hợp và trao đổi chất.",
+              "Nâng cao năng suất cây trồng và cải thiện phẩm chất nông sản (tăng hàm lượng đường, tinh bột, protein)."
+            ]],
+            ["🧬", "Thành phần & tác dụng", [
+              "Phân đạm (chứa N): Kích thích sự phát triển của cành lá, giúp lá xanh tốt, tăng tỉ lệ protein (phân urê CO(NH2)2, phân đạm amoni NH4NO3).",
+              "Phân lân (chứa P): Kích thích bộ rễ phát triển mạnh, tăng khả năng ra hoa đậu quả và chịu rét của cây (supephotphat đơn, supephotphat kép chứa Ca(H2PO4)2).",
+              "Phân kali (chứa K): Giúp thân cây cứng cáp, chống đổ ngã, tăng khả năng tích luỹ đường và tinh bột, tăng sức chống chịu sâu bệnh và khô hạn (KCl, K2SO4).",
+              "Phân hỗn hợp NPK: Phối trộn cả 3 nguyên tố N, P, K theo tỉ lệ thích hợp với từng giai đoạn sinh trưởng của cây."
+            ]],
+            ["⚠️", "Ảnh hưởng", [
+              "Lạm dụng bón quá nhiều phân đạm: Cây phát triển thân lá quá mức, dễ bị sâu bệnh tấn công, quả chậm chín, tích tụ hàm lượng nitrate (NO3⁻) độc hại trong rau củ.",
+              "Thoái hoá đất: Bón phân hoá học lâu năm không kết hợp phân hữu cơ làm đất bị chua hoá, chai cứng, mất hệ vi sinh vật có ích.",
+              "Ô nhiễm nguồn nước: Phân bón dư thừa bị rửa trôi xuống sông hồ gây hiện tượng phú dưỡng (tảo nở hoa, cá chết hàng loạt do thiếu oxy) và ngấm làm ô nhiễm nước ngầm."
+            ]],
+            ["♻️", "Giảm ô nhiễm", [
+              "Thực hiện nguyên tắc '4 đúng': Đúng chủng loại phân, Đúng liều lượng, Đúng thời điểm và Đúng phương pháp bón.",
+              "Tăng cường bón phân hữu cơ (phân chuồng ủ hoai, phân xanh, phân trùn quế) và phân vi sinh để làm giàu mùn đất.",
+              "Ứng dụng công nghệ tưới nhỏ giọt kết hợp bón phân hoà tan để cây hấp thụ tối đa dinh dưỡng, tránh rửa trôi lãng phí."
+            ]]
           ]
         }
       ]
@@ -360,235 +561,365 @@ window.MINDMAP_DATA = {
       side: "left",
       open: true,
       img: "assets/images/icons/vat_song_banner.png",
-      d: "VẬT SỐNG – SINH HỌC CƠ THỂ NGƯỜI & SINH THÁI HỌC",
+      d: "VẬT SỐNG – SINH HỌC CƠ THỂ NGƯỜI VÀ MỐI QUAN HỆ SINH THÁI",
       c: [
         {
           i: "🧍",
           t: "Cơ thể người",
           img: "assets/images/icons/bio_co_the.png",
-          d: [
-            "Khái quát về cơ thể người.",
-            "Cấu tạo cơ thể người: các khoang cơ thể, các hệ cơ quan.",
-            "Các cơ quan và hệ cơ quan chính trong cơ thể người.",
-            "Sự thống nhất giữa các cơ quan tạo nên chỉnh thể sống hoàn chỉnh."
-          ],
+          d: "Khái quát cấu tạo và tính thống nhất của cơ thể người",
           c: [
-            ["🧩", "Cấu tạo", "Cấu tạo các khoang và thành phần cơ thể người."],
-            ["🫀", "Hệ cơ quan", "Các hệ cơ quan chính trong cơ thể."],
-            ["🔄", "Sự thống nhất", "Sự phối hợp hoạt động thống nhất giữa các hệ cơ quan."]
+            ["🧩", "Cấu tạo", [
+              "Cơ thể người gồm 3 phần chính: Đầu, thân và các chi (chi trên - tay, chi dưới - chân).",
+              "Các khoang cơ thể: Khoang ngực và khoang bụng, được ngăn cách hoàn toàn bởi cơ hoành.",
+              "Khoang ngực chứa tim và hai lá phổi; Khoang bụng chứa dạ dày, ruột, gan, tuỵ, thận, bóng đái và cơ quan sinh dục."
+            ]],
+            ["🫀", "Hệ cơ quan", [
+              "Hệ vận động: Bộ xương và hệ cơ, chức năng nâng đỡ, định hình và vận động cơ thể.",
+              "Hệ tuần hoàn: Tim và mạch máu, vận chuyển oxy, chất dinh dưỡng đến tế bào và mang chất thải đi.",
+              "Hệ hô hấp: Đường dẫn khí và phổi, thực hiện trao đổi khí O2 và CO2 với môi trường.",
+              "Hệ tiêu hoá: Biến đổi thức ăn phức tạp thành các chất dinh dưỡng đơn giản hấp thụ vào máu.",
+              "Hệ bài tiết: Lọc máu và đào thải các chất cặn bã độc hại qua nước tiểu.",
+              "Hệ thần kinh, nội tiết & giác quan: Tiếp nhận kích thích, điều khiển, điều hoà phối hợp hoạt động toàn cơ thể."
+            ]],
+            ["🔄", "Sự thống nhất", [
+              "Các cơ quan và hệ cơ quan trong cơ thể không hoạt động độc lập mà phối hợp nhịp nhàng tạo thành một khối thống nhất.",
+              "Cơ chế điều khiển: Hệ thần kinh (dẫn truyền xung thần kinh nhanh, chính xác) và hệ nội tiết (vận chuyển hormone qua máu chậm nhưng kéo dài).",
+              "Ví dụ: Khi chạy nhanh, hệ vận động hoạt động mạnh kéo theo tim đập nhanh (tuần hoàn), thở gấp (hô hấp), toát nhiều mồ hôi (bài tiết & điều nhiệt)."
+            ]]
           ]
         },
         {
           i: "🦴",
           t: "Hệ vận động",
           img: "assets/images/icons/bio_van_dong.png",
-          d: [
-            "Chức năng, sự phù hợp giữa cấu tạo với chức năng của hệ vận động (hệ cơ xương).",
-            "Bảo vệ hệ vận động (phòng chống loãng xương, gãy xương, cong vẹo cột sống).",
-            "Vai trò của tập thể dục, thể thao đối với sự phát triển cơ xương.",
-            "Sức khoẻ học đường: tư thế ngồi học đúng, mang vác ba lô hợp lí."
-          ],
+          d: "Hệ cơ xương và sức khoẻ học đường",
           c: [
-            ["⚙️", "Cấu tạo & chức năng", "Cấu tạo bộ xương và hệ cơ, chức năng nâng đỡ, vận động."],
-            ["🛡️", "Bảo vệ", "Phòng chống cong vẹo cột sống và tổn thương xương khớp."],
-            ["🏃", "Thể dục thể thao", "Tác dụng rèn luyện thể chất tăng cường cơ bắp."],
-            ["🏫", "Sức khoẻ học đường", "Tư thế ngồi học chuẩn và thói quen bảo vệ xương."]
+            ["⚙️", "Cấu tạo & chức năng", [
+              "Bộ xương người gồm khoảng 206 chiếc xương, chia làm 3 phần: Xương đầu (sọ não, sọ mặt), Xương thân (cột sống chữ S, lồng ngực gồm xương sườn và xương ức) và Xương chi (xương đai và xương chi tự do).",
+              "Khớp xương: Khớp động (khớp vai, khớp gối - cử động linh hoạt nhờ dịch khớp); Khớp bán động (khớp đốt sống); Khớp bất động (khớp xương sọ).",
+              "Hệ cơ: Gồm khoảng 600 cơ vân, bám vào xương qua gân. Khi cơ co rút kéo xương dịch chuyển tạo nên cử động cơ thể.",
+              "Chức năng: Nâng đỡ cơ thể, bảo vệ nội quan (hộp sọ bảo vệ não, lồng ngực bảo vệ tim phổi) và tham gia vận động."
+            ]],
+            ["🛡️", "Bảo vệ", [
+              "Chế độ dinh dưỡng: Bổ sung đầy đủ canxi, photpho và vitamin D (uống sữa, tắm nắng sớm) giúp xương chắc khoẻ, chống còi xương ở trẻ em và loãng xương ở người lớn tuổi.",
+              "Tránh mang vác vật nặng quá sức hoặc mang lệch một bên vai làm biến dạng khung xương.",
+              "Khởi động kĩ trước khi vận động thể chất tránh bong gân, trật khớp và rách cơ."
+            ]],
+            ["🏃", "Thể dục thể thao", [
+              "Tập thể dục thường xuyên giúp tăng kích thước và khối lượng sợi cơ, tăng cường sức bền và sự dẻo dai.",
+              "Kích thích sụn tăng trưởng ở đầu xương dài phát triển, thúc đẩy tăng trưởng chiều cao tối ưu ở lứa tuổi dậy thì.",
+              "Tăng cường mật độ khoáng chất của xương, giúp tim bơm máu hiệu quả và nâng cao dung tích sống của phổi."
+            ]],
+            ["🏫", "Sức khoẻ học đường", [
+              "Tật cong vẹo cột sống: Do ngồi học sai tư thế (cúi gục đầu, vẹo lưng, bàn ghế không phù hợp chiều cao) hoặc đeo cặp quá nặng một bên vai.",
+              "Biện pháp phòng ngừa: Giữ lưng thẳng, hai vai ngang bằng khi ngồi học; khoảng cách từ mắt đến bàn học từ 25-30 cm; sử dụng ba lô 2 quai đeo đều hai vai."
+            ]]
           ]
         },
         {
           i: "🍎",
           t: "Dinh dưỡng & tiêu hoá",
           img: "assets/images/icons/bio_tieu_hoa.png",
-          d: [
-            "Chức năng, sự phù hợp giữa cấu tạo với chức năng của hệ tiêu hoá.",
-            "Chế độ dinh dưỡng cân đối và hợp lí của con người.",
-            "Bảo vệ hệ tiêu hoá (phòng tránh đau dạ dày, sâu răng, rối loạn tiêu hoá).",
-            "An toàn vệ sinh thực phẩm và phòng ngừa ngộ độc thực phẩm."
-          ],
+          d: "Hệ tiêu hoá và an toàn vệ sinh thực phẩm",
           c: [
-            ["⚙️", "Cấu tạo & chức năng", "Ống tiêu hoá và các tuyến tiêu hoá biến đổi thức ăn."],
-            ["🥗", "Chế độ dinh dưỡng", "Khẩu phần ăn cân bằng 4 nhóm chất dinh dưỡng."],
-            ["🛡️", "Bảo vệ hệ tiêu hoá", "Ăn uống khoa học và bảo vệ dạ dày, đường ruột."],
-            ["🧼", "ATVSTP", "Nguyên tắc chọn thực phẩm sạch và an toàn vệ sinh."]
+            ["⚙️", "Cấu tạo & chức năng", [
+              "Ống tiêu hoá: Miệng -> Hầu -> Thực quản -> Dạ dày (dung tích 2-3 lít, co bóp mạnh) -> Ruột non (dài 6m, có hàng triệu lông ruột hấp thụ chất dinh dưỡng) -> Ruột già -> Trực tràng -> Hậu môn.",
+              "Tuyến tiêu hoá: Tuyến nước bọt (tiết men amylase biến đổi tinh bột chín thành đường mantose), Tuyến gan (tiết dịch mật nhũ hoá chất béo), Tuyến tuỵ và Tuyến ruột (chứa đầy đủ các enzym tiêu hoá đạm, mỡ, đường).",
+              "Hai quá trình tiêu hoá: Tiêu hoá cơ học (cắn, nhai, nghiền, đảo trộn) và Tiêu hoá hoá học (enzym cắt phân tử lớn thành phân tử nhỏ hấp thụ qua mao mạch máu và mao mạch bạch huyết)."
+            ]],
+            ["🥗", "Chế độ dinh dưỡng", [
+              "Khẩu phần ăn hợp lí: Đảm bảo cân bằng 4 nhóm dưỡng chất: Carbohydrate (chất bột đường), Lipid (chất béo), Protein (chất đạm), Vitamin và Khoáng chất.",
+              "Tháp dinh dưỡng: Ăn đủ ngũ cốc, tăng cường rau củ quả tươi giàu chất xơ, ăn vừa phải thịt cá trứng sữa, hạn chế đường ngọt và chất béo, ăn rất ít muối (< 5g/ngày).",
+              "Uống đủ 1,5 - 2 lít nước mỗi ngày giúp quá trình tiêu hoá và chuyển hoá năng lượng diễn ra thuận lợi."
+            ]],
+            ["🛡️", "Bảo vệ hệ tiêu hoá", [
+              "Vệ sinh răng miệng sạch sẽ sau khi ăn và trước khi đi ngủ, ngăn ngừa vi khuẩn lên men tạo axit phá huỷ men răng gây sâu răng.",
+              "Ăn chậm, nhai kĩ giúp enzym ngấm đều và giảm tải cho dạ dày; ăn đúng giờ, không bỏ bữa sáng; tránh ăn đồ quá cay nóng hoặc căng thẳng khi ăn để phòng tránh viêm loét dạ dày - tá tràng.",
+              "Tẩy giun định kì 6 tháng/lần bảo vệ niêm mạc ruột non."
+            ]],
+            ["🧼", "ATVSTP", [
+              "Nguyên tắc an toàn: Sử dụng thực phẩm rõ nguồn gốc xuất xứ, còn hạn sử dụng; ăn chín, uống sôi; bảo quản thực phẩm trong tủ lạnh đúng cách.",
+              "Nguyên nhân ngộ độc: Do vi sinh vật và độc tố của chúng (khuẩn Salmonella, E.coli, nấm mốc aflatoxin); do hoá chất bảo quản độc hại, thuốc trừ sâu dư thừa hoặc bản thân thực phẩm chứa độc (cá nóc, nấm độc, khoai tây mọc mầm).",
+              "Xử lí khi ngộ độc thực phẩm: Gây nôn tống chất độc ra ngoài, cho uống dung dịch oresol bù nước và đưa ngay đến cơ sở y tế gần nhất."
+            ]]
           ]
         },
         {
           i: "🩸",
           t: "Máu & tuần hoàn",
           img: "assets/images/icons/bio_tuan_hoan.png",
-          d: [
-            "Chức năng, sự phù hợp giữa cấu tạo với chức năng của máu và hệ tuần hoàn (tim, mạch máu).",
-            "Bảo vệ hệ tuần hoàn và một số bệnh phổ biến (tăng huyết áp, xơ vữa động mạch, thiếu máu).",
-            "Miễn dịch: kháng nguyên, kháng thể; cơ chế miễn dịch và vai trò của vaccine trong phòng bệnh."
-          ],
+          d: "Máu, hệ tuần hoàn và cơ chế miễn dịch",
           c: [
-            ["❤️", "Tim & mạch máu", "Cấu tạo tim 4 ngăn, vòng tuần hoàn lớn và nhỏ."],
-            ["🛡️", "Bảo vệ & bệnh lý", "Phòng tránh huyết áp cao, đột quỵ và bệnh tim mạch."],
-            ["💉", "Kháng nguyên – thể", "Cơ chế miễn dịch đặc hiệu và không đặc hiệu."],
-            ["🩹", "Vaccine", "Ý nghĩa tiêm chủng vaccine tạo miễn dịch chủ động."]
+            ["❤️", "Tim & mạch máu", [
+              "Thành phần của máu: Huyết tương chiếm 55% thể tích (90% là nước, duy trì áp suất thẩm thấu và vận chuyển chất dinh dưỡng); Các tế bào máu chiếm 45% gồm Hồng cầu (chứa hemoglobin Hb vận chuyển O2 và CO2), Bạch cầu (bảo vệ cơ thể bằng thực bào và tiết kháng thể), Tiểu cầu (tham gia cơ chế đông máu chống mất máu).",
+              "Cấu tạo tim: Trái tim 4 ngăn (tâm nhĩ phải, tâm nhĩ trái ở trên; tâm thất phải, tâm thất trái ở dưới có thành cơ dày nhất). Giữa tâm nhĩ và tâm thất có van tim giúp máu chỉ chảy theo một chiều.",
+              "Hệ mạch máu: Động mạch (vận chuyển máu từ tim đến các cơ quan dưới áp lực lớn), Mao mạch (thành mỏng 1 lớp tế bào, nơi diễn ra trao đổi chất và khí với tế bào), Tĩnh mạch (dẫn máu từ cơ quan về tim).",
+              "Vòng tuần hoàn nhỏ: Máu đỏ thẫm từ tâm thất phải qua động mạch phổi đến phổi thải CO2 nhận O2 thành máu đỏ tươi theo tĩnh mạch phổi về tâm nhĩ trái.",
+              "Vòng tuần hoàn lớn: Máu đỏ tươi từ tâm thất trái qua động mạch chủ đến khắp cơ thể trao đổi chất và khí rồi theo tĩnh mạch chủ về tâm nhĩ phải."
+            ]],
+            ["🛡️", "Bảo vệ & bệnh lý", [
+              "Bệnh tim mạch phổ biến: Tăng huyết áp (huyết áp vượt quá 140/90 mmHg), Xơ vữa động mạch (do lắng đọng mỡ cholesterol làm hẹp lòng mạch), Nhồi máu cơ tim, Đột quỵ não.",
+              "Phòng ngừa bệnh: Hạn chế ăn mặn, giảm mỡ động vật và nội tạng; không hút thuốc lá và sử dụng rượu bia; giữ cân nặng hợp lí và rèn luyện thể dục thể thao đều đặn mỗi ngày."
+            ]],
+            ["💉", "Kháng nguyên – thể", [
+              "Kháng nguyên: Là những phân tử lạ (thường là protein trên vỏ vi khuẩn, virus, nấm...) khi xâm nhập vào cơ thể có khả năng kích thích cơ thể sinh ra phản ứng miễn dịch.",
+              "Kháng thể: Là các phân tử protein đặc hiệu (Immunoglobulin - Ig) do tế bào lympho B tiết ra, có khả năng liên kết đặc hiệu với kháng nguyên tương ứng theo cơ chế 'chìa khoá - ổ khoá' để vô hiệu hoá kháng nguyên.",
+              "Hàng rào bảo vệ miễn dịch: Da và niêm mạc (hàng rào vật lí), Bạch cầu thực bào (miễn dịch không đặc hiệu), Tế bào lympho B và lympho T (miễn dịch đặc hiệu)."
+            ]],
+            ["🩹", "Vaccine", [
+              "Bản chất: Vaccine chứa mầm bệnh đã bị làm suy yếu, đã chết hoặc một phần kháng nguyên tinh khiết của vi sinh vật gây bệnh.",
+              "Cơ chế: Khi tiêm vaccine, hệ miễn dịch tiếp xúc với kháng nguyên sẽ kích hoạt lympho B sản xuất kháng thể và tạo ra 'tế bào nhớ' (memory cells).",
+              "Ý nghĩa: Giúp cơ thể tạo miễn dịch chủ động; khi mầm bệnh thật xâm nhập, tế bào nhớ nhận diện và sản xuất ồ ạt kháng thể tiêu diệt mầm bệnh nhanh chóng, ngăn ngừa dịch bệnh truyền nhiễm trong cộng đồng."
+            ]]
           ]
         },
         {
           i: "💨",
           t: "Hệ hô hấp",
           img: "assets/images/icons/bio_ho_hap.png",
-          d: [
-            "Chức năng, sự phù hợp giữa cấu tạo với chức năng của hệ hô hấp (đường dẫn khí và phổi).",
-            "Cơ chế trao đổi khí ở phổi và ở tế bào.",
-            "Bảo vệ hệ hô hấp (phòng tránh viêm họng, viêm phổi, hen suyễn, tác hại thuốc lá và bụi mịn)."
-          ],
+          d: "Cơ quan hô hấp và sự trao đổi khí",
           c: [
-            ["⚙️", "Cấu tạo & chức năng", "Đường dẫn khí và phế nang thực hiện trao đổi khí."],
-            ["🛡️", "Bảo vệ hô hấp", "Phòng tránh ô nhiễm không khí và khói thuốc lá."]
+            ["⚙️", "Cấu tạo & chức năng", [
+              "Đường dẫn khí: Mũi (có lớp lông mũi cản bụi, tuyến chất nhầy giữ vi khuẩn, mạng mao mạch sưởi ấm không khí) -> Họng -> Thanh quản (có nắp thanh quản đậy kín đường thở khi nuốt thức ăn) -> Khí quản (chứa các vòng sụn giữ ống luôn mở) -> Phế quản phân nhánh vào phổi.",
+              "Hai lá phổi: Gồm lá phổi phải (3 thuỳ) và lá phổi trái (2 thuỳ), chứa khoảng 700 - 800 triệu phế nang (túi khí nhỏ) tạo diện tích bề mặt trao đổi khí khổng lồ lên tới 80 - 100 m².",
+              "Cơ chế trao đổi khí: Theo cơ chế khuếch tán từ nơi có nồng độ (phân áp) cao đến nơi có nồng độ thấp:",
+              "- Tại phổi: O2 từ phế nang khuếch tán vào máu đỏ thẫm; CO2 từ máu khuếch tán vào phế nang để thở ra ngoài.",
+              "- Tại tế bào: O2 từ máu đỏ tươi khuếch tán vào tế bào cung cấp cho quá trình hô hấp tế bào giải phóng năng lượng ATP; CO2 từ tế bào khuếch tán vào máu."
+            ]],
+            ["🛡️", "Bảo vệ hô hấp", [
+              "Tác hại khói thuốc lá: Chứa nicotin, khí CO (chiếm chỗ gắn của O2 trên hemoglobin), hắc ín (chất nhựa gây ung thư phổi) làm tê liệt lớp lông rung đường thở.",
+              "Tác hại bụi mịn (PM2.5, PM10) và khí độc SO2, NO2: Gây viêm phế quản mãn tính, hen suyễn, xơ hoá phổi.",
+              "Biện pháp: Đeo khẩu trang khi ra đường; trồng nhiều cây xanh lọc không khí; tích cực tập hít thở sâu để tăng dung tích sống của phổi; không hút thuốc lá."
+            ]]
           ]
         },
         {
           i: "💧",
           t: "Hệ bài tiết",
           img: "assets/images/icons/bio_bai_tiet.png",
-          d: [
-            "Các cơ quan của hệ bài tiết nước tiểu (thận, ống dẫn nước tiểu, bóng đái, ống đái).",
-            "Chức năng bài tiết, quá trình lọc máu tạo nước tiểu ở nephron của thận.",
-            "Bảo vệ hệ bài tiết (uống đủ nước, hạn chế ăn quá mặn, phòng tránh sỏi thận, suy thận)."
-          ],
+          d: "Hệ bài tiết nước tiểu và chức năng lọc máu",
           c: [
-            ["🧩", "Cơ quan", "Thận, ống dẫn, bóng đái và ống đái."],
-            ["⚙️", "Chức năng", "Lọc máu, cân bằng nội môi và đào thải độc tố."],
-            ["🛡️", "Bảo vệ thận", "Thói quen uống nước đúng cách và phòng tránh sỏi thận."]
+            ["🧩", "Cơ quan", [
+              "Hệ bài tiết nước tiểu gồm: 2 quả thận, 2 ống dẫn nước tiểu, 1 bóng đái (bàng quang chứa nước tiểu) và 1 ống đái dẫn ra ngoài.",
+              "Cấu tạo thận: Mỗi quả thận chứa khoảng 1 triệu đơn vị chức năng gọi là Nephron.",
+              "Cấu tạo một Nephron: Gồm Cầu thận (búi mao mạch máu áp lực cao), Nang cầu thận (bao Bowman bọc ngoài) và Ống thận dài được bao quanh bởi mạng mao mạch dày đặc."
+            ]],
+            ["⚙️", "Chức năng", [
+              "Quá trình tạo thành nước tiểu diễn ra qua 3 giai đoạn liên tục tại nephron:",
+              "1. Quá trình lọc máu (ở cầu thận): Máu qua màng lọc tạo thành Nước tiểu đầu (chứa nước, glucose, axit amin, ure... không có tế bào máu và protein lớn).",
+              "2. Quá trình hấp thụ lại (ở ống thận): Hấp thụ lại gần như toàn bộ nước (99%), chất dinh dưỡng và các ion cần thiết vào máu.",
+              "3. Quá trình bài tiết tiếp: Bài tiết thêm các ion thừa H⁺, K⁺, chất cặn bã, độc tố, cặn thuốc ra khỏi máu tạo thành Nước tiểu chính thức đổ vào bể thận.",
+              "Ý nghĩa: Giúp cơ thể thải lọc chất cặn bã chuyển hoá, duy trì áp suất thẩm thấu và hằng định nội môi."
+            ]],
+            ["🛡️", "Bảo vệ thận", [
+              "Bệnh lí: Sỏi thận (do lắng đọng các tinh thể muối canxi oxalat, urat trong thận), Viêm cầu thận (do nhiễm khuẩn), Suy thận (chức năng thận suy giảm phải chạy thận nhân tạo).",
+              "Thói quen bảo vệ: Uống đủ từ 1,5 - 2 lít nước mỗi ngày; không ăn thức ăn quá mặn hoặc quá nhiều đạm; không nhịn tiểu; giữ gìn vệ sinh cơ thể chống nhiễm trùng ngược dòng."
+            ]]
           ]
         },
         {
           i: "🔁",
           t: "Môi trường trong",
           img: "assets/images/icons/bio_moi_truong_trong.png",
-          d: [
-            "Khái niệm môi trường trong của cơ thể (máu, nước mô, bạch huyết).",
-            "Duy trì sự ổn định môi trường trong (cân bằng nội môi: nhiệt độ, huyết áp, đường huyết, pH)."
-          ],
+          d: "Môi trường trong cơ thể và cân bằng nội môi",
           c: [
-            ["💡", "Khái niệm", "Thành phần môi trường trong cơ thể."],
-            ["⚖️", "Cân bằng nội môi", "Cơ chế duy trì ổn định nồng độ các chất trong máu."]
+            ["💡", "Khái niệm", [
+              "Môi trường trong của cơ thể gồm 3 thành phần dịch lỏng: Máu, Dịch mô (nước mô quanh tế bào) và Dịch bạch huyết.",
+              "Mối quan hệ tuần hoàn: Máu lưu thông trong mao mạch thẩm thấu qua thành mạch tạo thành dịch mô; Dịch mô thẩm thấu vào mạch bạch huyết tạo thành dịch bạch huyết; Dịch bạch huyết theo ống bạch huyết đổ trở lại tĩnh mạch máu.",
+              "Vai trò: Là môi trường trung gian giúp tế bào thực hiện trao đổi chất và năng lượng với môi trường ngoài."
+            ]],
+            ["⚖️", "Cân bằng nội môi", [
+              "Khái niệm: Cân bằng nội môi là sự duy trì ổn định các chỉ số lí - hoá của môi trường trong cơ thể (nhiệt độ, huyết áp, áp suất thẩm thấu, nồng độ pH, đường huyết...).",
+              "Vai trò của gan: Điều hoà nồng độ glucose trong máu ổn định quanh mức 0,1% (4,4 - 6,4 mmol/L) nhờ hormone insulin chuyển glucose thành glycogen dự trữ và glucagon phân giải glycogen thành glucose.",
+              "Vai trò của thận: Điều hoà cân bằng lượng nước và muối khoáng (áp suất thẩm thấu) thông qua cơ chế bài tiết hoặc hấp thụ lại nước ở ống thận.",
+              "Hậu quả mất cân bằng: Gây rối loạn chuyển hoá, bệnh lí (bệnh tiểu đường do thiếu insulin, huyết áp cao, phù nề) và có thể dẫn đến tử vong."
+            ]]
           ]
         },
         {
           i: "🧠",
           t: "Thần kinh & giác quan",
           img: "assets/images/icons/bio_than_kinh.png",
-          d: [
-            "Chức năng, sự phù hợp giữa cấu tạo với chức năng của hệ thần kinh (não, tuỷ sống) và các giác quan (thị giác, thính giác).",
-            "Bảo vệ hệ thần kinh và các giác quan (ngủ đủ giấc, tránh chất kích thích, giữ khoảng cách mắt).",
-            "Sức khoẻ học đường: phòng chống cận thị học đường, tật cong vẹo cột sống do tư thế xấu."
-          ],
+          d: "Hệ thần kinh, giác quan và sức khoẻ học đường",
           c: [
-            ["⚙️", "Cấu tạo thần kinh", "Não bộ, tuỷ sống, dây thần kinh và các giác quan."],
-            ["🛡️", "Bảo vệ", "Chăm sóc giấc ngủ, tránh căng thẳng thần kinh."],
-            ["🏫", "Sức khoẻ học đường", "Phòng ngừa tật khúc xạ (cận thị) và bảo vệ thính giác."]
+            ["⚙️", "Cấu tạo thần kinh", [
+              "Đơn vị cấu tạo: Nơron (tế bào thần kinh) gồm thân chứa nhân, nhiều sợi nhánh tiếp nhận xung động và 1 sợi trục dài có bao myelin bọc ngoài truyền xung thần kinh.",
+              "Hệ thần kinh trung ương: Gồm Não bộ nằm trong hộp sọ và Tuỷ sống nằm trong ống xương sống.",
+              "Các phần của não bộ: Đại não (trung khu thần kinh cấp cao, vùng cảm giác, vận động, tư duy, ngôn ngữ), Tiểu não (điều hoà thăng bằng và phối hợp các cử động phức tạp), Trụ não (chứa trung khu điều khiển nhịp tim, nhịp thở, tiêu hoá), Não trung gian (điều hoà thân nhiệt, giấc ngủ).",
+              "Giác quan: Thị giác (mắt gồm giác mạc, đồng tử, thể thuỷ tinh, màng lưới chứa tế bào que và tế bào nón) và Thính giác (tai ngoài, tai giữa có màng nhĩ, tai trong có ốc tai thụ cảm âm thanh)."
+            ]],
+            ["🛡️", "Bảo vệ", [
+              "Chăm sóc hệ thần kinh: Đảm bảo ngủ đủ 8 tiếng/ngày giúp não bộ phục hồi năng lượng; sắp xếp thời gian biểu học tập và nghỉ ngơi hợp lí, tránh stress căng thẳng kéo dài.",
+              "Nói không với các chất kích thích: Rượu bia, thuốc lá, ma tuý, cà phê đậm đặc làm tê liệt tế bào thần kinh, suy giảm trí nhớ và làm chậm phản xạ."
+            ]],
+            ["🏫", "Sức khoẻ học đường", [
+              "Tật cận thị học đường: Thể thuỷ tinh bị phồng quá mức hoặc trục nhãn cầu dài hơn bình thường làm ảnh của vật rơi phía trước màng lưới (nhìn rõ vật ở gần, nhìn mờ vật ở xa).",
+              "Khắc phục cận thị: Đeo kính phân kì (kính cận) để kéo ảnh lùi về đúng màng lưới.",
+              "Phòng ngừa: Đảm bảo phòng học đủ ánh sáng tự nhiên; giữ khoảng cách từ mắt đến sách vở từ 25 - 30 cm; áp dụng quy tắc 20-20-20 (sau 20 phút nhìn màn hình nhìn xa 20 feet trong 20 giây); thường xuyên tập thể dục cho mắt."
+            ]]
           ]
         },
         {
           i: "🧬",
           t: "Hệ nội tiết",
           img: "assets/images/icons/bio_noi_tiet.png",
-          d: [
-            "Chức năng của các tuyến nội tiết chính: tuyến yên, tuyến giáp, tuyến thượng thận, tuyến tuỵ, tuyến sinh dục.",
-            "Vai trò điều hoà các quá trình sinh lí cơ thể của hormone.",
-            "Bảo vệ hệ nội tiết (phòng tránh bệnh bướu cổ do thiếu iod, tiểu đường...)."
-          ],
+          d: "Các tuyến nội tiết và vai trò của hormone",
           c: [
-            ["🧪", "Tuyến nội tiết", "Vị trí và chức năng các tuyến tiết hormone."],
-            ["🛡️", "Bảo vệ nội tiết", "Chế độ dinh dưỡng bổ sung iod và phòng ngừa tiểu đường."]
+            ["🧪", "Tuyến nội tiết", [
+              "Đặc điểm: Tuyến nội tiết không có ống dẫn, chất tiết là Hormone được ngấm trực tiếp vào máu để vận chuyển đến các cơ quan đích.",
+              "Tuyến yên: Được coi là 'nhạc trưởng' của hệ nội tiết, tiết hormone tăng trưởng GH và các hormone kích thích hoạt động của tuyến giáp, tuyến trên thận, tuyến sinh dục.",
+              "Tuyến giáp: Tiết hormone Thyroxin (chứa iod), có vai trò quan trọng trong trao đổi chất và chuyển hoá năng lượng, kích thích phát triển trí tuệ.",
+              "Tuyến tuỵ (phần nội tiết - đảo tụy): Tiết Insulin (hạ đường huyết khi đường tăng) và Glucagon (tăng đường huyết khi đường hạ).",
+              "Tuyến trên thận: Tiết Adrenalin và Noradrenalin điều hoà huyết áp, tim mạch trong trạng thái căng thẳng, sợ hãi.",
+              "Tuyến sinh dục: Tinh hoàn ở nam tiết Testosterone; Buồng trứng ở nữ tiết Estrogen và Progesterone."
+            ]],
+            ["🛡️", "Bảo vệ nội tiết", [
+              "Bệnh bướu cổ đơn thuần: Do chế độ ăn thiếu hụt iod -> tuyến giáp hoạt động quá mức phì đại -> Phòng ngừa bằng cách sử dụng muối iod hàng ngày và ăn hải sản biển.",
+              "Bệnh đái tháo đường (tiểu đường): Do tuyến tuỵ suy giảm khả năng tiết insulin -> đường trong máu tăng cao và thải ra nước tiểu -> Phòng ngừa bằng cách ăn giảm đường, tinh bột, kiểm soát cân nặng và tập thể thao.",
+              "Bệnh Basedow: Do tuyến giáp hoạt động quá mạnh tiết thừa thyroxin làm người gầy sút, mắt lồi, tim đập nhanh."
+            ]]
           ]
         },
         {
           i: "✋",
           t: "Da & thân nhiệt",
           img: "assets/images/icons/bio_da.png",
-          d: [
-            "Chức năng và cấu tạo 3 lớp của da người: biểu bì, bì, mỡ dưới da.",
-            "Chăm sóc và bảo vệ da, phòng các bệnh ngoài da (nấm, mụn, ghẻ).",
-            "Thân nhiệt: cơ chế điều hoà thân nhiệt khi trời nóng/lạnh, các biện pháp chống nóng, chống lạnh, phòng cảm cúm."
-          ],
+          d: "Cấu tạo chức năng của da và cơ chế điều hoà thân nhiệt",
           c: [
-            ["⚙️", "Cấu tạo da", "Lớp biểu bì, lớp bì và lớp mỡ dưới da."],
-            ["🧴", "Chăm sóc da", "Vệ sinh da sạch sẽ và bảo vệ da khỏi tia cực tím UV."],
-            ["🌡️", "Thân nhiệt", "Cơ chế điều hoà thân nhiệt cân bằng 37°C."]
+            ["⚙️", "Cấu tạo da", [
+              "Cấu tạo da gồm 3 lớp chính:",
+              "1. Lớp biểu bì: Tầng sừng ngoài cùng (các tế bào chết dễ bong tróc chống thấm nước và vi khuẩn); Tầng tế bào sống chứa các hạt sắc tố Melanin tạo màu da và ngăn tia cực tím UV.",
+              "2. Lớp bì: Cấu tạo từ các sợi mô liên kết dẻo dai; chứa thụ quan cảm giác (xúc giác, nhiệt độ, đau đớn), tuyến mồ hôi, tuyến nhờn, nang lông và cơ co chân lông, mạng mao mạch máu.",
+              "3. Lớp mỡ dưới da: Chứa các tế bào mỡ có vai trò cách nhiệt, chống mất nhiệt mùa lạnh và bảo vệ cơ thể khỏi va đập cơ học."
+            ]],
+            ["🧴", "Chăm sóc da", [
+              "Giữ vệ sinh da: Tắm rửa thường xuyên bằng xà phòng nhẹ, thay quần áo sạch sẽ ngăn ngừa các bệnh ngoài da (mụn nhọt, rôm sảy, hắc lào, lang ben).",
+              "Bảo vệ da: Không lạm dụng mỹ phẩm không rõ nguồn gốc; thoa kem chống nắng và đội mũ rộng vành khi ra nắng gắt để phòng ngừa bỏng rát và ung thư da."
+            ]],
+            ["🌡️", "Thân nhiệt", [
+              "Thân nhiệt bình thường của người ổn định ở mức 36,5°C - 37°C nhờ sự cân bằng giữa quá trình sinh nhiệt và toả nhiệt.",
+              "Cơ chế chống nóng: Mao mạch dưới da dãn ra giúp máu lưu thông nhiều; tuyến mồ hôi tiết mồ hôi bay hơi mang theo một lượng nhiệt lớn làm mát cơ thể.",
+              "Cơ chế chống lạnh: Mao mạch dưới da co lại giữ nhiệt; cơ co chân lông co (hiện tượng nổi da gà); cơ vân co giật liên tục (run rẩy) để tăng sinh nhiệt.",
+              "Phương pháp xử lí: Khi sốt cao trên 38,5°C chườm khăn ấm vào trán, nách, bẹn và uống thuốc hạ sốt theo hướng dẫn y tế."
+            ]]
           ]
         },
         {
           i: "👶",
           t: "Sinh sản",
           img: "assets/images/icons/bio_sinh_san.png",
-          d: [
-            "Chức năng, cấu tạo của hệ sinh dục nam và nữ.",
-            "Bảo vệ hệ sinh dục và vệ sinh tuổi dậy thì.",
-            "Bảo vệ sức khoẻ sinh sản vị thành niên, phòng tránh mang thai ngoài ý muốn và các bệnh lây truyền qua đường tình dục."
-          ],
+          d: "Hệ sinh dục và sức khoẻ sinh sản tuổi vị thành niên",
           c: [
-            ["⚙️", "Hệ sinh dục", "Cấu tạo cơ quan sinh dục nam và nữ."],
-            ["🛡️", "Bảo vệ", "Vệ sinh cơ thể đúng cách ở lứa tuổi dậy thì."],
-            ["💗", "SK sinh sản", "Giáo dục giới tính và bảo vệ sức khoẻ sinh sản tuổi vị thành niên."]
+            ["⚙️", "Hệ sinh dục", [
+              "Cơ quan sinh dục nam: Tinh hoàn (sản xuất tinh trùng và tiết testosterone), Mào tinh, Ống dẫn tinh, Tuyến tiền liệt, Tuyến hành, Dương vật.",
+              "Cơ quan sinh dục nữ: Buồng trứng (sản sinh trứng và tiết estrogen, progesterone), Phễu dẫn trứng, Ống dẫn trứng, Tử cung (dạ con - nơi phôi thai làm tổ và phát triển), Âm đạo.",
+              "Thụ tinh & Thụ thai: Thụ tinh diễn ra ở 1/3 phía ngoài ống dẫn trứng khi tinh trùng kết hợp với trứng tạo hợp tử; Hợp tử phân chia di chuyển về tử cung bám vào niêm mạc tử cung làm tổ gọi là thụ thai."
+            ]],
+            ["🛡️", "Bảo vệ", [
+              "Vệ sinh tuổi dậy thì: Rửa cơ quan sinh dục hàng ngày bằng nước sạch; đối với nữ trong chu kỳ kinh nguyệt cần thay băng vệ sinh thường xuyên 3-4 giờ/lần.",
+              "Biểu hiện dậy thì: Nam có hiện tượng xuất tinh lần đầu (mộng tinh), vỡ giọng, mọc râu; Nữ có chu kì kinh nguyệt đầu tiên, phát triển ngực và nở hông."
+            ]],
+            ["💗", "SK sinh sản", [
+              "Hậu quả mang thai ở tuổi vị thành niên: Nguy cơ sảy thai, sinh non, băng huyết đe dọa tính mạng; ảnh hưởng nặng nề đến tâm lí, tương lai học tập và kinh tế gia đình.",
+              "Các biện pháp tránh thai an toàn: Sử dụng bao cao su (vừa ngừa thai vừa ngăn lây bệnh), viên uống tránh thai, đặt vòng.",
+              "Phòng bệnh lây qua đường tình dục (STDs): HIV/AIDS, giang mai, lậu, sùi mào gà, viêm gan B -> lối sống lành mạnh, chung thuỷ và sử dụng biện pháp bảo vệ."
+            ]]
           ]
         },
         {
           i: "🌻",
           t: "Cảm ứng ở sinh vật",
           img: "assets/images/icons/bio_cam_ung.png",
-          d: [
-            "Khái niệm cảm ứng ở sinh vật (phản ứng trước kích thích của môi trường).",
-            "Các hình thức cảm ứng: tính hướng sáng, hướng đất, hướng nước, hướng tiếp xúc ở thực vật; phản xạ ở động vật.",
-            "Vai trò của cảm ứng giúp sinh vật thích nghi và tồn tại trong điều kiện sống thay đổi."
-          ],
+          d: "Hiện tượng cảm ứng và khả năng thích nghi của sinh vật",
           c: [
-            ["💡", "Khái niệm", "Khái niệm cảm ứng ở thực vật và động vật."],
-            ["🌿", "Hình thức cảm ứng", "Hướng sáng, hướng hoá, hướng nước và các phản xạ."],
-            ["🎯", "Vai trò", "Ý nghĩa giúp sinh vật thích nghi với môi trường sống."]
+            ["💡", "Khái niệm", [
+              "Cảm ứng là khả năng cơ thể sinh vật tiếp nhận và phản ứng lại các kích thích từ môi trường sống (bên trong hoặc bên ngoài) để tồn tại và phát triển.",
+              "Cảm ứng ở thực vật: Thường diễn ra chậm, khó nhận biết bằng mắt thường trong thời gian ngắn (vận động hướng động và ứng động).",
+              "Cảm ứng ở động vật: Diễn ra nhanh chóng, rõ ràng và chuẩn xác nhờ có hệ thần kinh thông qua cơ chế phản xạ."
+            ]],
+            ["🌿", "Hình thức cảm ứng", [
+              "Hướng động ở thực vật (vận động sinh trưởng định hướng theo nguồn kích thích):",
+              "- Hướng sáng: Thân và ngọn cây uốn cong về phía có ánh sáng mặt trời.",
+              "- Hướng trọng lực (hướng đất): Rễ cây sinh trưởng cắm sâu xuống lòng đất (hướng đất dương), ngọn cây vươn lên cao (hướng đất âm).",
+              "- Hướng nước & Hướng hoá: Rễ cây hướng tới nguồn nước và phân bón trong đất.",
+              "- Hướng tiếp xúc: Tua cuốn của cây thân leo (bầu, bí, mướp) quấn quanh cọc rào khi tiếp xúc.",
+              "Ứng động (không định hướng): Hiện tượng cụp lá của cây trinh nữ (xấu hổ) khi chạm tay; hoa mười giờ, hoa bồ công anh nở theo chu kì ánh sáng và nhiệt độ."
+            ]],
+            ["🎯", "Vai trò", [
+              "Giúp thực vật tìm kiếm nguồn sáng để quang hợp, rễ hút nước và khoáng chất dinh dưỡng nuôi cây.",
+              "Giúp động vật tìm kiếm thức ăn, nước uống, tìm bạn tình giao phối, trốn tránh kẻ thù săn mồi và thích nghi với điều kiện thời tiết khắc nghiệt."
+            ]]
           ]
         },
         {
           i: "🌱",
           t: "Sinh trưởng & phát triển",
           img: "assets/images/icons/bio_sinh_truong.png",
-          d: [
-            "Khái niệm, đặc điểm của sinh trưởng (tăng kích thước, khối lượng) và phát triển (phân hoá tế bào, phát sinh hình thái).",
-            "Các giai đoạn phát triển chính ở thực vật và động vật.",
-            "Các yếu tố ảnh hưởng: ánh sáng, nước, nhiệt độ, chất dinh dưỡng, hormone.",
-            "Ứng dụng kiến thức sinh trưởng và phát triển trong trồng trọt, chăn nuôi."
-          ],
+          d: "Sinh trưởng và phát triển ở sinh vật",
           c: [
-            ["💡", "Khái niệm", "Khái niệm sinh trưởng và phát triển ở sinh vật."],
-            ["📈", "Giai đoạn phát triển", "Vòng đời sinh trưởng qua các giai đoạn."],
-            ["☀️", "Yếu tố ảnh hưởng", "Nhiệt độ, ánh sáng, nước và chất dinh dưỡng."],
-            ["🚜", "Ứng dụng thực tiễn", "Thúc đẩy sinh trưởng cây trồng và vật nuôi."]
+            ["💡", "Khái niệm", [
+              "Sinh trưởng: Là quá trình tăng lên về kích thước và khối lượng của cơ thể do sự tăng lên về số lượng và kích thước của các tế bào.",
+              "Phát triển: Là quá trình biến đổi bao gồm sinh trưởng, phân hoá tế bào (hình thành các mô, cơ quan mới) và phát sinh hình thái cơ thể.",
+              "Mối quan hệ: Sinh trưởng là tiền đề của phát triển; cơ thể phải sinh trưởng đạt kích thước nhất định mới chuyển sang giai đoạn phát triển sinh sản."
+            ]],
+            ["📈", "Giai đoạn phát triển", [
+              "Vòng đời của thực vật hạt kín: Hạt nảy mầm -> Cây con -> Cây trưởng thành sinh trưởng sinh dưỡng -> Ra hoa, thụ phấn, thụ tinh -> Tạo quả và hạt chín.",
+              "Vòng đời động vật đẻ trứng (biến thái hoàn toàn - bướm): Trứng -> Sâu bướm (ấu trùng) -> Nhộng -> Bướm trưởng thành.",
+              "Vòng đời động vật đẻ con (người, thú): Hợp tử trong tử cung mẹ -> Phôi thai -> Con non sinh ra -> Cơ thể lớn lên qua giai đoạn dậy thì -> Trưởng thành sinh sản."
+            ]],
+            ["☀️", "Yếu tố ảnh hưởng", [
+              "Yếu tố bên trong: Hệ gene di truyền và các hormone sinh trưởng (ở thực vật: auxin, gibberellin kích thích; ở động vật: hormone GH, thyroxin, testosterone, estrogen).",
+              "Yếu tố bên ngoài: Dinh dưỡng (thức ăn, nước), Nhiệt độ, Ánh sáng mặt trời, Độ ẩm không khí."
+            ]],
+            ["🚜", "Ứng dụng thực tiễn", [
+              "Trong trồng trọt: Kích thích hạt nảy mầm bằng hormone; bấm ngọn tỉa cành để cây đẻ nhiều nhánh sai quả; chiếu đèn ban đêm kích thích hoa thanh long, hoa cúc nở nghịch vụ.",
+              "Trong chăn nuôi: Sử dụng khẩu phần thức ăn phù hợp từng lứa tuổi; chiếu sáng sưởi ấm cho gà con; cải tạo giống cho năng suất thịt, trứng, sữa vượt trội."
+            ]]
           ]
         },
         {
           i: "🌍",
           t: "Đa dạng sinh học",
           img: "assets/images/icons/bio_da_dang.png",
-          d: [
-            "Khái niệm và vai trò vô giá của đa dạng sinh học đối với tự nhiên và con người.",
-            "Các cấp độ đa dạng sinh học: đa dạng di truyền (gene), đa dạng loài, đa dạng hệ sinh thái.",
-            "Bảo vệ đa dạng sinh học: bảo vệ động thực vật quý hiếm, thành lập khu bảo tồn thiên nhiên, ngăn chặn săn bắt trái phép."
-          ],
+          d: "Đa dạng sinh học và các cấp độ bảo tồn",
           c: [
-            ["💡", "Khái niệm & vai trò", "Đa dạng sinh học duy trì cân bằng sinh thái Trái Đất."],
-            ["🗂️", "Cấp độ đa dạng", "Đa dạng di truyền (gene), loài và hệ sinh thái."],
-            ["🛡️", "Bảo vệ sinh học", "Bảo tồn các loài có nguy cơ tuyệt chủng và môi trường sống."]
+            ["💡", "Khái niệm & vai trò", [
+              "Đa dạng sinh học là sự phong phú về nguồn gene, về giống loài và các hệ sinh thái trên Trái Đất.",
+              "Vai trò điều hoà môi trường: Rừng cây quang hợp hấp thụ CO2 giải phóng O2, lọc bụi, điều hoà khí hậu toàn cầu, giữ đất giữ nước chống lũ lụt xói mòn.",
+              "Vai trò kinh tế: Cung cấp nguồn lương thực, thực phẩm, dược liệu quý sản xuất thuốc, nguyên liệu xây dựng và phục vụ du lịch sinh thái."
+            ]],
+            ["🗂️", "Cấp độ đa dạng", [
+              "1. Đa dạng di truyền (nguồn gene): Sự phong phú về các biến dị di truyền trong cùng một loài (ví dụ: hàng trăm giống lúa, nhiều màu hoa hồng).",
+              "2. Đa dạng loài: Số lượng các loài sinh vật khác nhau cùng sinh sống trong một khu vực địa lí.",
+              "3. Đa dạng hệ sinh thái: Sự phong phú của các kiểu môi trường sống (hệ sinh thái rừng nhiệt đới, sa vẳn, đầm lầy, rạn san hô, biển, hồ nước ngọt)."
+            ]],
+            ["🛡️", "Bảo vệ sinh học", [
+              "Nguyên nhân suy giảm: Chặt phá rừng bừa bãi làm mất môi trường sống; săn bắt buôn bán động vật hoang dã trái phép; ô nhiễm môi trường và biến đổi khí hậu; du nhập các loài sinh vật ngoại lai xâm hại.",
+              "Biện pháp bảo vệ: Thành lập các vườn quốc gia, khu bảo tồn thiên nhiên; ban hành Sách Đỏ Việt Nam và thế giới bảo vệ loài nguy cấp; cấm săn bắn mùa sinh sản; đẩy mạnh tuyên truyền cộng đồng."
+            ]]
           ]
         },
         {
           i: "🔬",
           t: "Ứng dụng sinh học",
           img: "assets/images/icons/bio_ung_dung.png",
-          d: [
-            "Thành tựu sinh học hiện đại (công nghệ sinh học, nhân bản vô tính, giải mã bộ gene).",
-            "Ứng dụng to lớn của sinh học trong nông nghiệp, y học, bảo vệ môi trường và đời sống con người.",
-            "Trách nhiệm của con người trong việc bảo vệ sự sống và phát triển bền vững."
-          ],
+          d: "Thành tựu và ứng dụng của sinh học trong đời sống",
           c: [
-            ["🧬", "Thành tựu", "Những đột phá khoa học sinh học trong thế kỉ 21."],
-            ["🏥", "Nông nghiệp & y học", "Sản xuất thuốc, vắc xin, giống cây trồng biến đổi gene."],
-            ["🤝", "Trách nhiệm", "Ý thức bảo vệ môi trường sống và trách nhiệm công dân."]
+            ["🧬", "Thành tựu", [
+              "Công nghệ sinh học hiện đại đạt bước tiến vượt bậc: Giải mã thành công bản đồ bộ gene người và nhiều loài sinh vật.",
+              "Kĩ thuật nhân bản vô tính (cừu Dolly) và nuôi cấy mô tế bào thực vật tạo hàng triệu cây giống đồng đều sạch bệnh.",
+              "Công nghệ chỉnh sửa gene CRISPR/Cas9 mở ra kỉ nguyên chữa trị các bệnh di truyền nan y."
+            ]],
+            ["🏥", "Nông nghiệp & y học", [
+              "Nông nghiệp: Tạo ra các giống cây trồng biến đổi gene (GMO) kháng sâu bệnh, chịu mặn, chịu hạn (ngô kháng sâu, lúa vàng giàu vitamin A); sản xuất phân vi sinh và thuốc trừ sâu sinh học an toàn.",
+              "Y dược: Sản xuất insulin người bằng vi khuẩn biến đổi gene để điều trị tiểu đường; sản xuất vaccine thế hệ mới, kháng sinh và kháng thể đơn dòng điều trị ung thư.",
+              "Xử lí môi trường: Sử dụng vi sinh vật phân huỷ rác thải hữu cơ, xử lí nước thải công nghiệp và làm sạch các vết dầu loang trên biển."
+            ]],
+            ["🤝", "Trách nhiệm", [
+              "Mỗi cá nhân có trách nhiệm nâng cao ý thức bảo vệ môi trường, không tiêu thụ và tiếp tay cho việc buôn bán động vật hoang dã.",
+              "Ứng dụng công nghệ sinh học phải đi đôi với đạo đức sinh học, ngăn ngừa nguy cơ phát tán vũ khí sinh học hoặc sinh vật biến đổi gene gây hại cho tự nhiên."
+            ]]
           ]
         }
       ]
@@ -602,7 +933,7 @@ window.MINDMAP_DATA = {
       side: "left",
       open: true,
       img: "assets/images/icons/nang_luong_banner.png",
-      d: "NĂNG LƯỢNG VÀ SỰ BIẾN ĐỔI",
+      d: "NĂNG LƯỢNG VÀ SỰ BIẾN ĐỔI – CƠ HỌC, ĐIỆN HỌC VÀ NHIỆT HỌC",
       c: [
         /* 1. Khối lượng riêng và áp suất */
         {
@@ -610,47 +941,79 @@ window.MINDMAP_DATA = {
           t: "KLR & áp suất",
           img: "assets/images/icons/phys_klr.png",
           open: true,
-          d: "Khối lượng riêng và áp suất",
+          d: "Khối lượng riêng, lực đẩy Archimedes và áp suất",
           c: [
             {
               i: "⚖️",
               t: "Khối lượng riêng",
               img: "assets/images/icons/phys_klr.png",
-              d: [
-                "Khái niệm khối lượng riêng: Khối lượng của một đơn vị thể tích chất đó.",
-                "Công thức tính: D = m / V (D: khối lượng riêng, m: khối lượng, V: thể tích).",
-                "Đơn vị đo khối lượng riêng thường dùng: kg/m3, g/cm3.",
-                "Thực hành đo khối lượng riêng của vật rắn và chất lỏng.",
-                "Điều kiện vật nổi, vật chìm và định luật Archimedes (lực đẩy Ác-si-mét FA = d * V)."
-              ],
+              d: "Khái niệm và phương pháp đo khối lượng riêng",
               c: [
-                ["💡", "Khái niệm", "Khái niệm khối lượng riêng của một chất."],
-                ["📐", "Công thức", "Công thức D = m / V."],
-                ["📏", "Đơn vị đo", "kg/m3, g/cm3."],
-                ["🧪", "Đo KLR", "Thí nghiệm đo khối lượng riêng vật hình học và chất lỏng."],
-                ["⛵", "Nổi – chìm (Archimedes)", "Lực đẩy Archimedes và điều kiện vật nổi, lơ lửng, chìm."]
+                ["💡", "Khái niệm", [
+                  "Khối lượng riêng của một chất là khối lượng của một đơn vị thể tích chất đó.",
+                  "Ý nghĩa: Cho biết mức độ đặc hay xốp của chất đó (1 m³ chất đó nặng bao nhiêu kilôgam).",
+                  "Ví dụ: Khối lượng riêng của nước là 1000 kg/m³, của sắt là 7800 kg/m³, của chì là 11300 kg/m³."
+                ]],
+                ["📐", "Công thức", [
+                  "Công thức: D = m / V  <=>  m = D * V  <=>  V = m / D.",
+                  "Trong đó: D là khối lượng riêng, m là khối lượng của vật (kg hoặc g), V là thể tích của vật (m³ hoặc cm³).",
+                  "Mối liên hệ với trọng lượng riêng (d): d = 10 * D (đơn vị N/m³)."
+                ]],
+                ["📏", "Đơn vị đo", [
+                  "Đơn vị hợp pháp trong hệ đo lường chuẩn SI: kilôgam trên mét khối (kg/m³).",
+                  "Đơn vị thường dùng trong phòng thí nghiệm: gam trên xentimét khối (g/cm³) hoặc gam trên mililít (g/mL).",
+                  "Quy đổi: 1 g/cm³ = 1000 kg/m³."
+                ]],
+                ["🧪", "Đo KLR", [
+                  "Đo khối lượng riêng vật rắn hình khối chữ nhật: Dùng cân đo khối lượng m, dùng thước đo chiều dài a, rộng b, cao c -> V = a*b*c -> D = m/V.",
+                  "Đo vật rắn hình dạng bất kì không thấm nước: Dùng cân đo m; thả vật chìm vào ống đong chứa sẵn thể tích nước V1, mực nước dâng lên V2 -> thể tích vật V = V2 - V1 -> D = m / (V2 - V1).",
+                  "Đo khối lượng riêng chất lỏng: Dùng cân điện tử xác định khối lượng cốc rỗng m1, đong thể tích chất lỏng V bằng ống đong đổ vào cốc cân được m2 -> khối lượng chất lỏng m = m2 - m1 -> D = m/V."
+                ]],
+                ["⛵", "Nổi – chìm (Archimedes)", [
+                  "Định luật Archimedes: Một vật nhúng chìm trong chất lỏng bị chất lỏng tác dụng một lực đẩy hướng thẳng đứng từ dưới lên trên, có độ lớn bằng trọng lượng phần chất lỏng bị vật chiếm chỗ.",
+                  "Công thức lực đẩy: F_A = d_lỏng * V_chìm = 10 * D_lỏng * V_chìm.",
+                  "Điều kiện vật nổi, lơ lửng, chìm:",
+                  "- Vật chìm xuống khi: F_A < P  <=>  D_vật > D_lỏng.",
+                  "- Vật lơ lửng trong chất lỏng khi: F_A = P  <=>  D_vật = D_lỏng.",
+                  "- Vật nổi lên mặt thoáng khi: F_A > P  <=>  D_vật < D_lỏng (khi nổi đứng yên thì F_A = P)."
+                ]]
               ]
             },
             {
               i: "👇",
               t: "Áp suất",
               img: "assets/images/icons/phys_ap_suat.png",
-              d: [
-                "Khái niệm áp suất: Áp lực tác dụng lên một đơn vị diện tích bị ép.",
-                "Công thức tính: p = F / S (p: áp suất, F: áp lực, S: diện tích bị ép).",
-                "Đơn vị đo áp suất: N/m2 (Pascal - Pa), mmHg, atm.",
-                "Tăng, giảm áp suất bằng cách thay đổi áp lực hoặc diện tích tiếp xúc.",
-                "Áp suất trong lòng chất lỏng và áp suất khí quyển.",
-                "Thí nghiệm chứng minh áp suất khí quyển và các hiện tượng thực tế.",
-                "Ứng dụng trong đời sống: giác hút chân không, bình xịt, tàu đệm khí."
-              ],
+              d: "Áp suất trên một bề mặt, trong chất lỏng và chất khí",
               c: [
-                ["💡", "Khái niệm & công thức", "Công thức p = F / S."],
-                ["📏", "Đơn vị đo", "Pascal (Pa), N/m2, atmosphere."],
-                ["↕️", "Tăng – giảm áp suất", "Biện pháp tăng hoặc giảm áp suất trong kĩ thuật."],
-                ["🌊", "Chất lỏng & khí quyển", "Sự truyền áp suất chất lỏng và sự tồn tại của áp suất khí quyển."],
-                ["🧪", "Thí nghiệm thực tế", "Thí nghiệm ống hút, bình xịt, quả bóng chịu áp suất."],
-                ["🚗", "Ứng dụng đời sống", "Giác mút cao su, bơm tiêm, tàu đệm khí."]
+                ["💡", "Khái niệm & công thức", [
+                  "Áp lực: Là lực ép có phương vuông góc với bề mặt bị ép.",
+                  "Áp suất: Là đại lượng đặc trưng cho tác dụng của áp lực lên bề mặt bị ép, có độ lớn bằng áp lực tác dụng lên một đơn vị diện tích bị ép.",
+                  "Công thức: p = F / S  <=>  F = p * S  <=>  S = F / p.",
+                  "Trong đó: p là áp suất, F là áp lực tác dụng (N), S là diện tích bề mặt bị ép (m²)."
+                ]],
+                ["📏", "Đơn vị đo", [
+                  "Đơn vị đo áp suất trong hệ SI: Pascal (kí hiệu Pa), 1 Pa = 1 N/m².",
+                  "Đơn vị áp suất khí quyển: atmosphere (atm) hoặc milimét thuỷ ngân (mmHg).",
+                  "Quy đổi: 1 atm ≈ 1,013 * 10^5 Pa ≈ 760 mmHg."
+                ]],
+                ["↕️", "Tăng – giảm áp suất", [
+                  "Cách tăng áp suất (p tăng): Tăng áp lực F hoặc giảm diện tích bị ép S (mài sắc lưỡi dao, mũi kim khâu nhỏ nhọn, đóng cọc nhọn đầu).",
+                  "Cách giảm áp suất (p giảm): Giảm áp lực F hoặc tăng diện tích bị ép S (xe tăng, máy xúc dùng bánh xích bản rộng để không bị lún bùn; móng nhà xây to rộng để đỡ sức nặng công trình)."
+                ]],
+                ["🌊", "Chất lỏng & khí quyển", [
+                  "Áp suất chất lỏng: Chất lỏng gây áp suất theo mọi phương lên đáy bình, thành bình và các vật nhúng trong lòng nó; càng xuống sâu áp suất càng lớn: p = d * h (h là độ sâu tính từ mặt thoáng).",
+                  "Nguyên lí truyền áp suất (Pascal): Độ tăng áp suất tác dụng lên một chất lỏng chứa trong bình kín được truyền nguyên vẹn theo mọi hướng (ứng dụng máy nén thuỷ lực F2/F1 = S2/S1).",
+                  "Áp suất khí quyển: Do Trái Đất có lớp khí quyển dày bao quanh và không khí có trọng lượng nên gây áp suất theo mọi phương lên vạn vật trên Trái Đất (chứng minh bằng thí nghiệm Torricelli đo được 760 mmHg)."
+                ]],
+                ["🧪", "Thí nghiệm thực tế", [
+                  "Thí nghiệm lộn ngược cốc nước: Đổ đầy nước vào cốc thuỷ tinh, úp chặt một tấm bìa cứng lên miệng cốc rồi lộn ngược cốc lại -> tấm bìa không rơi, nước không chảy ra ngoài do áp suất khí quyển từ dưới đẩy lên thắng trọng lượng nước.",
+                  "Thí nghiệm quả bóng trong bình hút chân không: Đặt quả bóng bay hơi xẹp vào bình chuông rồi hút không khí ra -> quả bóng tự phồng to lên do áp suất bên ngoài giảm."
+                ]],
+                ["🚗", "Ứng dụng đời sống", [
+                  "Giác mút cao su gắn tường: Ấn mạnh giác mút để đẩy hết không khí bên trong ra ngoài, áp suất khí quyển bên ngoài ép chặt giác hút vào mặt kính.",
+                  "Bình xịt thuốc / nước hoa: Hoạt động dựa trên sự chênh lệch áp suất khi luồng khí chuyển động nhanh làm giảm áp suất cuốn chất lỏng phun ra thành dạng sương.",
+                  "Tàu đệm khí: Bơm luồng khí áp suất cao xuống đáy tạo lớp đệm khí nâng thân tàu nổi trên mặt nước giúp giảm ma sát tối đa."
+                ]]
               ]
             }
           ]
@@ -662,21 +1025,22 @@ window.MINDMAP_DATA = {
           t: "Lực làm quay",
           img: "assets/images/icons/phys_quay.png",
           open: true,
-          d: [
-            "Lực có thể làm quay vật quanh một điểm hoặc một trục cố định.",
-            "Tác dụng làm quay của lực được đặc trưng bằng moment lực (M = F * d).",
-            "Đòn bẩy: đòn bẩy có thể làm thay đổi hướng và độ lớn của lực tác dụng.",
-            "Ứng dụng các loại đòn bẩy trong thực tiễn (bập bênh, kéo cắt kim loại, kìm, mở nắp chai, xe rùa)."
-          ],
+          d: "Tác dụng làm quay của lực, moment lực và đòn bẩy",
           c: [
             ["🔄", "Lực quay vật", [
-              "Lực có thể làm quay vật quanh trục hoặc điểm tựa.",
-              "Thí nghiệm mô tả tác dụng làm quay của lực khi đẩy cửa hoặc quay bánh xe."
+              "Khi một vật có trục quay hoặc điểm tựa cố định chịu tác dụng của một lực có giá không song song và không cắt trục quay thì lực đó sẽ làm quay vật.",
+              "Đặc trưng của tác dụng làm quay là Moment lực (kí hiệu M).",
+              "Công thức tính moment lực: M = F * d (đơn vị: N.m).",
+              "Trong đó: F là độ lớn của lực tác dụng (N), d là cánh tay đòn - khoảng cách từ trục quay đến giá của lực (m).",
+              "Nhận xét: Lực tác dụng càng lớn và cánh tay đòn càng dài thì tác dụng làm quay càng mạnh (giải thích vì sao tay nắm cửa luôn đặt xa bản lề, cờ lê càng dài vặn ốc càng nhẹ)."
             ]],
             ["🏗️", "Đòn bẩy & moment", [
-              "Đòn bẩy và moment lực đặc trưng cho tác dụng làm quay.",
-              "Minh hoạ đòn bẩy làm thay đổi hướng và độ lớn của lực.",
-              "Phân loại các loại đòn bẩy trong đời sống và kĩ thuật."
+              "Cấu tạo đòn bẩy: Gồm Điểm tựa cố định (O), Điểm đặt lực cản (O1 - nơi đặt vật nâng) và Điểm đặt lực tác dụng (O2 - nơi người tác dụng lực).",
+              "Điều kiện cân bằng đòn bẩy: F1 * d1 = F2 * d2 (hay F1 * OO1 = F2 * OO2).",
+              "Phân loại các loại đòn bẩy trong thực tiễn:",
+              "- Đòn bẩy loại 1 (Điểm tựa O nằm giữa O1 và O2): Bập bênh, kéo cắt giấy, xà beng nhổ đinh, kìm bấm (được lợi về lực khi OO2 > OO1).",
+              "- Đòn bẩy loại 2 (Điểm đặt vật O1 nằm giữa điểm tựa O và tay cầm O2): Xe rùa chở cát, đồ khui nắp chai nước ngọt, dao cắt giấy bàn (luôn được lợi về lực vì OO2 > OO1).",
+              "- Đòn bẩy loại 3 (Điểm tác dụng lực O2 nằm giữa điểm tựa O và vật O1): Đũa ăn cơm, kẹp gắp đá, cần câu cá (thiệt về lực nhưng được lợi về đường đi và tốc độ)."
             ]]
           ]
         },
@@ -687,37 +1051,41 @@ window.MINDMAP_DATA = {
           t: "Điện",
           img: "assets/images/icons/phys_dien.png",
           open: true,
-          d: [
-            "Hiện tượng nhiễm điện do cọ xát (hai loại điện tích: dương và âm).",
-            "Định nghĩa dòng điện là dòng chuyển dời có hướng của các hạt mang điện tích.",
-            "Nguồn điện cung cấp năng lượng điện (pin, ắc quy, máy phát điện).",
-            "Các tác dụng cơ bản của dòng điện: nhiệt, phát sáng, hoá học, sinh lí.",
-            "Mạch điện đơn giản gồm nguồn, công tắc, dây dẫn và thiết bị tiêu thụ.",
-            "Đo cường độ dòng điện (I, đơn vị Ampe - A) bằng Ampe kế và hiệu điện thế (U, đơn vị Vôn - V) bằng Vôn kế."
-          ],
+          d: "Điện tích, dòng điện, mạch điện và các tác dụng của dòng điện",
           c: [
             ["✨", "Nhiễm điện", [
-              "Hiện tượng nhiễm điện do cọ xát giải thích cấu tạo nguyên tử.",
-              "Sự tương tác giữa các điện tích cùng dấu đẩy nhau, khác dấu hút nhau."
+              "Nguyên nhân: Khi hai vật cọ xát với nhau, các electron có thể dịch chuyển từ vật này sang vật khác làm các vật bị nhiễm điện.",
+              "Vật nhiễm điện âm: Nhận thêm electron (thừa electron).",
+              "Vật nhiễm điện dương: Mất bớt electron (thiếu electron).",
+              "Tương tác giữa hai điện tích: Các điện tích cùng dấu (cùng âm hoặc cùng dương) thì đẩy nhau; các điện tích khác dấu thì hút nhau.",
+              "Hiện tượng thực tế: Lược nhựa cọ xát tóc hút các mẩu giấy vụn; hiện tượng sấm sét trong cơn dông do sự phóng điện giữa các đám mây tích điện trái dấu."
             ]],
             ["➡️", "Dòng điện", [
-              "Dòng điện là dòng chuyển dời có hướng của các hạt mang điện tích.",
-              "Vật liệu dẫn điện (kim loại) và vật liệu cách điện (cao su, nhựa, thuỷ tinh)."
+              "Định nghĩa: Dòng điện là dòng chuyển dời có hướng của các hạt mang điện tích (trong kim loại là dòng electron tự do, trong dung dịch điện phân là dòng các ion âm và ion dương).",
+              "Quy ước chiều dòng điện: Chiều dòng điện trong mạch kín được quy ước đi từ cực dương qua dây dẫn và các thiết bị điện đến cực âm của nguồn điện.",
+              "Chất dẫn điện: Cho dòng điện chạy qua tốt (kim loại đồng, nhôm, sắt, nước muối, than chì).",
+              "Chất cách điện: Không cho dòng điện chạy qua (cao su, sứ, nhựa, thuỷ tinh, nước cất nguyên chất)."
             ]],
             ["🔥", "Tác dụng dòng điện", [
-              "Tác dụng phát sáng (đèn LED, đèn sợi đốt), nhiệt (bàn là, nồi cơm), hoá học (mạ điện), sinh lí (châm cứu, giật điện)."
+              "1. Tác dụng nhiệt: Dòng điện chạy qua dây dẫn làm dây dẫn nóng lên (bàn là, nồi cơm điện, bếp điện, cầu chì tự đứt khi quá tải).",
+              "2. Tác dụng phát sáng: Dòng điện chạy qua làm bóng đèn dây tóc phát sáng, làm phát quang chất trong đèn huỳnh quang và đèn LED tiết kiệm điện.",
+              "3. Tác dụng hoá học: Dòng điện chạy qua dung dịch điện phân làm xảy ra phản ứng hoá học phân li kim loại (ứng dụng mạ vàng, mạ đồng, tinh luyện kim loại).",
+              "4. Tác dụng sinh lí: Dòng điện chạy qua cơ thể người làm co giật cơ, làm tim ngừng đập và ngưng thở (nguy hiểm chết người, cần tuân thủ an toàn điện; ứng dụng dòng điện nhỏ trong máy khử rung tim và châm cứu điện y học)."
             ]],
             ["🔋", "Nguồn điện", [
-              "Nguồn điện cung cấp năng lượng điện duy trì dòng điện trong mạch.",
-              "Các loại pin, ắc quy thông dụng trong đời sống."
+              "Nguồn điện có khả năng cung cấp năng lượng điện để duy trì dòng điện hoạt động trong mạch.",
+              "Cấu tạo nguồn: Mỗi nguồn điện đều có 2 cực: Cực dương (kí hiệu +) và Cực âm (kí hiệu -).",
+              "Các loại nguồn điện thông dụng: Pin con thỏ (1,5V), Pin cúc áo, Pin sạc Lithium-ion điện thoại, Ắc quy xe máy (12V), Máy phát điện nhà máy thuỷ điện, pin mặt trời."
             ]],
             ["🔌", "Mạch điện", [
-              "Sơ đồ mạch điện và các kí hiệu linh kiện: nguồn, công tắc, bóng đèn, điện trở, chuông, cầu chì.",
-              "Nguyên tắc an toàn điện và chức năng của cầu chì, rơ le tự ngắt."
+              "Mạch điện đơn giản gồm: Nguồn điện, Dây nối dẫn điện, Công tắc (khoá K đóng ngắt mạch) và Thiết bị tiêu thụ điện (bóng đèn, chuông, quạt).",
+              "Kí hiệu quy ước: Nguồn điện (vạch dài mảnh cực +, vạch ngắn dày cực -), Bóng đèn (hình tròn có dấu nhân chéo), Điện trở (hình chữ nhật dài), Biến trở (hình chữ nhật có mũi tên chỉ), Công tắc K mở/đóng.",
+              "Thiết bị bảo vệ an toàn: Cầu chì (dây chì tự chảy đứt khi đoản mạch), Rơ le (relay), Cầu dao tự động (Aptomat - CB tự ngắt khi chập điện hoặc quá tải)."
             ]],
             ["📟", "Đo I và U", [
-              "Khái niệm cường độ dòng điện (Ampe kế mắc nối tiếp) và hiệu điện thế (Vôn kế mắc song song).",
-              "Thao tác thực hành đo I và U với dụng cụ đo điện."
+              "Cường độ dòng điện (I): Đặc trưng cho độ mạnh yếu của dòng điện. Đơn vị đo là Ampe (A) hoặc miliampe (mA), 1 A = 1000 mA. Đo bằng Ampe kế (mắc nối tiếp với thiết bị cần đo).",
+              "Hiệu điện thế (Điện áp - U): Đặc trưng cho khả năng sinh ra dòng điện của nguồn điện giữa 2 cực. Đơn vị đo là Vôn (V) hoặc milivôn (mV), kilôvôn (kV). Đo bằng Vôn kế (mắc song song với hai điểm cần đo điện thế).",
+              "Quy tắc đo an toàn: Chọn thang đo phù hợp với giá trị ước lượng; nối chốt dương (+) của đồng hồ đo về phía cực dương nguồn điện."
             ]]
           ]
         },
@@ -728,28 +1096,31 @@ window.MINDMAP_DATA = {
           t: "Nhiệt",
           img: "assets/images/icons/phys_nhiet.png",
           open: true,
-          d: [
-            "Khái niệm năng lượng nhiệt và nội năng của vật (tổng động năng của các phân tử cấu tạo nên vật).",
-            "Đo năng lượng nhiệt (đơn vị Joule - J hoặc Calorie) bằng oát kế hoặc joulemeter.",
-            "Các hình thức truyền nhiệt: dẫn nhiệt (chủ yếu chất rắn), đối lưu (chất lỏng và khí), bức xạ nhiệt (truyền qua chân không).",
-            "Sự nở vì nhiệt của các chất: chất rắn, lỏng, khí nở ra khi nóng lên, co lại khi lạnh đi.",
-            "Ứng dụng và tác hại của sự nở vì nhiệt trong đời sống và xây dựng (khe hở đường ray xe lửa, băng kép nhiệt)."
-          ],
+          d: "Năng lượng nhiệt, các hình thức truyền nhiệt và sự nở vì nhiệt",
           c: [
             ["♨️", "Năng lượng nhiệt", [
-              "Khái niệm năng lượng nhiệt và nội năng của vật chất.",
-              "Nhiệt độ càng cao thì các phân tử chuyển động càng nhanh."
+              "Năng lượng nhiệt: Là dạng năng lượng mà một vật có được do sự chuyển động nhiệt hỗn loạn không ngừng của các phân tử, nguyên tử cấu tạo nên vật.",
+              "Nội năng: Là tổng động năng (chuyển động) và thế năng tương tác của tất cả các phân tử cấu tạo nên vật.",
+              "Mối liên hệ nhiệt độ: Nhiệt độ của vật càng cao thì các phân tử cấu tạo nên vật chuyển động càng nhanh và nội năng của vật càng lớn.",
+              "Nhiệt lượng (Q): Là phần nội năng mà vật nhận thêm được hay mất bớt đi trong quá trình truyền nhiệt (đơn vị: Joule - J hoặc Calorie, 1 cal ≈ 4,186 J)."
             ]],
             ["⏲️", "Đo NL nhiệt", [
-              "Phương pháp đo năng lượng nhiệt mà vật hấp thụ khi bị đun nóng."
+              "Dụng cụ đo năng lượng nhiệt: Sử dụng Joulemeter hoặc Oát kế (Wattmeter) kết hợp đồng hồ bấm giây để đo năng lượng nhiệt mà dây đốt nóng cung cấp cho lượng nước trong nhiệt lượng kế.",
+              "Công thức tính nhiệt lượng đun nóng chất: Q = m * c * Δt (m là khối lượng chất kg, c là nhiệt dung riêng J/kg.K, Δt là độ tăng nhiệt độ °C)."
             ]],
             ["🌬️", "Truyền nhiệt", [
-              "Dẫn nhiệt, đối lưu và bức xạ nhiệt (năng lượng từ Mặt Trời).",
-              "Sự truyền năng lượng trong hiệu ứng nhà kính và vật liệu cách nhiệt tốt."
+              "1. Dẫn nhiệt: Là hình thức truyền nhiệt chủ yếu qua sự tiếp xúc trực tiếp giữa các phân tử mà không có sự dịch chuyển vật chất thành dòng (chủ yếu ở chất rắn; kim loại dẫn nhiệt tốt nhất; chất lỏng, khí, gỗ, xốp cách nhiệt tốt).",
+              "2. Đối lưu: Là hình thức truyền nhiệt bằng các dòng chất lỏng hoặc chất khí chuyển động nóng bốc lên, lạnh chìm xuống (chủ yếu ở chất lỏng và chất khí; tạo nên gió biển và luồng đối lưu trong nồi nước sôi).",
+              "3. Bức xạ nhiệt: Là hình thức truyền nhiệt dưới dạng các tia nhiệt (tia hồng ngoại) đi thẳng qua không gian (có thể truyền qua cả chân không; ví dụ năng lượng nhiệt từ Mặt Trời truyền đến Trái Đất; sưởi ấm bên bếp lửa).",
+              "Hiệu ứng nhà kính: Năng lượng bức xạ sóng ngắn của Mặt Trời xuyên qua khí quyển làm nóng mặt đất, nhiệt bức xạ sóng dài từ mặt đất bị giữ lại bởi khí CO2, CH4 làm khí quyển ấm lên."
             ]],
             ["🚆", "Nở vì nhiệt", [
-              "Đặc điểm chất khác nhau nở vì nhiệt khác nhau (chất khí nở nhiều nhất, chất rắn nở ít nhất).",
-              "Ứng dụng và phòng tránh tác hại của sự nở vì nhiệt trong thực tế."
+              "Quy luật chung: Hầu hết các chất đều nở ra khi nóng lên (thể tích tăng) và co lại khi lạnh đi (thể tích giảm).",
+              "So sánh mức độ nở vì nhiệt: Chất khí nở vì nhiệt nhiều hơn chất lỏng, chất lỏng nở vì nhiệt nhiều hơn chất rắn.",
+              "Sự nở vì nhiệt của chất rắn khác nhau: Nhôm nở nhiều hơn đồng, đồng nở nhiều hơn sắt.",
+              "Ứng dụng & Phòng ngừa:",
+              "- Băng kép (ghép 2 thanh kim loại nở nhiệt khác nhau): Khi nóng bị uốn cong về phía kim loại nở ít hơn -> dùng làm rơ le tự ngắt điện trong bàn là, ấm đun nước.",
+              "- Khe hở đường ray xe lửa & mố cầu: Để khoảng hở nhỏ giữa các đoạn thanh ray để khi trời nắng nóng thanh ray nở dài không bị kích gãy uốn cong gây tai nạn."
             ]]
           ]
         }
