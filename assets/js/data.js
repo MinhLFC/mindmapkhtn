@@ -1,12 +1,12 @@
 /* =========================================================
    DỮ LIỆU SƠ ĐỒ TƯ DUY – KHOA HỌC TỰ NHIÊN 8
    Phiên bản nâng cấp: Toàn bộ nội dung khoa học chi tiết, chuyên sâu,
-   chuẩn chương trình GDPT 2018 (SGK KHTN 8).
+   chuẩn chương trình GDPT 2018 (SGK KHOA HỌC TỰ NHIÊN 8).
    Mỗi nhánh đều có kiến thức đầy đủ, công thức, phương trình hoá học, thí nghiệm & thực tiễn.
    ========================================================= */
 window.MINDMAP_DATA = {
-  t: "KHTN 8",
-  sub: "Chương trình Khoa học tự nhiên 8",
+  t: "KHOA HỌC TỰ NHIÊN 8",
+  sub: "Sản phẩm học tập của Nhóm 5 • Trường ĐH Sư phạm TP.HCM",
   c: [
     /* ==================== 1. MỞ ĐẦU ==================== */
     {
