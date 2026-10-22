@@ -253,7 +253,7 @@ window.MINDMAP_DATA = {
                   "Tính số mol từ khối lượng: n = <span class='math-frac'><span class='num'>m</span><span class='den'>M</span></span>  ⟺  m = n × M  ⟺  M = <span class='math-frac'><span class='num'>m</span><span class='den'>n</span></span>.",
                   "Tính số mol từ thể tích khí (ở điều kiện chuẩn): n = <span class='math-frac'><span class='num'>V</span><span class='den'>24,79</span></span>  ⟺  V = n × 24,79 (lít).",
                   "Tỉ khối chất khí A đối với khí B: d<sub>A/B</sub> = <span class='math-frac'><span class='num'>M<sub>A</sub></span><span class='den'>M<sub>B</sub></span></span> (cho biết khí A nặng hay nhẹ hơn khí B bao nhiêu lần).",
-                  "Tỉ khối chất khí A đối với không khí (M<sub>kk</sub> = 29 g/mol): d<sub>A/không khí</sub> = <span class='math-frac'><span class='num'>M<sub>A</sub></span><span class='den'>29</span></span>."
+                  "Tỉ khối chất khí A đối với không khí (M<sub>kk</sub> = 29 g/mol): d<sub>A/kk</sub> = <span class='math-frac'><span class='num'>M<sub>A</sub></span><span class='den'>29</span></span>."
                 ]]
               ]
             },
@@ -275,9 +275,9 @@ window.MINDMAP_DATA = {
                   "Nguyên nhân H < 100%: Do chất phản ứng không tinh khiết, phản ứng thuận nghịch, hao hụt trong quá trình thao tác hoặc có phản ứng phụ."
                 ]],
                 ["🧾", "Tính H%", [
-                  "Công thức tính theo chất sản phẩm: H = <span class='math-frac'><span class='num'>m<sub>thực tế</sub></span><span class='den'>m<sub>lí thuyết</sub></span></span> × 100%.",
-                  "Công thức tính theo chất tham gia: H = <span class='math-frac'><span class='num'>m<sub>lí thuyết cần dùng</sub></span><span class='den'>m<sub>thực tế đã dùng</sub></span></span> × 100%.",
-                  "Tính lượng chất thực tế khi biết H: m<sub>thực tế (sản phẩm)</sub> = <span class='math-frac'><span class='num'>m<sub>lí thuyết</sub> × H</span><span class='den'>100</span></span>."
+                  "Công thức tính theo chất sản phẩm: H = <span class='math-frac'><span class='num'>m<sub>tt</sub></span><span class='den'>m<sub>lt</sub></span></span> × 100%  (với m<sub>tt</sub>: khối lượng thực tế, m<sub>lt</sub>: khối lượng lí thuyết).",
+                  "Công thức tính theo chất tham gia: H = <span class='math-frac'><span class='num'>m<sub>lt</sub></span><span class='den'>m<sub>tt</sub></span></span> × 100%  (với m<sub>lt</sub>: lượng chất lí thuyết cần dùng, m<sub>tt</sub>: lượng thực tế đã dùng).",
+                  "Tính lượng chất thực tế khi biết hiệu suất H%: m<sub>tt</sub> = <span class='math-frac'><span class='num'>m<sub>lt</sub> × H</span><span class='den'>100</span></span>."
                 ]]
               ]
             },
@@ -299,17 +299,17 @@ window.MINDMAP_DATA = {
                 ]],
                 ["💯", "C%", [
                   "Nồng độ phần trăm (C%): Cho biết số gam chất tan có trong 100 gam dung dịch.",
-                  "Công thức: C% = <span class='math-frac'><span class='num'>m<sub>chất tan</sub></span><span class='den'>m<sub>dung dịch</sub></span></span> × 100%.",
-                  "Trong đó: m<sub>dung dịch</sub> = m<sub>chất tan</sub> + m<sub>dung môi</sub> (khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi)."
+                  "Công thức: C% = <span class='math-frac'><span class='num'>m<sub>ct</sub></span><span class='den'>m<sub>dd</sub></span></span> × 100%  (với m<sub>ct</sub>: khối lượng chất tan, m<sub>dd</sub>: khối lượng dung dịch).",
+                  "Trong đó: m<sub>dd</sub> = m<sub>ct</sub> + m<sub>dm</sub>  (khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi)."
                 ]],
                 ["🧴", "CM", [
-                  "Nồng độ mol (C_M): Cho biết số mol chất tan có trong 1 lít dung dịch.",
-                  "Công thức: C<sub>M</sub> = <span class='math-frac'><span class='num'>n</span><span class='den'>V</span></span> (mol/lít hoặc M).",
-                  "Trong đó: n là số mol chất tan (mol), V là thể tích dung dịch (lít)."
+                  "Nồng độ mol (C<sub>M</sub>): Cho biết số mol chất tan có trong 1 lít dung dịch.",
+                  "Công thức: C<sub>M</sub> = <span class='math-frac'><span class='num'>n</span><span class='den'>V</span></span>  (với n: số mol chất tan tính theo mol, V: thể tích dung dịch tính theo lít).",
+                  "Đơn vị nồng độ mol: mol/lít (thường ký hiệu là M)."
                 ]],
                 ["🧪", "Pha dung dịch", [
                   "Các bước pha chế một dung dịch có nồng độ cho trước:",
-                  "1. Tính toán lượng chất tan (m<sub>chất tan</sub> hoặc số mol n) và lượng dung môi (hoặc thể tích V) cần dùng.",
+                  "1. Tính toán lượng chất tan (m<sub>ct</sub> hoặc số mol n) và lượng dung môi (hoặc thể tích V) cần dùng.",
                   "2. Cân chính xác lượng chất tan cho vào cốc thuỷ tinh.",
                   "3. Đong lượng dung môi cần thiết (nước cất), rót từ từ vào cốc và dùng đũa thuỷ tinh khuấy đều cho tan hoàn toàn."
                 ]]
