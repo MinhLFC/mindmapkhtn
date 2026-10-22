@@ -250,10 +250,10 @@ window.MINDMAP_DATA = {
                   "Thể tích mol chất khí: Ở điều kiện chuẩn (đkc: 25°C và 1 bar), 1 mol của bất kì chất khí nào cũng đều chiếm thể tích bằng 24,79 lít."
                 ]],
                 ["📐", "Công thức", [
-                  "Tính số mol từ khối lượng: n = <span class="math-frac"><span class="num">m</span><span class="den">M</span></span>  ⟺  m = n × M  ⟺  M = <span class="math-frac"><span class="num">m</span><span class="den">n</span></span>.",
-                  "Tính số mol từ thể tích khí (ở điều kiện chuẩn): n = <span class="math-frac"><span class="num">V</span><span class="den">24,79</span></span>  ⟺  V = n × 24,79 (lít).",
-                  "Tỉ khối chất khí A đối với khí B: d<sub>A/B</sub> = <span class="math-frac"><span class="num">M<sub>A</sub></span><span class="den">M<sub>B</sub></span></span> (cho biết khí A nặng hay nhẹ hơn khí B bao nhiêu lần).",
-                  "Tỉ khối chất khí A đối với không khí (M<sub>kk</sub> = 29 g/mol): d<sub>A/không khí</sub> = <span class="math-frac"><span class="num">M<sub>A</sub></span><span class="den">29</span></span>."
+                  "Tính số mol từ khối lượng: n = <span class='math-frac'><span class='num'>m</span><span class='den'>M</span></span>  ⟺  m = n × M  ⟺  M = <span class='math-frac'><span class='num'>m</span><span class='den'>n</span></span>.",
+                  "Tính số mol từ thể tích khí (ở điều kiện chuẩn): n = <span class='math-frac'><span class='num'>V</span><span class='den'>24,79</span></span>  ⟺  V = n × 24,79 (lít).",
+                  "Tỉ khối chất khí A đối với khí B: d<sub>A/B</sub> = <span class='math-frac'><span class='num'>M<sub>A</sub></span><span class='den'>M<sub>B</sub></span></span> (cho biết khí A nặng hay nhẹ hơn khí B bao nhiêu lần).",
+                  "Tỉ khối chất khí A đối với không khí (M<sub>kk</sub> = 29 g/mol): d<sub>A/không khí</sub> = <span class='math-frac'><span class='num'>M<sub>A</sub></span><span class='den'>29</span></span>."
                 ]]
               ]
             },
@@ -275,9 +275,9 @@ window.MINDMAP_DATA = {
                   "Nguyên nhân H < 100%: Do chất phản ứng không tinh khiết, phản ứng thuận nghịch, hao hụt trong quá trình thao tác hoặc có phản ứng phụ."
                 ]],
                 ["🧾", "Tính H%", [
-                  "Công thức tính theo chất sản phẩm: H = <span class="math-frac"><span class="num">m<sub>thực tế</sub></span><span class="den">m<sub>lí thuyết</sub></span></span> × 100%.",
-                  "Công thức tính theo chất tham gia: H = <span class="math-frac"><span class="num">m<sub>lí thuyết cần dùng</sub></span><span class="den">m<sub>thực tế đã dùng</sub></span></span> × 100%.",
-                  "Tính lượng chất thực tế khi biết H: m<sub>thực tế (sản phẩm)</sub> = <span class="math-frac"><span class="num">m<sub>lí thuyết</sub> × H</span><span class="den">100</span></span>."
+                  "Công thức tính theo chất sản phẩm: H = <span class='math-frac'><span class='num'>m<sub>thực tế</sub></span><span class='den'>m<sub>lí thuyết</sub></span></span> × 100%.",
+                  "Công thức tính theo chất tham gia: H = <span class='math-frac'><span class='num'>m<sub>lí thuyết cần dùng</sub></span><span class='den'>m<sub>thực tế đã dùng</sub></span></span> × 100%.",
+                  "Tính lượng chất thực tế khi biết H: m<sub>thực tế (sản phẩm)</sub> = <span class='math-frac'><span class='num'>m<sub>lí thuyết</sub> × H</span><span class='den'>100</span></span>."
                 ]]
               ]
             },
@@ -299,12 +299,12 @@ window.MINDMAP_DATA = {
                 ]],
                 ["💯", "C%", [
                   "Nồng độ phần trăm (C%): Cho biết số gam chất tan có trong 100 gam dung dịch.",
-                  "Công thức: C% = <span class="math-frac"><span class="num">m<sub>chất tan</sub></span><span class="den">m<sub>dung dịch</sub></span></span> × 100%.",
+                  "Công thức: C% = <span class='math-frac'><span class='num'>m<sub>chất tan</sub></span><span class='den'>m<sub>dung dịch</sub></span></span> × 100%.",
                   "Trong đó: m<sub>dung dịch</sub> = m<sub>chất tan</sub> + m<sub>dung môi</sub> (khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi)."
                 ]],
                 ["🧴", "CM", [
                   "Nồng độ mol (C_M): Cho biết số mol chất tan có trong 1 lít dung dịch.",
-                  "Công thức: C<sub>M</sub> = <span class="math-frac"><span class="num">n</span><span class="den">V</span></span> (mol/lít hoặc M).",
+                  "Công thức: C<sub>M</sub> = <span class='math-frac'><span class='num'>n</span><span class='den'>V</span></span> (mol/lít hoặc M).",
                   "Trong đó: n là số mol chất tan (mol), V là thể tích dung dịch (lít)."
                 ]],
                 ["🧪", "Pha dung dịch", [
@@ -956,7 +956,7 @@ window.MINDMAP_DATA = {
                   "Ví dụ: Khối lượng riêng của nước là 1000 kg/m³, của sắt là 7800 kg/m³, của chì là 11300 kg/m³."
                 ]],
                 ["📐", "Công thức", [
-                  "Công thức: D = <span class="math-frac"><span class="num">m</span><span class="den">V</span></span>  ⟺  m = D × V  ⟺  V = <span class="math-frac"><span class="num">m</span><span class="den">D</span></span>.",
+                  "Công thức: D = <span class='math-frac'><span class='num'>m</span><span class='den'>V</span></span>  ⟺  m = D × V  ⟺  V = <span class='math-frac'><span class='num'>m</span><span class='den'>D</span></span>.",
                   "Trong đó: D là khối lượng riêng, m là khối lượng của vật (kg hoặc g), V là thể tích của vật (m³ hoặc cm³).",
                   "Mối liên hệ với trọng lượng riêng (d): d = 10 × D (đơn vị N/m³)."
                 ]],
@@ -989,7 +989,7 @@ window.MINDMAP_DATA = {
                 ["💡", "Khái niệm & công thức", [
                   "Áp lực: Là lực ép có phương vuông góc với bề mặt bị ép.",
                   "Áp suất: Là đại lượng đặc trưng cho tác dụng của áp lực lên bề mặt bị ép, có độ lớn bằng áp lực tác dụng lên một đơn vị diện tích bị ép.",
-                  "Công thức: p = <span class="math-frac"><span class="num">F</span><span class="den">S</span></span>  ⟺  F = p × S  ⟺  S = <span class="math-frac"><span class="num">F</span><span class="den">p</span></span>.",
+                  "Công thức: p = <span class='math-frac'><span class='num'>F</span><span class='den'>S</span></span>  ⟺  F = p × S  ⟺  S = <span class='math-frac'><span class='num'>F</span><span class='den'>p</span></span>.",
                   "Trong đó: p là áp suất, F là áp lực tác dụng (N), S là diện tích bề mặt bị ép (m²)."
                 ]],
                 ["📏", "Đơn vị đo", [
