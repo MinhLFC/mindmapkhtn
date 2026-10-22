@@ -202,7 +202,7 @@ window.MINDMAP_DATA = {
               c: [
                 ["📢", "Định luật", [
                   "Nội dung định luật (Lomonosov & Lavoisier): 'Trong một phản ứng hoá học, tổng khối lượng của các chất tham gia phản ứng bằng tổng khối lượng của các sản phẩm tạo thành.'",
-                  "Biểu thức toán học cho phản ứng A + B -> C + D: m_A + m_B = m_C + m_D.",
+                  "Biểu thức toán học cho phản ứng A + B → C + D: m<sub>A</sub> + m<sub>B</sub> = m<sub>C</sub> + m<sub>D</sub>.",
                   "Ý nghĩa: Biết khối lượng của (n - 1) chất ta luôn tính được khối lượng của chất còn lại."
                 ]],
                 ["🧪", "Thí nghiệm", [
@@ -245,15 +245,15 @@ window.MINDMAP_DATA = {
               d: "Khái niệm mol và tỉ khối của chất khí",
               c: [
                 ["💡", "Khái niệm", [
-                  "Mol là lượng chất có chứa N_A (khoảng 6,022 * 10^23) nguyên tử hoặc phân tử của chất đó (hằng số Avogadro N_A = 6,022 * 10^23 mol^-1).",
+                  "Mol là lượng chất có chứa N<sub>A</sub> (khoảng 6,022 × 10²³) nguyên tử hoặc phân tử của chất đó (hằng số Avogadro N<sub>A</sub> = 6,022 × 10²³ mol⁻¹).",
                   "Khối lượng mol (M): Là khối lượng tính bằng gam của 1 mol chất đó (đơn vị: g/mol). Có trị số bằng nguyên tử khối hoặc phân tử khối.",
                   "Thể tích mol chất khí: Ở điều kiện chuẩn (đkc: 25°C và 1 bar), 1 mol của bất kì chất khí nào cũng đều chiếm thể tích bằng 24,79 lít."
                 ]],
                 ["📐", "Công thức", [
-                  "Tính số mol từ khối lượng: n = m / M  <=>  m = n * M  <=>  M = m / n.",
-                  "Tính số mol từ thể tích khí (ở đkc): n = V / 24,79  <=>  V = n * 24,79 (lít).",
-                  "Tỉ khối chất khí A đối với khí B: d_(A/B) = M_A / M_B (cho biết khí A nặng hay nhẹ hơn khí B bao nhiêu lần).",
-                  "Tỉ khối chất khí A đối với không khí (M_kk = 29 g/mol): d_(A/kk) = M_A / 29."
+                  "Tính số mol từ khối lượng: n = <span class="math-frac"><span class="num">m</span><span class="den">M</span></span>  ⟺  m = n × M  ⟺  M = <span class="math-frac"><span class="num">m</span><span class="den">n</span></span>.",
+                  "Tính số mol từ thể tích khí (ở điều kiện chuẩn): n = <span class="math-frac"><span class="num">V</span><span class="den">24,79</span></span>  ⟺  V = n × 24,79 (lít).",
+                  "Tỉ khối chất khí A đối với khí B: d<sub>A/B</sub> = <span class="math-frac"><span class="num">M<sub>A</sub></span><span class="den">M<sub>B</sub></span></span> (cho biết khí A nặng hay nhẹ hơn khí B bao nhiêu lần).",
+                  "Tỉ khối chất khí A đối với không khí (M<sub>kk</sub> = 29 g/mol): d<sub>A/không khí</sub> = <span class="math-frac"><span class="num">M<sub>A</sub></span><span class="den">29</span></span>."
                 ]]
               ]
             },
@@ -268,16 +268,16 @@ window.MINDMAP_DATA = {
                   "1. Chuyển đổi dữ kiện đề bài (khối lượng m hoặc thể tích V) thành số mol n.",
                   "2. Viết phương trình hoá học và cân bằng chính xác.",
                   "3. Dựa vào tỉ lệ mol trên phương trình để tìm số mol chất cần xác định.",
-                  "4. Chuyển số mol vừa tìm được thành khối lượng (m = n * M) hoặc thể tích khí (V = n * 24,79 L)."
+                  "4. Chuyển số mol vừa tìm được thành khối lượng (m = n × M) hoặc thể tích khí (V = n × 24,79 L)."
                 ]],
                 ["📈", "Hiệu suất", [
                   "Khái niệm: Hiệu suất phản ứng (H) phản ánh mức độ hoàn thành của phản ứng hoá học, biểu thị tỉ lệ giữa lượng chất thu được thực tế so với lượng chất tính theo phương trình lí thuyết.",
                   "Nguyên nhân H < 100%: Do chất phản ứng không tinh khiết, phản ứng thuận nghịch, hao hụt trong quá trình thao tác hoặc có phản ứng phụ."
                 ]],
                 ["🧾", "Tính H%", [
-                  "Công thức tính theo chất sản phẩm: H = (m_thực tế / m_lí thuyết) * 100%.",
-                  "Công thức tính theo chất tham gia: H = (m_lí thuyết cần dùng / m_thực tế đã dùng) * 100%.",
-                  "Tính lượng chất thực tế khi biết H: m_thực tế (sản phẩm) = (m_lí thuyết * H) / 100."
+                  "Công thức tính theo chất sản phẩm: H = <span class="math-frac"><span class="num">m<sub>thực tế</sub></span><span class="den">m<sub>lí thuyết</sub></span></span> × 100%.",
+                  "Công thức tính theo chất tham gia: H = <span class="math-frac"><span class="num">m<sub>lí thuyết cần dùng</sub></span><span class="den">m<sub>thực tế đã dùng</sub></span></span> × 100%.",
+                  "Tính lượng chất thực tế khi biết H: m<sub>thực tế (sản phẩm)</sub> = <span class="math-frac"><span class="num">m<sub>lí thuyết</sub> × H</span><span class="den">100</span></span>."
                 ]]
               ]
             },
@@ -299,17 +299,17 @@ window.MINDMAP_DATA = {
                 ]],
                 ["💯", "C%", [
                   "Nồng độ phần trăm (C%): Cho biết số gam chất tan có trong 100 gam dung dịch.",
-                  "Công thức: C% = (m_ct / m_dd) * 100%.",
-                  "Trong đó: m_dd = m_ct + m_dm (khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi)."
+                  "Công thức: C% = <span class="math-frac"><span class="num">m<sub>chất tan</sub></span><span class="den">m<sub>dung dịch</sub></span></span> × 100%.",
+                  "Trong đó: m<sub>dung dịch</sub> = m<sub>chất tan</sub> + m<sub>dung môi</sub> (khối lượng dung dịch = khối lượng chất tan + khối lượng dung môi)."
                 ]],
                 ["🧴", "CM", [
                   "Nồng độ mol (C_M): Cho biết số mol chất tan có trong 1 lít dung dịch.",
-                  "Công thức: C_M = n / V (mol/lít hoặc M).",
+                  "Công thức: C<sub>M</sub> = <span class="math-frac"><span class="num">n</span><span class="den">V</span></span> (mol/lít hoặc M).",
                   "Trong đó: n là số mol chất tan (mol), V là thể tích dung dịch (lít)."
                 ]],
                 ["🧪", "Pha dung dịch", [
                   "Các bước pha chế một dung dịch có nồng độ cho trước:",
-                  "1. Tính toán lượng chất tan (m_ct hoặc n) và lượng dung môi (hoặc thể tích V) cần dùng.",
+                  "1. Tính toán lượng chất tan (m<sub>chất tan</sub> hoặc số mol n) và lượng dung môi (hoặc thể tích V) cần dùng.",
                   "2. Cân chính xác lượng chất tan cho vào cốc thuỷ tinh.",
                   "3. Đong lượng dung môi cần thiết (nước cất), rót từ từ vào cốc và dùng đũa thuỷ tinh khuấy đều cho tan hoàn toàn."
                 ]]
@@ -454,7 +454,7 @@ window.MINDMAP_DATA = {
               c: [
                 ["💡", "Khái niệm", [
                   "Oxide là hợp chất gồm hai nguyên tố, trong đó có một nguyên tố là oxygen.",
-                  "Công thức phân tử tổng quát: M_x O_y (hoá trị của O luôn là II, x*hóa_trị_M = 2*y).",
+                  "Công thức phân tử tổng quát: M<sub>x</sub>O<sub>y</sub> (hoá trị của O luôn là II, x × hoá_trị_M = 2 × y).",
                   "Ví dụ: Carbon dioxide (CO2), Sulfur dioxide (SO2), Calcium oxide (CaO), Iron(III) oxide (Fe2O3)."
                 ]],
                 ["🗂️", "Phân loại", [
@@ -956,9 +956,9 @@ window.MINDMAP_DATA = {
                   "Ví dụ: Khối lượng riêng của nước là 1000 kg/m³, của sắt là 7800 kg/m³, của chì là 11300 kg/m³."
                 ]],
                 ["📐", "Công thức", [
-                  "Công thức: D = m / V  <=>  m = D * V  <=>  V = m / D.",
+                  "Công thức: D = <span class="math-frac"><span class="num">m</span><span class="den">V</span></span>  ⟺  m = D × V  ⟺  V = <span class="math-frac"><span class="num">m</span><span class="den">D</span></span>.",
                   "Trong đó: D là khối lượng riêng, m là khối lượng của vật (kg hoặc g), V là thể tích của vật (m³ hoặc cm³).",
-                  "Mối liên hệ với trọng lượng riêng (d): d = 10 * D (đơn vị N/m³)."
+                  "Mối liên hệ với trọng lượng riêng (d): d = 10 × D (đơn vị N/m³)."
                 ]],
                 ["📏", "Đơn vị đo", [
                   "Đơn vị hợp pháp trong hệ đo lường chuẩn SI: kilôgam trên mét khối (kg/m³).",
@@ -972,11 +972,11 @@ window.MINDMAP_DATA = {
                 ]],
                 ["⛵", "Nổi – chìm (Archimedes)", [
                   "Định luật Archimedes: Một vật nhúng chìm trong chất lỏng bị chất lỏng tác dụng một lực đẩy hướng thẳng đứng từ dưới lên trên, có độ lớn bằng trọng lượng phần chất lỏng bị vật chiếm chỗ.",
-                  "Công thức lực đẩy: F_A = d_lỏng * V_chìm = 10 * D_lỏng * V_chìm.",
+                  "Công thức lực đẩy: F<sub>A</sub> = d<sub>lỏng</sub> × V<sub>chìm</sub> = 10 × D<sub>lỏng</sub> × V<sub>chìm</sub>.",
                   "Điều kiện vật nổi, lơ lửng, chìm:",
-                  "- Vật chìm xuống khi: F_A < P  <=>  D_vật > D_lỏng.",
-                  "- Vật lơ lửng trong chất lỏng khi: F_A = P  <=>  D_vật = D_lỏng.",
-                  "- Vật nổi lên mặt thoáng khi: F_A > P  <=>  D_vật < D_lỏng (khi nổi đứng yên thì F_A = P)."
+                  "- Vật chìm xuống khi: F<sub>A</sub> < P  ⟺  D<sub>vật</sub> > D<sub>lỏng</sub>.",
+                  "- Vật lơ lửng trong chất lỏng khi: F<sub>A</sub> = P  ⟺  D<sub>vật</sub> = D<sub>lỏng</sub>.",
+                  "- Vật nổi lên mặt thoáng khi: F<sub>A</sub> > P  ⟺  D<sub>vật</sub> < D<sub>lỏng</sub> (khi nổi đứng yên thì F<sub>A</sub> = P)."
                 ]]
               ]
             },
@@ -989,13 +989,13 @@ window.MINDMAP_DATA = {
                 ["💡", "Khái niệm & công thức", [
                   "Áp lực: Là lực ép có phương vuông góc với bề mặt bị ép.",
                   "Áp suất: Là đại lượng đặc trưng cho tác dụng của áp lực lên bề mặt bị ép, có độ lớn bằng áp lực tác dụng lên một đơn vị diện tích bị ép.",
-                  "Công thức: p = F / S  <=>  F = p * S  <=>  S = F / p.",
+                  "Công thức: p = <span class="math-frac"><span class="num">F</span><span class="den">S</span></span>  ⟺  F = p × S  ⟺  S = <span class="math-frac"><span class="num">F</span><span class="den">p</span></span>.",
                   "Trong đó: p là áp suất, F là áp lực tác dụng (N), S là diện tích bề mặt bị ép (m²)."
                 ]],
                 ["📏", "Đơn vị đo", [
                   "Đơn vị đo áp suất trong hệ SI: Pascal (kí hiệu Pa), 1 Pa = 1 N/m².",
                   "Đơn vị áp suất khí quyển: atmosphere (atm) hoặc milimét thuỷ ngân (mmHg).",
-                  "Quy đổi: 1 atm ≈ 1,013 * 10^5 Pa ≈ 760 mmHg."
+                  "Quy đổi: 1 atm ≈ 1,013 × 10⁵ Pa ≈ 760 mmHg."
                 ]],
                 ["↕️", "Tăng – giảm áp suất", [
                   "Cách tăng áp suất (p tăng): Tăng áp lực F hoặc giảm diện tích bị ép S (mài sắc lưỡi dao, mũi kim khâu nhỏ nhọn, đóng cọc nhọn đầu).",
@@ -1031,13 +1031,13 @@ window.MINDMAP_DATA = {
             ["🔄", "Lực quay vật", [
               "Khi một vật có trục quay hoặc điểm tựa cố định chịu tác dụng của một lực có giá không song song và không cắt trục quay thì lực đó sẽ làm quay vật.",
               "Đặc trưng của tác dụng làm quay là Moment lực (kí hiệu M).",
-              "Công thức tính moment lực: M = F * d (đơn vị: N.m).",
+              "Công thức tính moment lực: M = F × d (đơn vị: N.m).",
               "Trong đó: F là độ lớn của lực tác dụng (N), d là cánh tay đòn - khoảng cách từ trục quay đến giá của lực (m).",
               "Nhận xét: Lực tác dụng càng lớn và cánh tay đòn càng dài thì tác dụng làm quay càng mạnh (giải thích vì sao tay nắm cửa luôn đặt xa bản lề, cờ lê càng dài vặn ốc càng nhẹ)."
             ]],
             ["🏗️", "Đòn bẩy & moment", [
               "Cấu tạo đòn bẩy: Gồm Điểm tựa cố định (O), Điểm đặt lực cản (O1 - nơi đặt vật nâng) và Điểm đặt lực tác dụng (O2 - nơi người tác dụng lực).",
-              "Điều kiện cân bằng đòn bẩy: F1 * d1 = F2 * d2 (hay F1 * OO1 = F2 * OO2).",
+              "Điều kiện cân bằng đòn bẩy: F<sub>1</sub> × d<sub>1</sub> = F<sub>2</sub> × d<sub>2</sub> (hay F<sub>1</sub> × OO<sub>1</sub> = F<sub>2</sub> × OO<sub>2</sub>).",
               "Phân loại các loại đòn bẩy trong thực tiễn:",
               "- Đòn bẩy loại 1 (Điểm tựa O nằm giữa O1 và O2): Bập bênh, kéo cắt giấy, xà beng nhổ đinh, kìm bấm (được lợi về lực khi OO2 > OO1).",
               "- Đòn bẩy loại 2 (Điểm đặt vật O1 nằm giữa điểm tựa O và tay cầm O2): Xe rùa chở cát, đồ khui nắp chai nước ngọt, dao cắt giấy bàn (luôn được lợi về lực vì OO2 > OO1).",
@@ -1107,7 +1107,7 @@ window.MINDMAP_DATA = {
             ]],
             ["⏲️", "Đo NL nhiệt", [
               "Dụng cụ đo năng lượng nhiệt: Sử dụng Joulemeter hoặc Oát kế (Wattmeter) kết hợp đồng hồ bấm giây để đo năng lượng nhiệt mà dây đốt nóng cung cấp cho lượng nước trong nhiệt lượng kế.",
-              "Công thức tính nhiệt lượng đun nóng chất: Q = m * c * Δt (m là khối lượng chất kg, c là nhiệt dung riêng J/kg.K, Δt là độ tăng nhiệt độ °C)."
+              "Công thức tính nhiệt lượng đun nóng chất: Q = m × c × Δt (m là khối lượng chất kg, c là nhiệt dung riêng J/kg.K, Δt là độ tăng nhiệt độ °C)."
             ]],
             ["🌬️", "Truyền nhiệt", [
               "1. Dẫn nhiệt: Là hình thức truyền nhiệt chủ yếu qua sự tiếp xúc trực tiếp giữa các phân tử mà không có sự dịch chuyển vật chất thành dòng (chủ yếu ở chất rắn; kim loại dẫn nhiệt tốt nhất; chất lỏng, khí, gỗ, xốp cách nhiệt tốt).",

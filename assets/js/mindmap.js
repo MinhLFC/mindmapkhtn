@@ -379,6 +379,72 @@
     return typeof n.d === 'string' ? n.d : n.t;
   }
 
+  /* ---------- ÂM THANH POP / GIỌT NƯỚC (Web Audio API) ---------- */
+  let audioCtx = null;
+  let isSoundEnabled = localStorage.getItem('sound_enabled') !== 'false';
+
+  function initAudio() {
+    if (!audioCtx) {
+      const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtxClass) audioCtx = new AudioCtxClass();
+    }
+    if (audioCtx && audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+  }
+
+  function playBubbleSound(frequency = 520) {
+    if (!isSoundEnabled) return;
+    try {
+      initAudio();
+      if (!audioCtx) return;
+
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      const now = audioCtx.currentTime;
+
+      // Hiệu ứng giọt nước "Pop / Bubble": Tần số quét vút lên từ frequency đến frequency * 1.7
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(frequency, now);
+      osc.frequency.exponentialRampToValueAtTime(frequency * 1.7, now + 0.08);
+
+      // Âm lượng êm dịu, giảm dần nhanh
+      gain.gain.setValueAtTime(0.2, now);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start(now);
+      osc.stop(now + 0.12);
+    } catch (e) {
+      // Bỏ qua lỗi audio policy
+    }
+  }
+
+  const btnSoundToggle = $('btnSoundToggle');
+  const soundIcon = $('soundIcon');
+  const soundText = $('soundText');
+
+  function updateSoundUI() {
+    if (soundIcon) soundIcon.textContent = isSoundEnabled ? '🔊' : '🔇';
+    if (soundText) soundText.textContent = isSoundEnabled ? 'Âm thanh' : 'Đã tắt';
+    if (btnSoundToggle) {
+      btnSoundToggle.classList.toggle('muted', !isSoundEnabled);
+      btnSoundToggle.title = isSoundEnabled ? 'Bấm để tắt âm thanh hiệu ứng' : 'Bấm để bật âm thanh hiệu ứng';
+    }
+  }
+
+  if (btnSoundToggle) {
+    updateSoundUI();
+    btnSoundToggle.addEventListener('click', () => {
+      isSoundEnabled = !isSoundEnabled;
+      localStorage.setItem('sound_enabled', isSoundEnabled ? 'true' : 'false');
+      updateSoundUI();
+      if (isSoundEnabled) playBubbleSound(600);
+    });
+  }
+
   /* ---------- Định dạng công thức, PTHH và chống lỗi font ---------- */
   function formatDetailItem(rawText) {
     let text = rawText.replace(/^[\s\-–]+/, '');
@@ -405,13 +471,13 @@
       str = str.replace(/↓/g, '<span class="chem-precipitate" title="Chất kết tủa">↓</span>');
 
       // 3. Chỉ số dưới công thức hoá học (sau tên nguyên tố hoặc dấu đóng ngoặc)
-      // Ví dụ: H2O -> H₂O, Fe2O3 -> Fe₂O₃, Ca(OH)2 -> Ca(OH)₂, Al2(SO4)3 -> Al₂(SO₄)₃
-      str = str.replace(/([A-Z][a-z]?|\))(\d+)/g, '$1<sub>$2</sub>');
+      // Sử dụng negative lookahead để không thay thế số bên trong thẻ HTML (như <sub>2</sub> hoặc <span class="...">)
+      str = str.replace(/([A-Z][a-z]?|\))(\d+)(?![^<]*>)/g, '$1<sub>$2</sub>');
 
       return str;
     }
 
-    const isFormula = /→|->|--|↑|↓|\b(H2|O2|H2O|CO2|CaCO3|HCl|NaOH|BaCl2|Fe2O3|Al2O3|SO2|SO3|H2SO4|FeCl2|ZnCl2|CuSO4|Na2SO4|BaSO4)\b|n\s*=|D\s*=|p\s*=|C%|C_M|F_A/.test(text);
+    const isFormula = /→|->|--|↑|↓|math-frac|<sub>|\b(H2|O2|H2O|CO2|CaCO3|HCl|NaOH|BaCl2|Fe2O3|Al2O3|SO2|SO3|H2SO4|FeCl2|ZnCl2|CuSO4|Na2SO4|BaSO4)\b|n\s*=|D\s*=|p\s*=|C%|C<sub>M|F<sub>A/.test(text);
 
     let html = '';
     if (prefix) {
@@ -517,32 +583,44 @@
 
   /* ---------- Bấm vào nút ---------- */
   function onNodeClick(n) {
-    if (n.depth === 0) { fit(); return; }
+    if (n.depth === 0) {
+      playBubbleSound(440);
+      fit();
+      return;
+    }
+
     if (n.children.length) {
       n.open = !n.open;
+      playBubbleSound(n.open ? 560 : 420);
       if (!n.open && panelNode && isDescendantOrSelf(panelNode, n) && panelNode !== n) closeDetail();
       update({ anchor: n });
       if (n.open && n.d) showDetail(n);
       else if (!n.open && panelNode === n) closeDetail();
       else select(n);
     } else {
+      playBubbleSound(680);
       showDetail(n);
     }
   }
 
   /* ---------- Thanh công cụ ---------- */
   $('btnExpand').addEventListener('click', () => {
+    playBubbleSound(500);
     all.forEach((n) => { if (n.children.length) n.open = true; });
     update();
     fit();
   });
   $('btnCollapse').addEventListener('click', () => {
+    playBubbleSound(380);
     all.forEach((n) => { n.open = n.depth === 0; });
     closeDetail();
     update();
     fit();
   });
-  $('btnCenter').addEventListener('click', () => fit());
+  $('btnCenter').addEventListener('click', () => {
+    playBubbleSound(480);
+    fit();
+  });
 
   /* ---------- Gallery 4 Infographics ---------- */
   const INFOGRAPHICS = [
@@ -559,6 +637,7 @@
   const galleryTabs = document.querySelectorAll('.gallery-tab');
 
   function openGallery(index = 0) {
+    playBubbleSound(480);
     currentGalleryIndex = index;
     renderGallery();
     if (galleryModal) {
@@ -592,15 +671,18 @@
   $('galleryClose')?.addEventListener('click', closeGallery);
   $('galleryOverlay')?.addEventListener('click', closeGallery);
   $('galleryPrev')?.addEventListener('click', () => {
+    playBubbleSound(440);
     currentGalleryIndex = (currentGalleryIndex - 1 + INFOGRAPHICS.length) % INFOGRAPHICS.length;
     renderGallery();
   });
   $('galleryNext')?.addEventListener('click', () => {
+    playBubbleSound(440);
     currentGalleryIndex = (currentGalleryIndex + 1) % INFOGRAPHICS.length;
     renderGallery();
   });
   galleryTabs.forEach((tab, idx) => {
     tab.addEventListener('click', () => {
+      playBubbleSound(460);
       currentGalleryIndex = idx;
       renderGallery();
     });
@@ -608,6 +690,7 @@
 
   /* ---------- Chế độ sáng / tối ---------- */
   $('themeToggle').addEventListener('click', () => {
+    playBubbleSound(520);
     const dark = document.documentElement.getAttribute('data-theme') !== 'dark';
     document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
     localStorage.setItem('theme', dark ? 'dark' : 'light');
