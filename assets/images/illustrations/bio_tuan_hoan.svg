@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#fecdd3" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Heart and vessels -->
+  <path d="M50 74 C26 56 20 44 24 34 C28 24 40 24 50 34 C60 24 72 24 76 34 C80 44 74 56 50 74 Z" fill="#ef4444" stroke="#ffffff" stroke-width="2.5"/>
+  <!-- Pulse ECG line -->
+  <path d="M30 48 L42 48 L46 40 L52 56 L56 46 L60 48 L70 48" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

@@ -2,7 +2,7 @@
    DỮ LIỆU SƠ ĐỒ TƯ DUY – KHOA HỌC TỰ NHIÊN 8
    Phiên bản nâng cấp: Toàn bộ nội dung khoa học chi tiết, chuyên sâu,
    chuẩn chương trình GDPT 2018 (SGK KHTN 8).
-   Mỗi nhánh đều có kiến thức đầy đủ, công thức, PTHH, thí nghiệm & thực tiễn.
+   Mỗi nhánh đều có kiến thức đầy đủ, công thức, phương trình hoá học, thí nghiệm & thực tiễn.
    ========================================================= */
 window.MINDMAP_DATA = {
   t: "KHTN 8",
@@ -23,7 +23,7 @@ window.MINDMAP_DATA = {
         {
           i: "🧪",
           t: "Hoá chất",
-          img: "assets/images/icons/chem_phan_ung.png",
+          img: "assets/images/illustrations/chem_phan_ung.svg",
           c: [
             ["🔎", "Nhận biết", [
               "Nhận biết nhãn hoá chất: Tên hoá chất, công thức phân tử, độ tinh khiết, nồng độ và các kí hiệu cảnh báo an toàn.",
@@ -45,7 +45,7 @@ window.MINDMAP_DATA = {
         {
           i: "⚗️",
           t: "Dụng cụ",
-          img: "assets/images/icons/chem_bien_doi.png",
+          img: "assets/images/illustrations/chem_bien_doi.svg",
           c: [
             ["🧫", "Thuỷ tinh", [
               "Ống nghiệm: Dùng chứa lượng nhỏ hoá chất để thực hiện phản ứng nhanh; khi đun phải nghiêng miệng ống nghiệm khoảng 45 độ và hướng về nơi không có người.",
@@ -67,7 +67,7 @@ window.MINDMAP_DATA = {
         {
           i: "🔌",
           t: "Thiết bị điện",
-          img: "assets/images/icons/phys_ac_quy.png",
+          img: "assets/images/illustrations/intro_thiet_bi_dien.svg",
           c: [
             ["🔋", "Nguồn điện", [
               "Biến áp nguồn: Thiết bị hạ điện áp lưới xoay chiều (220V) xuống nguồn điện hạ áp an toàn một chiều (DC) hoặc xoay chiều (AC) từ 1,5V đến 12V.",
@@ -88,7 +88,8 @@ window.MINDMAP_DATA = {
         },
         {
           i: "🦺",
-          t: "An toàn PTN",
+          t: "An toàn phòng thí nghiệm",
+          img: "assets/images/illustrations/intro_an_toan.svg",
           c: [
             ["📜", "Nội quy", [
               "Mặc áo blouse trắng, đeo kính bảo hộ và mang găng tay cao su thích hợp khi tiếp xúc với hoá chất nguy hiểm.",
@@ -113,7 +114,7 @@ window.MINDMAP_DATA = {
     /* ==================== 2. CHẤT VÀ SỰ BIẾN ĐỔI CHẤT ==================== */
     {
       i: "⚗️",
-      t: "Chất & biến đổi",
+      t: "Chất và sự biến đổi chất",
       color: "#ea580c",
       side: "right",
       open: true,
@@ -124,13 +125,13 @@ window.MINDMAP_DATA = {
         {
           i: "💥",
           t: "Phản ứng hoá học",
-          img: "assets/images/icons/chem_phan_ung.png",
+          img: "assets/images/illustrations/chem_phan_ung.svg",
           open: true,
           c: [
             {
               i: "🔄",
-              t: "Biến đổi lí – hoá",
-              img: "assets/images/icons/chem_bien_doi.png",
+              t: "Biến đổi vật lí và hoá học",
+              img: "assets/images/illustrations/chem_bien_doi.svg",
               d: "Sự biến đổi vật lí và biến đổi hoá học",
               c: [
                 ["💡", "Khái niệm", [
@@ -150,8 +151,8 @@ window.MINDMAP_DATA = {
             },
             {
               i: "🎆",
-              t: "Phản ứng HH",
-              img: "assets/images/icons/chem_phan_ung.png",
+              t: "Phản ứng hoá học",
+              img: "assets/images/illustrations/chem_phan_ung.svg",
               d: "Khái niệm và diễn biến phản ứng hoá học",
               c: [
                 ["💡", "Khái niệm", [
@@ -174,8 +175,8 @@ window.MINDMAP_DATA = {
             },
             {
               i: "⚡",
-              t: "Năng lượng PƯ",
-              img: "assets/images/icons/chem_nang_luong.png",
+              t: "Năng lượng phản ứng hoá học",
+              img: "assets/images/illustrations/chem_nang_luong.svg",
               d: "Năng lượng trong các phản ứng hoá học",
               c: [
                 ["💡", "Khái niệm", [
@@ -196,7 +197,7 @@ window.MINDMAP_DATA = {
             {
               i: "⚖️",
               t: "Bảo toàn khối lượng",
-              img: "assets/images/icons/chem_can.png",
+              img: "assets/images/illustrations/chem_bao_toan.svg",
               d: "Định luật bảo toàn khối lượng",
               c: [
                 ["📢", "Định luật", [
@@ -212,8 +213,8 @@ window.MINDMAP_DATA = {
             },
             {
               i: "✍️",
-              t: "Phương trình HH",
-              img: "assets/images/icons/chem_but_chi.png",
+              t: "Phương trình hoá học",
+              img: "assets/images/illustrations/chem_phuong_trinh.svg",
               d: "Phương trình hoá học và phương pháp cân bằng",
               c: [
                 ["💡", "Khái niệm", [
@@ -230,7 +231,7 @@ window.MINDMAP_DATA = {
                   "Tỉ lệ số hạt đúng bằng tỉ lệ các hệ số đứng trước mỗi công thức hoá học.",
                   "Ví dụ phản ứng: 4Al + 3O2 -> 2Al2O3 -> Tỉ lệ số nguyên tử Al : số phân tử O2 : số phân tử Al2O3 = 4 : 3 : 2."
                 ]],
-                ["✏️", "Viết PTHH", [
+                ["✏️", "Cách lập phương trình hoá học", [
                   "Phương pháp chẵn - lẻ: Thêm hệ số 2 vào trước chất có chỉ số lẻ để làm chẵn nguyên tử.",
                   "Phương pháp nhóm nguyên tử: Coi nhóm nguyên tử (như SO4, NO3, OH, CO3) là một đơn vị để cân bằng nhanh.",
                   "Ví dụ: Fe + 2HCl -> FeCl2 + H2↑; 2NaOH + H2SO4 -> Na2SO4 + 2H2O."
@@ -239,8 +240,8 @@ window.MINDMAP_DATA = {
             },
             {
               i: "🧮",
-              t: "Mol & tỉ khối",
-              img: "assets/images/icons/chem_mol.png",
+              t: "Mol và tỉ khối chất khí",
+              img: "assets/images/illustrations/chem_mol_ti_khoi.svg",
               d: "Khái niệm mol và tỉ khối của chất khí",
               c: [
                 ["💡", "Khái niệm", [
@@ -258,8 +259,8 @@ window.MINDMAP_DATA = {
             },
             {
               i: "📊",
-              t: "Tính theo PTHH",
-              img: "assets/images/icons/chem_tinh_toan.png",
+              t: "Tính theo phương trình hoá học",
+              img: "assets/images/illustrations/chem_tinh_toan.svg",
               d: "Tính toán theo phương trình hoá học và hiệu suất phản ứng",
               c: [
                 ["🔢", "Lượng chất", [
@@ -283,7 +284,7 @@ window.MINDMAP_DATA = {
             {
               i: "💧",
               t: "Nồng độ dung dịch",
-              img: "assets/images/icons/chem_nong_do.png",
+              img: "assets/images/illustrations/chem_nong_do.svg",
               d: "Độ tan và các loại nồng độ dung dịch",
               c: [
                 ["💡", "Khái niệm", [
@@ -321,11 +322,11 @@ window.MINDMAP_DATA = {
         {
           i: "🚀",
           t: "Tốc độ & xúc tác",
-          img: "assets/images/icons/chem_toc_do.png",
+          img: "assets/images/illustrations/chem_toc_do.svg",
           open: true,
           d: "Tốc độ phản ứng hoá học và các yếu tố ảnh hưởng",
           c: [
-            ["⏱️", "Tốc độ PƯ", [
+            ["⏱️", "Tốc độ phản ứng", [
               "Khái niệm: Tốc độ phản ứng là đại lượng đặc trưng cho sự thay đổi lượng chất tham gia hoặc sản phẩm trong một đơn vị thời gian (cho biết phản ứng diễn ra nhanh hay chậm).",
               "Ví dụ phản ứng nhanh: Phản ứng cháy nổ của hỗn hợp khí gas và oxy; phản ứng tạo kết tủa trắng AgCl khi nhỏ AgNO3 vào NaCl.",
               "Ví dụ phản ứng chậm: Quá trình đinh sắt bị gỉ sét ngoài không khí; quá trình lên men giấm ăn; đá vôi bị bào mòn bởi nước mưa."
@@ -342,8 +343,8 @@ window.MINDMAP_DATA = {
               "Chất ức chế: Ngược lại với chất xúc tác, làm chậm tốc độ phản ứng không mong muốn (chất bảo quản thực phẩm chống ôi thiu)."
             ]],
             ["🧪", "Thí nghiệm", [
-              "Thí nghiệm ảnh hưởng diện tích tiếp xúc: Cho mẩu đá vôi (CaCO3) và bột đá vôi có cùng khối lượng vào 2 ống nghiệm chứa cùng thể tích dd HCl loãng -> ống nghiệm chứa bột đá vôi sủi bọt khí CO2 nhanh và mạnh hơn rất nhiều.",
-              "Thí nghiệm vai trò chất xúc tác: Cho dd H2O2 (nước oxy già) vào 2 ống nghiệm, thêm một ít bột MnO2 vào ống thứ hai -> ống có MnO2 bọt khí O2 thoát ra cuồn cuộn làm tàn đóm đỏ bùng cháy."
+              "Thí nghiệm ảnh hưởng diện tích tiếp xúc: Cho mẩu đá vôi (CaCO3) và bột đá vôi có cùng khối lượng vào 2 ống nghiệm chứa cùng thể tích dung dịch HCl loãng -> ống nghiệm chứa bột đá vôi sủi bọt khí CO2 nhanh và mạnh hơn rất nhiều.",
+              "Thí nghiệm vai trò chất xúc tác: Cho dung dịch H2O2 (nước oxy già) vào 2 ống nghiệm, thêm một ít bột MnO2 vào ống thứ hai -> ống có MnO2 bọt khí O2 thoát ra cuồn cuộn làm tàn đóm đỏ bùng cháy."
             ]]
           ]
         },
@@ -358,7 +359,7 @@ window.MINDMAP_DATA = {
             {
               i: "🍋",
               t: "Acid",
-              img: "assets/images/icons/chem_acid.png",
+              img: "assets/images/illustrations/chem_acid.svg",
               d: "Phân tử acid và tính chất hoá học",
               c: [
                 ["💡", "Khái niệm", [
@@ -370,9 +371,9 @@ window.MINDMAP_DATA = {
                 ["🧪", "Thí nghiệm", [
                   "Thí nghiệm 1: Nhỏ 1 giọt dung dịch HCl lên mẩu giấy quỳ tím -> quỳ tím lập tức chuyển sang màu đỏ.",
                   "Thí nghiệm 2: Cho 1-2 ml dung dịch HCl vào ống nghiệm chứa mẩu kim loại kẽm (Zn) hoặc sắt (Fe) -> có nhiều bọt khí không màu H2 thoát ra, toả nhiệt.",
-                  "Thí nghiệm 3: Cho dd HCl vào ống nghiệm chứa gỉ sắt Fe2O3 màu nâu đỏ -> gỉ sắt tan dần tạo dung dịch FeCl3 màu vàng nâu."
+                  "Thí nghiệm 3: Cho dung dịch HCl vào ống nghiệm chứa gỉ sắt Fe2O3 màu nâu đỏ -> gỉ sắt tan dần tạo dung dịch FeCl3 màu vàng nâu."
                 ]],
-                ["✏️", "PTHH", [
+                ["✏️", "Phương trình hoá học", [
                   "1. Acid + Kim loại (trước H) -> Muối + H2↑: Zn + 2HCl -> ZnCl2 + H2↑; 2Al + 3H2SO4 (loãng) -> Al2(SO4)3 + 3H2↑.",
                   "2. Acid + Oxide base -> Muối + H2O: CuO (đen) + 2HCl -> CuCl2 (xanh lam) + H2O; Fe2O3 + 3H2SO4 -> Fe2(SO4)3 + 3H2O.",
                   "3. Acid + Base -> Muối + H2O: HCl + NaOH -> NaCl + H2O; H2SO4 + Cu(OH)2 -> CuSO4 + 2H2O.",
@@ -394,7 +395,7 @@ window.MINDMAP_DATA = {
             {
               i: "🧼",
               t: "Base",
-              img: "assets/images/icons/chem_base.png",
+              img: "assets/images/illustrations/chem_base.svg",
               d: "Phân tử base và tính chất hoá học",
               c: [
                 ["💡", "Khái niệm", [
@@ -404,11 +405,11 @@ window.MINDMAP_DATA = {
                   "Phân loại: Base tan trong nước gọi là Kiềm (NaOH, KOH, Ba(OH)2, Ca(OH)2) và Base không tan (Cu(OH)2, Fe(OH)3, Al(OH)3, Mg(OH)2)."
                 ]],
                 ["🧪", "Thí nghiệm", [
-                  "Thí nghiệm 1: Nhúng giấy quỳ tím vào dung dịch NaOH -> quỳ tím hoá xanh; nhỏ dd phenolphthalein không màu vào NaOH -> dung dịch chuyển sang màu hồng đậm.",
-                  "Thí nghiệm 2: Cho dd NaOH vào ống nghiệm đựng dd CuSO4 -> xuất hiện kết tủa màu xanh lam dạng nhầy của Cu(OH)2: CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4.",
+                  "Thí nghiệm 1: Nhúng giấy quỳ tím vào dung dịch NaOH -> quỳ tím hoá xanh; nhỏ dung dịch phenolphthalein không màu vào NaOH -> dung dịch chuyển sang màu hồng đậm.",
+                  "Thí nghiệm 2: Cho dung dịch NaOH vào ống nghiệm đựng dung dịch CuSO4 -> xuất hiện kết tủa màu xanh lam dạng nhầy của Cu(OH)2: CuSO4 + 2NaOH -> Cu(OH)2↓ + Na2SO4.",
                   "Thí nghiệm 3: Dẫn khí CO2 vào cốc đựng dung dịch vôi trong Ca(OH)2 -> dung dịch bị vẩn đục trắng do tạo thành kết tủa CaCO3."
                 ]],
-                ["✏️", "PTHH", [
+                ["✏️", "Phương trình hoá học", [
                   "1. Base + Acid -> Muối + H2O (Phản ứng trung hoà): NaOH + HCl -> NaCl + H2O; Ba(OH)2 + H2SO4 -> BaSO4↓ + 2H2O.",
                   "2. Base tan + Oxide acid -> Muối + H2O: 2NaOH + CO2 -> Na2CO3 + H2O; Ca(OH)2 + SO2 -> CaSO3↓ + H2O.",
                   "3. Base tan + Muối -> Muối mới + Base mới: 2NaOH + FeCl2 -> Fe(OH)2↓ (trắng xanh) + 2NaCl.",
@@ -424,7 +425,7 @@ window.MINDMAP_DATA = {
             {
               i: "🎨",
               t: "Thang pH",
-              img: "assets/images/icons/chem_ph.png",
+              img: "assets/images/illustrations/chem_ph.svg",
               d: "Thang đo pH và ý nghĩa thực tiễn",
               c: [
                 ["💡", "Khái niệm", [
@@ -448,7 +449,7 @@ window.MINDMAP_DATA = {
             {
               i: "🌫️",
               t: "Oxide",
-              img: "assets/images/icons/chem_oxide.png",
+              img: "assets/images/illustrations/chem_oxide.svg",
               d: "Hợp chất Oxide và phân loại",
               c: [
                 ["💡", "Khái niệm", [
@@ -462,7 +463,7 @@ window.MINDMAP_DATA = {
                   "Oxide lưỡng tính: Tác dụng được với cả dung dịch acid và dung dịch base tạo muối (Al2O3, ZnO).",
                   "Oxide trung tính (không tạo muối): Không tác dụng với acid, base, nước ở điều kiện thường (CO, NO, N2O)."
                 ]],
-                ["✏️", "PTHH", [
+                ["✏️", "Phương trình hoá học", [
                   "Tạo thành oxide: Đốt cháy đơn chất trong oxygen: C + O2 --t°--> CO2; 4Fe + 3O2 --t°--> 2Fe2O3.",
                   "Oxide base tác dụng với nước tạo kiềm: CaO + H2O -> Ca(OH)2; Na2O + H2O -> 2NaOH.",
                   "Oxide acid tác dụng với nước tạo acid: SO3 + H2O -> H2SO4; P2O5 + 3H2O -> 2H3PO4.",
@@ -478,7 +479,7 @@ window.MINDMAP_DATA = {
             {
               i: "🧂",
               t: "Muối",
-              img: "assets/images/icons/chem_muoi.png",
+              img: "assets/images/illustrations/chem_muoi.svg",
               d: "Hợp chất Muối và tính chất hoá học",
               c: [
                 ["💡", "Khái niệm", [
@@ -499,9 +500,9 @@ window.MINDMAP_DATA = {
                 ]],
                 ["⚗️", "Tính chất hoá học", [
                   "1. Muối + Kim loại (mạnh hơn đứng trước) -> Muối mới + Kim loại mới: Fe + CuSO4 -> FeSO4 + Cu↓ (đồng đỏ bám lên sắt).",
-                  "2. Muối + Acid -> Muối mới + Acid mới (ĐK: có chất kết tủa hoặc bay hơi): BaCl2 + H2SO4 -> BaSO4↓ + 2HCl; CaCO3 + 2HCl -> CaCl2 + CO2↑ + H2O.",
-                  "3. Muối + Base -> Muối mới + Base mới (ĐK: có kết tủa): CuSO4 + 2NaOH -> Cu(OH)2↓ (xanh) + Na2SO4.",
-                  "4. Muối + Muối -> Hai muối mới (ĐK: 2 muối ban đầu tan, sản phẩm có ít nhất 1 muối kết tủa): AgNO3 + NaCl -> AgCl↓ (trắng) + NaNO3."
+                  "2. Muối + Acid -> Muối mới + Acid mới (Điều kiện: có chất kết tủa hoặc bay hơi): BaCl2 + H2SO4 -> BaSO4↓ + 2HCl; CaCO3 + 2HCl -> CaCl2 + CO2↑ + H2O.",
+                  "3. Muối + Base -> Muối mới + Base mới (Điều kiện: có kết tủa): CuSO4 + 2NaOH -> Cu(OH)2↓ (xanh) + Na2SO4.",
+                  "4. Muối + Muối -> Hai muối mới (Điều kiện: 2 muối ban đầu tan, sản phẩm có ít nhất 1 muối kết tủa): AgNO3 + NaCl -> AgCl↓ (trắng) + NaNO3."
                 ]],
                 ["🏭", "Điều chế", [
                   "Kim loại + Phi kim -> Muối: 2Na + Cl2 -> 2NaCl; Fe + S --t°--> FeS.",
@@ -511,7 +512,7 @@ window.MINDMAP_DATA = {
                   "Khai thác tự nhiên: Cô cạn nước biển thu muối ăn NaCl; khai thác mỏ đá vôi CaCO3, quặng thạch cao CaSO4."
                 ]],
                 ["🧪", "Thí nghiệm", [
-                  "Thí nghiệm Fe tác dụng với dd CuSO4: Nhúng một đinh sắt sạch vào ống nghiệm đựng dung dịch CuSO4 màu xanh lam. Sau vài phút, rút đinh sắt ra thấy có một lớp kim loại màu đỏ (Cu) bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần.",
+                  "Thí nghiệm Fe tác dụng với dung dịch CuSO4: Nhúng một đinh sắt sạch vào ống nghiệm đựng dung dịch CuSO4 màu xanh lam. Sau vài phút, rút đinh sắt ra thấy có một lớp kim loại màu đỏ (Cu) bám ngoài đinh sắt, màu xanh lam của dung dịch nhạt dần.",
                   "Thí nghiệm phản ứng trao đổi muối: Trộn dung dịch BaCl2 với dung dịch Na2SO4 xuất hiện ngay kết tủa trắng đục BaSO4 không tan trong axit mạnh."
                 ]]
               ]
@@ -523,7 +524,7 @@ window.MINDMAP_DATA = {
         {
           i: "🌾",
           t: "Phân bón hoá học",
-          img: "assets/images/icons/chem_phan_bon.png",
+          img: "assets/images/illustrations/chem_phan_bon.svg",
           open: true,
           d: "Phân bón hoá học và kĩ thuật bón phân an toàn",
           c: [
@@ -566,7 +567,7 @@ window.MINDMAP_DATA = {
         {
           i: "🧍",
           t: "Cơ thể người",
-          img: "assets/images/icons/bio_co_the.png",
+          img: "assets/images/illustrations/bio_co_the.svg",
           d: "Khái quát cấu tạo và tính thống nhất của cơ thể người",
           c: [
             ["🧩", "Cấu tạo", [
@@ -592,7 +593,7 @@ window.MINDMAP_DATA = {
         {
           i: "🦴",
           t: "Hệ vận động",
-          img: "assets/images/icons/bio_van_dong.png",
+          img: "assets/images/illustrations/bio_van_dong.svg",
           d: "Hệ cơ xương và sức khoẻ học đường",
           c: [
             ["⚙️", "Cấu tạo & chức năng", [
@@ -620,7 +621,7 @@ window.MINDMAP_DATA = {
         {
           i: "🍎",
           t: "Dinh dưỡng & tiêu hoá",
-          img: "assets/images/icons/bio_tieu_hoa.png",
+          img: "assets/images/illustrations/bio_tieu_hoa.svg",
           d: "Hệ tiêu hoá và an toàn vệ sinh thực phẩm",
           c: [
             ["⚙️", "Cấu tạo & chức năng", [
@@ -648,7 +649,7 @@ window.MINDMAP_DATA = {
         {
           i: "🩸",
           t: "Máu & tuần hoàn",
-          img: "assets/images/icons/bio_tuan_hoan.png",
+          img: "assets/images/illustrations/bio_tuan_hoan.svg",
           d: "Máu, hệ tuần hoàn và cơ chế miễn dịch",
           c: [
             ["❤️", "Tim & mạch máu", [
@@ -677,7 +678,7 @@ window.MINDMAP_DATA = {
         {
           i: "💨",
           t: "Hệ hô hấp",
-          img: "assets/images/icons/bio_ho_hap.png",
+          img: "assets/images/illustrations/bio_ho_hap.svg",
           d: "Cơ quan hô hấp và sự trao đổi khí",
           c: [
             ["⚙️", "Cấu tạo & chức năng", [
@@ -697,7 +698,7 @@ window.MINDMAP_DATA = {
         {
           i: "💧",
           t: "Hệ bài tiết",
-          img: "assets/images/icons/bio_bai_tiet.png",
+          img: "assets/images/illustrations/bio_bai_tiet.svg",
           d: "Hệ bài tiết nước tiểu và chức năng lọc máu",
           c: [
             ["🧩", "Cơ quan", [
@@ -721,7 +722,7 @@ window.MINDMAP_DATA = {
         {
           i: "🔁",
           t: "Môi trường trong",
-          img: "assets/images/icons/bio_moi_truong_trong.png",
+          img: "assets/images/illustrations/bio_moi_truong_trong.svg",
           d: "Môi trường trong cơ thể và cân bằng nội môi",
           c: [
             ["💡", "Khái niệm", [
@@ -740,7 +741,7 @@ window.MINDMAP_DATA = {
         {
           i: "🧠",
           t: "Thần kinh & giác quan",
-          img: "assets/images/icons/bio_than_kinh.png",
+          img: "assets/images/illustrations/bio_than_kinh.svg",
           d: "Hệ thần kinh, giác quan và sức khoẻ học đường",
           c: [
             ["⚙️", "Cấu tạo thần kinh", [
@@ -763,7 +764,7 @@ window.MINDMAP_DATA = {
         {
           i: "🧬",
           t: "Hệ nội tiết",
-          img: "assets/images/icons/bio_noi_tiet.png",
+          img: "assets/images/illustrations/bio_noi_tiet.svg",
           d: "Các tuyến nội tiết và vai trò của hormone",
           c: [
             ["🧪", "Tuyến nội tiết", [
@@ -784,7 +785,7 @@ window.MINDMAP_DATA = {
         {
           i: "✋",
           t: "Da & thân nhiệt",
-          img: "assets/images/icons/bio_da.png",
+          img: "assets/images/illustrations/bio_da.svg",
           d: "Cấu tạo chức năng của da và cơ chế điều hoà thân nhiệt",
           c: [
             ["⚙️", "Cấu tạo da", [
@@ -808,7 +809,7 @@ window.MINDMAP_DATA = {
         {
           i: "👶",
           t: "Sinh sản",
-          img: "assets/images/icons/bio_sinh_san.png",
+          img: "assets/images/illustrations/bio_sinh_san.svg",
           d: "Hệ sinh dục và sức khoẻ sinh sản tuổi vị thành niên",
           c: [
             ["⚙️", "Hệ sinh dục", [
@@ -830,7 +831,7 @@ window.MINDMAP_DATA = {
         {
           i: "🌻",
           t: "Cảm ứng ở sinh vật",
-          img: "assets/images/icons/bio_cam_ung.png",
+          img: "assets/images/illustrations/bio_cam_ung.svg",
           d: "Hiện tượng cảm ứng và khả năng thích nghi của sinh vật",
           c: [
             ["💡", "Khái niệm", [
@@ -855,7 +856,7 @@ window.MINDMAP_DATA = {
         {
           i: "🌱",
           t: "Sinh trưởng & phát triển",
-          img: "assets/images/icons/bio_sinh_truong.png",
+          img: "assets/images/illustrations/bio_sinh_truong.svg",
           d: "Sinh trưởng và phát triển ở sinh vật",
           c: [
             ["💡", "Khái niệm", [
@@ -881,7 +882,7 @@ window.MINDMAP_DATA = {
         {
           i: "🌍",
           t: "Đa dạng sinh học",
-          img: "assets/images/icons/bio_da_dang.png",
+          img: "assets/images/illustrations/bio_da_dang.svg",
           d: "Đa dạng sinh học và các cấp độ bảo tồn",
           c: [
             ["💡", "Khái niệm & vai trò", [
@@ -903,7 +904,7 @@ window.MINDMAP_DATA = {
         {
           i: "🔬",
           t: "Ứng dụng sinh học",
-          img: "assets/images/icons/bio_ung_dung.png",
+          img: "assets/images/illustrations/bio_ung_dung.svg",
           d: "Thành tựu và ứng dụng của sinh học trong đời sống",
           c: [
             ["🧬", "Thành tựu", [
@@ -938,15 +939,15 @@ window.MINDMAP_DATA = {
         /* 1. Khối lượng riêng và áp suất */
         {
           i: "🧱",
-          t: "KLR & áp suất",
-          img: "assets/images/icons/phys_klr.png",
+          t: "Khối lượng riêng và áp suất",
+          img: "assets/images/illustrations/phys_klr.svg",
           open: true,
           d: "Khối lượng riêng, lực đẩy Archimedes và áp suất",
           c: [
             {
               i: "⚖️",
               t: "Khối lượng riêng",
-              img: "assets/images/icons/phys_klr.png",
+              img: "assets/images/illustrations/phys_klr.svg",
               d: "Khái niệm và phương pháp đo khối lượng riêng",
               c: [
                 ["💡", "Khái niệm", [
@@ -964,7 +965,7 @@ window.MINDMAP_DATA = {
                   "Đơn vị thường dùng trong phòng thí nghiệm: gam trên xentimét khối (g/cm³) hoặc gam trên mililít (g/mL).",
                   "Quy đổi: 1 g/cm³ = 1000 kg/m³."
                 ]],
-                ["🧪", "Đo KLR", [
+                ["🧪", "Đo khối lượng riêng", [
                   "Đo khối lượng riêng vật rắn hình khối chữ nhật: Dùng cân đo khối lượng m, dùng thước đo chiều dài a, rộng b, cao c -> V = a*b*c -> D = m/V.",
                   "Đo vật rắn hình dạng bất kì không thấm nước: Dùng cân đo m; thả vật chìm vào ống đong chứa sẵn thể tích nước V1, mực nước dâng lên V2 -> thể tích vật V = V2 - V1 -> D = m / (V2 - V1).",
                   "Đo khối lượng riêng chất lỏng: Dùng cân điện tử xác định khối lượng cốc rỗng m1, đong thể tích chất lỏng V bằng ống đong đổ vào cốc cân được m2 -> khối lượng chất lỏng m = m2 - m1 -> D = m/V."
@@ -982,7 +983,7 @@ window.MINDMAP_DATA = {
             {
               i: "👇",
               t: "Áp suất",
-              img: "assets/images/icons/phys_ap_suat.png",
+              img: "assets/images/illustrations/phys_ap_suat.svg",
               d: "Áp suất trên một bề mặt, trong chất lỏng và chất khí",
               c: [
                 ["💡", "Khái niệm & công thức", [
@@ -1023,7 +1024,7 @@ window.MINDMAP_DATA = {
         {
           i: "🎡",
           t: "Lực làm quay",
-          img: "assets/images/icons/phys_quay.png",
+          img: "assets/images/illustrations/phys_don_bay.svg",
           open: true,
           d: "Tác dụng làm quay của lực, moment lực và đòn bẩy",
           c: [
@@ -1049,7 +1050,7 @@ window.MINDMAP_DATA = {
         {
           i: "💡",
           t: "Điện",
-          img: "assets/images/icons/phys_dien.png",
+          img: "assets/images/illustrations/phys_dien.svg",
           open: true,
           d: "Điện tích, dòng điện, mạch điện và các tác dụng của dòng điện",
           c: [
@@ -1094,7 +1095,7 @@ window.MINDMAP_DATA = {
         {
           i: "🌡️",
           t: "Nhiệt",
-          img: "assets/images/icons/phys_nhiet.png",
+          img: "assets/images/illustrations/phys_nhiet.svg",
           open: true,
           d: "Năng lượng nhiệt, các hình thức truyền nhiệt và sự nở vì nhiệt",
           c: [

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e11d48" />
+      <stop offset="100%" stop-color="#9f1239" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#fecdd3" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Stopwatch with speed lines -->
+  <circle cx="50" cy="54" r="24" fill="#881337" stroke="#ffffff" stroke-width="3"/>
+  <rect x="47" y="24" width="6" height="8" rx="2" fill="#ffffff"/>
+  <!-- Dial hand moving fast -->
+  <line x1="50" y1="54" x2="64" y2="44" stroke="#facc15" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="50" cy="54" r="3" fill="#ffffff"/>
+  <!-- Motion streaks -->
+  <line x1="16" y1="46" x2="22" y2="46" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="12" y1="54" x2="20" y2="54" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  <line x1="16" y1="62" x2="22" y2="62" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+
+</svg>

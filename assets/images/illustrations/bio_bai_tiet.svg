@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" />
+      <stop offset="100%" stop-color="#581c87" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#d8b4fe" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Kidneys -->
+  <path d="M34 36 C26 36 24 48 28 60 C32 68 40 66 42 56 C44 48 40 36 34 36 Z" fill="#c084fc" stroke="#ffffff" stroke-width="2"/>
+  <path d="M66 36 C74 36 76 48 72 60 C68 68 60 66 58 56 C56 48 60 36 66 36 Z" fill="#c084fc" stroke="#ffffff" stroke-width="2"/>
+
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#5eead4" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Internal equilibrium droplet / cells -->
+  <path d="M50 24 C50 24 28 50 28 62 C28 74 38 80 50 80 C62 80 72 74 72 62 C72 50 50 24 50 24 Z" fill="#14b8a6" stroke="#ffffff" stroke-width="2.5"/>
+  <circle cx="50" cy="58" r="8" fill="#ffffff" fill-opacity="0.9"/>
+  <text x="44" y="62" fill="#0f766e" font-size="11" font-weight="bold" font-family="Arial">pH</text>
+
+</svg>

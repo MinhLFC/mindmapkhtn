@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#c7d2fe" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Rainbow pH spectrum bar 0-14 -->
+  <defs>
+    <linearGradient id="phGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="25%" stop-color="#f97316" />
+      <stop offset="50%" stop-color="#22c55e" />
+      <stop offset="75%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+  </defs>
+  <rect x="16" y="38" width="68" height="24" rx="12" fill="url(#phGrad)" stroke="#ffffff" stroke-width="2.5"/>
+  <!-- Center neutral indicator -->
+  <line x1="50" y1="32" x2="50" y2="68" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="50" cy="32" r="5" fill="#22c55e" stroke="#ffffff" stroke-width="1.5"/>
+  <text x="20" y="30" fill="#ef4444" font-size="11" font-weight="bold" font-family="Arial">0</text>
+  <text x="47" y="24" fill="#22c55e" font-size="11" font-weight="bold" font-family="Arial">7</text>
+  <text x="73" y="30" fill="#a855f7" font-size="11" font-weight="bold" font-family="Arial">14</text>
+
+</svg>

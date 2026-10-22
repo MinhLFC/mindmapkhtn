@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#fef08a" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Balance scale -->
+  <rect x="47" y="24" width="6" height="50" rx="3" fill="#ffffff"/>
+  <rect x="36" y="70" width="28" height="6" rx="3" fill="#ffffff"/>
+  <!-- Beam -->
+  <line x1="20" y1="34" x2="80" y2="34" stroke="#fde047" stroke-width="4" stroke-linecap="round"/>
+  <!-- Left Pan -->
+  <line x1="24" y1="34" x2="20" y2="52" stroke="#ffffff" stroke-width="2"/>
+  <line x1="32" y1="34" x2="36" y2="52" stroke="#ffffff" stroke-width="2"/>
+  <path d="M16 52 Q28 60 40 52 Z" fill="#facc15" stroke="#ffffff" stroke-width="2"/>
+  <!-- Right Pan -->
+  <line x1="68" y1="34" x2="64" y2="52" stroke="#ffffff" stroke-width="2"/>
+  <line x1="76" y1="34" x2="80" y2="52" stroke="#ffffff" stroke-width="2"/>
+  <path d="M60 52 Q72 60 84 52 Z" fill="#facc15" stroke="#ffffff" stroke-width="2"/>
+
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#15803d" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#bbf7d0" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Seed to sprout growth -->
+  <path d="M50 74 L50 40 M50 56 Q36 50 34 38 Q48 42 50 56 M50 46 Q64 40 66 28 Q52 32 50 46" fill="#86efac" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+  <circle cx="50" cy="74" r="7" fill="#ca8a04"/>
+
+</svg>

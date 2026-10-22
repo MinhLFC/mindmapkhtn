@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#cbd5e1" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Blackboard / Formula Sheet -->
+  <rect x="18" y="24" width="64" height="48" rx="6" fill="#0f172a" stroke="#ffffff" stroke-width="3"/>
+  <!-- Equation text lines -->
+  <text x="24" y="44" fill="#38bdf8" font-size="12" font-weight="bold" font-family="monospace">2H₂ + O₂</text>
+  <text x="24" y="60" fill="#facc15" font-size="12" font-weight="bold" font-family="monospace">→ 2H₂O</text>
+  <!-- Pencil -->
+  <polygon points="76,64 70,68 84,82 88,78" fill="#eab308" stroke="#ffffff" stroke-width="1.5"/>
+
+</svg>

@@ -379,6 +379,49 @@
     return typeof n.d === 'string' ? n.d : n.t;
   }
 
+  /* ---------- Định dạng công thức, PTHH và chống lỗi font ---------- */
+  function formatDetailItem(rawText) {
+    let text = rawText.replace(/^[\s\-–]+/, '');
+
+    // Phát hiện tiền tố đề mục (ví dụ: Khái niệm:, Ví dụ:, 1. Acid..., v.v.)
+    const colonIdx = text.indexOf(':');
+    let prefix = '';
+    let body = text;
+
+    if (colonIdx > 0 && colonIdx <= 55) {
+      prefix = text.substring(0, colonIdx + 1);
+      body = text.substring(colonIdx + 1).trim();
+    }
+
+    function processFormulas(str) {
+      if (!str) return '';
+      // 1. Phản ứng có điều kiện nhiệt độ
+      str = str.replace(/--t°-->/g, ' <span class="chem-arrow"><span class="chem-cond">t°</span>→</span> ');
+      str = str.replace(/-->/g, ' <span class="chem-arrow">→</span> ');
+      str = str.replace(/->/g, ' <span class="chem-arrow">→</span> ');
+      
+      // 2. Ký hiệu khí bay hơi và chất kết tủa
+      str = str.replace(/↑/g, '<span class="chem-gas" title="Khí bay hơi">↑</span>');
+      str = str.replace(/↓/g, '<span class="chem-precipitate" title="Chất kết tủa">↓</span>');
+
+      // 3. Chỉ số dưới công thức hoá học (sau tên nguyên tố hoặc dấu đóng ngoặc)
+      // Ví dụ: H2O -> H₂O, Fe2O3 -> Fe₂O₃, Ca(OH)2 -> Ca(OH)₂, Al2(SO4)3 -> Al₂(SO₄)₃
+      str = str.replace(/([A-Z][a-z]?|\))(\d+)/g, '$1<sub>$2</sub>');
+
+      return str;
+    }
+
+    const isFormula = /→|->|--|↑|↓|\b(H2|O2|H2O|CO2|CaCO3|HCl|NaOH|BaCl2|Fe2O3|Al2O3|SO2|SO3|H2SO4|FeCl2|ZnCl2|CuSO4|Na2SO4|BaSO4)\b|n\s*=|D\s*=|p\s*=|C%|C_M|F_A/.test(text);
+
+    let html = '';
+    if (prefix) {
+      html += `<strong class="detail-term">${processFormulas(prefix)}</strong> `;
+    }
+    html += processFormulas(body);
+
+    return { html, isFormula };
+  }
+
   function showDetail(n) {
     panelNode = n;
     panel.style.setProperty('--c', n.color);
@@ -415,7 +458,9 @@
     ul.className = 'detail-list';
     items.forEach((t) => {
       const li = document.createElement('li');
-      li.textContent = t.replace(/^[\s\-–]+/, '');
+      const { html, isFormula } = formatDetailItem(t);
+      li.innerHTML = html;
+      if (isFormula) li.classList.add('is-formula-card');
       ul.appendChild(li);
     });
     body.append(lab, ul);

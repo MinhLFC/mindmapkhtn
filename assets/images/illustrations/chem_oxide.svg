@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#c2410c" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#fed7aa" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Oxide 3D Molecules: Metal/Nonmetal linked to 2 Oxygen spheres -->
+  <line x1="34" y1="50" x2="66" y2="50" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  <!-- Center Atom -->
+  <circle cx="50" cy="50" r="14" fill="#38bdf8" stroke="#ffffff" stroke-width="2.5"/>
+  <text x="45" y="54" fill="#ffffff" font-size="12" font-weight="bold" font-family="Arial">M</text>
+  <!-- Oxygen Atoms (Red) -->
+  <circle cx="24" cy="50" r="10" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="19" y="54" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial">O</text>
+  <circle cx="76" cy="50" r="10" fill="#ef4444" stroke="#ffffff" stroke-width="2"/>
+  <text x="71" y="54" fill="#ffffff" font-size="11" font-weight="bold" font-family="Arial">O</text>
+
+</svg>

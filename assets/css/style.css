@@ -109,7 +109,30 @@ button { font-family: inherit; cursor: pointer; }
 }
 .brand-sub-en { font-size: 11px; color: var(--muted); font-style: italic; white-space: nowrap; }
 
-.nav-menu { margin-left: auto; display: flex; gap: 8px; }
+.nav-menu { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+
+/* Huy hiệu Nhóm 5 */
+.group-tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f59e0b, #ea580c);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .4px;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.group-tag-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 8px #ffffff;
+}
 .nav-link {
   text-decoration: none;
   font-weight: 700;
@@ -256,29 +279,29 @@ button { font-family: inherit; cursor: pointer; }
 .node-inner:hover { transform: scale(1.06); }
 .node-icon { font-family: var(--emoji); line-height: 1; }
 
-/* Hình minh hoạ trực tiếp trên nút */
+/* Hình minh hoạ vector trực tiếp trên nút */
 .node-art-badge {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 32px;
   height: 32px;
-  border-radius: 8px;
-  background: #ffffff;
-  padding: 2px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  border-radius: 9px;
+  background: transparent;
+  padding: 0;
   flex-shrink: 0;
   overflow: hidden;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.15));
 }
 .node.l1 .node-art-badge {
-  width: 38px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   border-radius: 12px;
-  padding: 3px;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.25));
 }
 .node-art-img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
@@ -303,7 +326,7 @@ button { font-family: inherit; cursor: pointer; }
 .root-logo { height: 40px; width: auto; display: block; }
 .root-art-img { height: 38px; width: auto; object-fit: contain; }
 .root-title { font-size: 26px; font-weight: 800; line-height: 1.1; }
-.root-sub { font-size: 12px; opacity: .85; font-weight: 500; letter-spacing: .4px; text-transform: uppercase; }
+.root-sub { font-size: 12.5px; opacity: .95; font-weight: 700; letter-spacing: .4px; text-transform: uppercase; color: #fde047; margin-top: 4px; }
 @keyframes rootGlow {
   0%, 100% { box-shadow: 0 0 0 6px rgba(21,101,192,.18), 0 14px 34px rgba(11,79,134,.4); }
   50% { box-shadow: 0 0 0 12px rgba(21,101,192,.08), 0 14px 34px rgba(11,79,134,.4); }
@@ -500,30 +523,28 @@ button { font-family: inherit; cursor: pointer; }
 /* Ảnh minh hoạ lớn trong Khung chi tiết */
 .detail-art-card {
   width: 100%;
-  max-height: 160px;
+  padding: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #ffffff;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(241, 245, 249, 0.95));
   border: 1px solid var(--border);
-  border-radius: 14px;
-  padding: 10px;
+  border-radius: 16px;
   margin-bottom: 14px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
 }
 [data-theme="dark"] .detail-art-card {
-  background: var(--surface-2);
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.85));
 }
 .detail-art-image {
-  max-width: 100%;
-  max-height: 140px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  border-radius: 8px;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.18));
 }
 .detail-chip-img {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   border-radius: 4px;
 }
@@ -539,19 +560,82 @@ button { font-family: inherit; cursor: pointer; }
 .detail-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 14px; }
 .detail-list li {
   position: relative;
-  padding: 9px 12px 9px 30px;
+  padding: 10px 14px 10px 32px;
   border-radius: 12px;
   background: var(--surface-2);
+  border: 1px solid transparent;
   font-size: 14px;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 .detail-list li::before {
   content: "✔";
   position: absolute;
-  left: 11px; top: 9px;
+  left: 11px; top: 10px;
   color: var(--c);
   font-weight: 800;
   font-size: 12px;
+}
+
+/* Thẻ công thức / PTHH nổi bật chống lỗi font */
+.detail-list li.is-formula-card {
+  background: color-mix(in srgb, var(--c) 7%, var(--surface-2));
+  border-left: 3.5px solid var(--c);
+  border-radius: 8px 12px 12px 8px;
+}
+.detail-list li.is-formula-card::before {
+  content: "🧪";
+  font-size: 13px;
+  left: 10px;
+  top: 10px;
+}
+
+/* Kiểu chữ tiêu đề đề mục con */
+.detail-term {
+  color: var(--c);
+  font-weight: 800;
+  margin-right: 3px;
+}
+
+/* Kiểu ký tự và mũi tên hoá học */
+.chem-arrow {
+  display: inline-block;
+  color: #ef4444;
+  font-weight: 800;
+  margin: 0 5px;
+  position: relative;
+}
+.chem-cond {
+  position: absolute;
+  top: -11px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  font-weight: 700;
+  color: #f59e0b;
+}
+.chem-gas {
+  color: #0284c7;
+  font-weight: 900;
+  margin-left: 2px;
+  display: inline-block;
+}
+.chem-precipitate {
+  color: #ea580c;
+  font-weight: 900;
+  margin-left: 2px;
+  display: inline-block;
+}
+.detail-list sub {
+  font-size: 0.76em;
+  line-height: 0;
+  vertical-align: sub;
+  font-weight: 700;
+}
+.detail-list sup {
+  font-size: 0.76em;
+  line-height: 0;
+  vertical-align: super;
+  font-weight: 700;
 }
 .detail-chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .detail-chip {

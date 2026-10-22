@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#075985" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <rect x="4" y="4" width="92" height="92" rx="20" fill="url(#bgGrad)" stroke="#7dd3fc" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Lungs and trachea -->
+  <rect x="47" y="24" width="6" height="16" rx="3" fill="#ffffff"/>
+  <!-- Left lung -->
+  <path d="M45 40 C34 40 24 48 24 62 C24 74 36 76 44 72 C46 66 46 48 45 40 Z" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+  <!-- Right lung -->
+  <path d="M55 40 C66 40 76 48 76 62 C76 74 64 76 56 72 C54 66 54 48 55 40 Z" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+
+</svg>
